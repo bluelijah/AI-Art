@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+
+# Raw media stays local (large, and not ours to redistribute)
+data/**/*.wav
+data/**/*.mp3
+data/**/*.m4a
+data/**/*.mp4
+data/**/*.webm
+
+# Generated outputs
+output/

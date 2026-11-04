@@ -1,0 +1,26 @@
+[project]
+name = "speechart"
+version = "0.1.0"
+description = "Hidden Structures in Speech: aligned timelines of political speeches for data-driven artworks"
+readme = "README.md"
+authors = [
+    { name = "Elijah", email = "elijah.olson123@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "av>=18.1.0",
+    "librosa>=0.11.0",
+    "numpy>=2.4.6",
+    "pandas>=3.1.0",
+    "soundfile>=0.14.0",
+    "whisperx>=3.8.6",
+]
+
+[build-system]
+requires = ["uv_build>=0.10.4,<0.11.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.2.0",
+]

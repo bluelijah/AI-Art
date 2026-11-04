@@ -1,0 +1,12 @@
+{
+  "id": "thunberg_2019_un",
+  "speaker": "Greta Thunberg",
+  "title": "Address to the UN Climate Action Summit",
+  "date": "2019-09-23",
+  "venue": "United Nations Headquarters, New York",
+  "language": "en",
+  "audio_file": "audio.wav",
+  "source_url": null,
+  "notes": "audio.wav is gitignored; recreate it with scripts/import_audio.py from the source video.",
+  "source": "PBS NewsHour upload: \"WATCH: Greta Thunberg's full speech to world leaders at UN Climate Action Summit\" (1080p mp4, audio extracted with scripts/import_audio.py)"
+}
