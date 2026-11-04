@@ -91,3 +91,41 @@ def lagged_correlation(a: pd.Series, b: pd.Series, max_lag: int) -> pd.Series:
     b = pd.Series(np.asarray(b, dtype=float))
     lags = range(-max_lag, max_lag + 1)
     return pd.Series([a.corr(b.shift(-lag)) for lag in lags], index=list(lags), name="r")
+
+
+def clip_long_words(words: pd.DataFrame, max_word_s: float = 1.2) -> pd.DataFrame:
+    """Fix words the aligner stretched over applause or silence.
+
+    Forced alignment sometimes glues a word to the gap before it (e.g. "The"
+    spanning 7 s of applause). The word's end is usually right, so keep the
+    end and give it a plausible length based on its characters.
+    """
+    w = words.copy()
+    dur = w["end"] - w["start"]
+    est = 0.07 * w["word"].str.len() + 0.10
+    bad = dur > max_word_s
+    w.loc[bad, "start"] = w.loc[bad, "end"] - np.minimum(dur[bad], est[bad])
+    w["clipped"] = bad
+    return w
+
+
+def reaction_after(words: pd.DataFrame, events: pd.DataFrame, window_s: float = 3.0) -> pd.DataFrame:
+    """For each word, the reaction (if any) that starts within `window_s` after it ends.
+
+    Adds: reaction_after (label or ""), reaction_delay (s), reaction_duration (s).
+    A reaction is credited only to the last word before it starts.
+    """
+    w = words.copy()
+    w["reaction_after"] = ""
+    w["reaction_delay"] = np.nan
+    w["reaction_duration"] = np.nan
+    ends = w["end"].to_numpy()
+    for ev in events.itertuples(index=False):
+        before = np.flatnonzero(ends <= ev.start + 0.25)  # small tolerance for window edges
+        if len(before) == 0:
+            continue
+        i = before[-1]
+        delay = ev.start - ends[i]
+        if delay <= window_s:
+            w.loc[i, ["reaction_after", "reaction_delay", "reaction_duration"]] = [ev.label, max(delay, 0.0), ev.duration]
+    return w

@@ -8,10 +8,15 @@ authors = [
 ]
 requires-python = ">=3.11"
 dependencies = [
+    "anthropic>=2.4.0",
     "av>=18.1.0",
     "librosa>=0.11.0",
+    "matplotlib>=3.11.2",
     "numpy>=2.4.6",
     "pandas>=3.1.0",
+    "panns-inference>=0.1.1",
+    "pydantic>=2.14.2",
+    "sentence-transformers>=5.7.0",
     "soundfile>=0.14.0",
     "whisperx>=3.8.6",
 ]
