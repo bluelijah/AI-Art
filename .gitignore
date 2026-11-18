@@ -11,5 +11,6 @@ data/**/*.m4a
 data/**/*.mp4
 data/**/*.webm
 
-# Generated outputs
-output/
+
+# Local secrets
+.env

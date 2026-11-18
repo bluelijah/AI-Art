@@ -1,0 +1,35 @@
+{
+  "id": "thunberg_2018_cop24",
+  "speaker": "Greta Thunberg",
+  "title": "Address to the COP24 plenary",
+  "date": "2018-12-12",
+  "venue": "COP24, Katowice, Poland",
+  "tracked_phrase": "maybe they will",
+  "aftermath": {
+    "window": [
+      "2018-11-15",
+      "2019-02-28"
+    ],
+    "wikipedia": [
+      "Greta_Thunberg",
+      "School_strike_for_climate",
+      "2018_United_Nations_Climate_Change_Conference"
+    ],
+    "gdelt_queries": [
+      "\"not mature enough\" thunberg",
+      "thunberg"
+    ]
+  },
+  "language": "en",
+  "audio_file": "audio.wav",
+  "source": "COP24 Speech _ Greta Thunberg.mp4 (local download, 216 s)",
+  "speaker_start_s": 10.0,
+  "notes": "audio.wav is gitignored; create it with scripts/import_audio.py from the source video. Set speaker_start_s after transcription if the recording opens with someone else.",
+  "speaker_start_note": "Recording opens with the session chair ('Ms. Thunberg, you have the floor', 0-4 s); Thunberg starts at 11.1 s.",
+  "shared_lines_with": {
+    "thunberg_2019_un": [
+      "not mature enough to tell it like it is",
+      "change is coming, whether you like it or not"
+    ]
+  }
+}

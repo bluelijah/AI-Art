@@ -1,0 +1,14 @@
+{
+  "id": "malala_2013_un",
+  "speaker": "Malala Yousafzai",
+  "title": "Address to the UN Youth Assembly",
+  "date": "2013-07-12",
+  "venue": "United Nations Headquarters, New York",
+  "tracked_phrase": "we call upon",
+  "language": "en",
+  "audio_file": "audio.wav",
+  "source": "Malala Yousafzai addresses United Nations Youth Assembly.mp4 (local download, 1062 s)",
+  "speaker_start_s": 0.0,
+  "notes": "audio.wav is gitignored; create it with scripts/import_audio.py from the source video. Set speaker_start_s after transcription if the recording opens with someone else.",
+  "aftermath_note": "No aftermath data: Wikipedia pageview API starts July 2015, GDELT DOC API starts 2017."
+}

@@ -1,0 +1,523 @@
+{
+  "source": "claude-opus-5-5, manual pass in a Claude Code session following prompts/rhetoric_v1.md (not blind: applause had already been detected). Replace with scripts/tag_sentences.py --force.",
+  "prompt": "prompts/rhetoric_v1.md",
+  "date": "2026-11-04",
+  "sentences": [
+    {
+      "seg_id": 3,
+      "devices": [
+        "WARNING",
+        "DIRECT_ADDRESS",
+        "PUNCHLINE"
+      ],
+      "emotion": "DEFIANCE",
+      "intensity": 2,
+      "addressee": "LEADERS",
+      "topic": "FUTURE_WARNING",
+      "invites_applause": true,
+      "note": "opening warning: 'we'll be watching you'"
+    },
+    {
+      "seg_id": 4,
+      "devices": [
+        "PUNCHLINE"
+      ],
+      "emotion": "ANGER",
+      "intensity": 2,
+      "addressee": "NONE",
+      "topic": "MORAL_JUDGEMENT",
+      "invites_applause": false,
+      "note": "blunt verdict"
+    },
+    {
+      "seg_id": 5,
+      "devices": [
+        "PERSONAL_TESTIMONY",
+        "CONTRAST"
+      ],
+      "emotion": "GRIEF",
+      "intensity": 1,
+      "addressee": "SELF",
+      "topic": "PERSONAL_STAKES",
+      "invites_applause": false,
+      "note": "setup of here/school contrast"
+    },
+    {
+      "seg_id": 6,
+      "devices": [
+        "PERSONAL_TESTIMONY",
+        "CONTRAST"
+      ],
+      "emotion": "GRIEF",
+      "intensity": 1,
+      "addressee": "SELF",
+      "topic": "PERSONAL_STAKES",
+      "invites_applause": false,
+      "note": "second half of here/school contrast"
+    },
+    {
+      "seg_id": 7,
+      "devices": [
+        "CONTRAST",
+        "DIRECT_ADDRESS",
+        "ACCUSATION"
+      ],
+      "emotion": "ANGER",
+      "intensity": 2,
+      "addressee": "LEADERS",
+      "topic": "MORAL_JUDGEMENT",
+      "invites_applause": false,
+      "note": "'yet' turns the contrast on the leaders"
+    },
+    {
+      "seg_id": 8,
+      "devices": [
+        "RHETORICAL_QUESTION",
+        "DIRECT_ADDRESS",
+        "PUNCHLINE"
+      ],
+      "emotion": "ANGER",
+      "intensity": 3,
+      "addressee": "LEADERS",
+      "topic": "MORAL_JUDGEMENT",
+      "invites_applause": true,
+      "note": "first 'How dare you'"
+    },
+    {
+      "seg_id": 9,
+      "devices": [
+        "ACCUSATION",
+        "DIRECT_ADDRESS",
+        "PERSONAL_TESTIMONY"
+      ],
+      "emotion": "ANGER",
+      "intensity": 3,
+      "addressee": "LEADERS",
+      "topic": "PERSONAL_STAKES",
+      "invites_applause": true,
+      "note": "stolen dreams accusation"
+    },
+    {
+      "seg_id": 10,
+      "devices": [
+        "CONTRAST",
+        "PERSONAL_TESTIMONY"
+      ],
+      "emotion": "GRIEF",
+      "intensity": 1,
+      "addressee": "SELF",
+      "topic": "PERSONAL_STAKES",
+      "invites_applause": false,
+      "note": "'and yet' self-qualification"
+    },
+    {
+      "seg_id": 11,
+      "devices": [
+        "LIST_OF_THREE",
+        "ANAPHORA"
+      ],
+      "emotion": "GRIEF",
+      "intensity": 2,
+      "addressee": "WORLD",
+      "topic": "FUTURE_WARNING",
+      "invites_applause": false,
+      "note": "list of three, item 1"
+    },
+    {
+      "seg_id": 12,
+      "devices": [
+        "LIST_OF_THREE",
+        "ANAPHORA"
+      ],
+      "emotion": "GRIEF",
+      "intensity": 2,
+      "addressee": "WORLD",
+      "topic": "FUTURE_WARNING",
+      "invites_applause": false,
+      "note": "list of three, item 2"
+    },
+    {
+      "seg_id": 13,
+      "devices": [
+        "LIST_OF_THREE"
+      ],
+      "emotion": "GRIEF",
+      "intensity": 3,
+      "addressee": "WORLD",
+      "topic": "FUTURE_WARNING",
+      "invites_applause": true,
+      "note": "list of three, item 3"
+    },
+    {
+      "seg_id": 14,
+      "devices": [
+        "CONTRAST",
+        "ACCUSATION",
+        "DIRECT_ADDRESS"
+      ],
+      "emotion": "ANGER",
+      "intensity": 3,
+      "addressee": "LEADERS",
+      "topic": "INACTION",
+      "invites_applause": true,
+      "note": "mass extinction vs money and fairy tales"
+    },
+    {
+      "seg_id": 15,
+      "devices": [
+        "RHETORICAL_QUESTION",
+        "ANAPHORA",
+        "PUNCHLINE"
+      ],
+      "emotion": "ANGER",
+      "intensity": 3,
+      "addressee": "LEADERS",
+      "topic": "MORAL_JUDGEMENT",
+      "invites_applause": true,
+      "note": "second 'How dare you'"
+    },
+    {
+      "seg_id": 16,
+      "devices": [
+        "STATISTIC"
+      ],
+      "emotion": "RESOLVE",
+      "intensity": 1,
+      "addressee": "WORLD",
+      "topic": "SCIENCE_NUMBERS",
+      "invites_applause": false,
+      "note": "30 years of clear science"
+    },
+    {
+      "seg_id": 17,
+      "devices": [
+        "ANAPHORA",
+        "ACCUSATION",
+        "CONTRAST",
+        "DIRECT_ADDRESS"
+      ],
+      "emotion": "ANGER",
+      "intensity": 3,
+      "addressee": "LEADERS",
+      "topic": "INACTION",
+      "invites_applause": true,
+      "note": "third 'How dare you', look away vs doing enough"
+    },
+    {
+      "seg_id": 18,
+      "devices": [
+        "DIRECT_ADDRESS",
+        "CONTRAST"
+      ],
+      "emotion": "DISBELIEF",
+      "intensity": 1,
+      "addressee": "LEADERS",
+      "topic": "INACTION",
+      "invites_applause": false,
+      "note": "setup: 'you say you hear us'"
+    },
+    {
+      "seg_id": 19,
+      "devices": [
+        "CONTRAST",
+        "PERSONAL_TESTIMONY"
+      ],
+      "emotion": "DISBELIEF",
+      "intensity": 2,
+      "addressee": "LEADERS",
+      "topic": "MORAL_JUDGEMENT",
+      "invites_applause": false,
+      "note": "'but' answer to the setup"
+    },
+    {
+      "seg_id": 20,
+      "devices": [
+        "PUZZLE_SOLUTION",
+        "DIRECT_ADDRESS"
+      ],
+      "emotion": "ANGER",
+      "intensity": 2,
+      "addressee": "LEADERS",
+      "topic": "MORAL_JUDGEMENT",
+      "invites_applause": false,
+      "note": "puzzle: if you understood and still failed"
+    },
+    {
+      "seg_id": 21,
+      "devices": [
+        "PUZZLE_SOLUTION",
+        "ACCUSATION",
+        "PUNCHLINE"
+      ],
+      "emotion": "DEFIANCE",
+      "intensity": 3,
+      "addressee": "LEADERS",
+      "topic": "MORAL_JUDGEMENT",
+      "invites_applause": true,
+      "note": "solution: 'you would be evil'"
+    },
+    {
+      "seg_id": 22,
+      "devices": [
+        "STATISTIC"
+      ],
+      "emotion": "FEAR",
+      "intensity": 1,
+      "addressee": "WORLD",
+      "topic": "SCIENCE_NUMBERS",
+      "invites_applause": false,
+      "note": "50% chance of 1.5 degrees"
+    },
+    {
+      "seg_id": 23,
+      "devices": [
+        "STATISTIC",
+        "DIRECT_ADDRESS",
+        "CONTRAST"
+      ],
+      "emotion": "IRONY",
+      "intensity": 2,
+      "addressee": "LEADERS",
+      "topic": "SCIENCE_NUMBERS",
+      "invites_applause": false,
+      "note": "setup: '50% may be acceptable to you'"
+    },
+    {
+      "seg_id": 24,
+      "devices": [
+        "CONTRAST"
+      ],
+      "emotion": "FEAR",
+      "intensity": 1,
+      "addressee": "WORLD",
+      "topic": "SCIENCE_NUMBERS",
+      "invites_applause": false,
+      "note": "what the numbers leave out"
+    },
+    {
+      "seg_id": 25,
+      "devices": [
+        "STATISTIC",
+        "ACCUSATION"
+      ],
+      "emotion": "ANGER",
+      "intensity": 2,
+      "addressee": "LEADERS",
+      "topic": "SCIENCE_NUMBERS",
+      "invites_applause": false,
+      "note": "'your CO2', technologies that barely exist"
+    },
+    {
+      "seg_id": 26,
+      "devices": [
+        "CONTRAST",
+        "STATISTIC",
+        "PUNCHLINE"
+      ],
+      "emotion": "DEFIANCE",
+      "intensity": 2,
+      "addressee": "LEADERS",
+      "topic": "MORAL_JUDGEMENT",
+      "invites_applause": true,
+      "note": "'not acceptable to us' answers 'acceptable to you'"
+    },
+    {
+      "seg_id": 27,
+      "devices": [
+        "PERSONAL_TESTIMONY"
+      ],
+      "emotion": "RESOLVE",
+      "intensity": 2,
+      "addressee": "LEADERS",
+      "topic": "PERSONAL_STAKES",
+      "invites_applause": true,
+      "note": "completes 26: 'we who have to live with the consequences'"
+    },
+    {
+      "seg_id": 28,
+      "devices": [
+        "STATISTIC"
+      ],
+      "emotion": "NEUTRAL",
+      "intensity": 0,
+      "addressee": "WORLD",
+      "topic": "SCIENCE_NUMBERS",
+      "invites_applause": false,
+      "note": "IPCC carbon budget, 420 gigatons"
+    },
+    {
+      "seg_id": 29,
+      "devices": [
+        "STATISTIC"
+      ],
+      "emotion": "FEAR",
+      "intensity": 1,
+      "addressee": "WORLD",
+      "topic": "SCIENCE_NUMBERS",
+      "invites_applause": false,
+      "note": "down to 350 gigatons"
+    },
+    {
+      "seg_id": 30,
+      "devices": [
+        "ANAPHORA",
+        "RHETORICAL_QUESTION",
+        "ACCUSATION",
+        "DIRECT_ADDRESS"
+      ],
+      "emotion": "ANGER",
+      "intensity": 3,
+      "addressee": "LEADERS",
+      "topic": "INACTION",
+      "invites_applause": true,
+      "note": "fourth 'How dare you'"
+    },
+    {
+      "seg_id": 31,
+      "devices": [
+        "STATISTIC",
+        "WARNING"
+      ],
+      "emotion": "FEAR",
+      "intensity": 2,
+      "addressee": "WORLD",
+      "topic": "SCIENCE_NUMBERS",
+      "invites_applause": false,
+      "note": "budget gone in 8.5 years"
+    },
+    {
+      "seg_id": 32,
+      "devices": [
+        "ACCUSATION"
+      ],
+      "emotion": "ANGER",
+      "intensity": 2,
+      "addressee": "LEADERS",
+      "topic": "INACTION",
+      "invites_applause": false,
+      "note": "no plans because numbers are uncomfortable"
+    },
+    {
+      "seg_id": 33,
+      "devices": [
+        "ACCUSATION",
+        "DIRECT_ADDRESS",
+        "PUNCHLINE"
+      ],
+      "emotion": "ANGER",
+      "intensity": 3,
+      "addressee": "LEADERS",
+      "topic": "MORAL_JUDGEMENT",
+      "invites_applause": true,
+      "note": "'not mature enough'"
+    },
+    {
+      "seg_id": 34,
+      "devices": [
+        "ACCUSATION",
+        "DIRECT_ADDRESS",
+        "PUNCHLINE"
+      ],
+      "emotion": "ANGER",
+      "intensity": 3,
+      "addressee": "LEADERS",
+      "topic": "MORAL_JUDGEMENT",
+      "invites_applause": true,
+      "note": "'You are failing us'"
+    },
+    {
+      "seg_id": 35,
+      "devices": [
+        "CONTRAST",
+        "ACCUSATION"
+      ],
+      "emotion": "DEFIANCE",
+      "intensity": 2,
+      "addressee": "LEADERS",
+      "topic": "FUTURE_WARNING",
+      "invites_applause": false,
+      "note": "'but the young people' turn"
+    },
+    {
+      "seg_id": 36,
+      "devices": [
+        "WARNING",
+        "DIRECT_ADDRESS",
+        "PUNCHLINE"
+      ],
+      "emotion": "RESOLVE",
+      "intensity": 2,
+      "addressee": "LEADERS",
+      "topic": "FUTURE_WARNING",
+      "invites_applause": true,
+      "note": "eyes of future generations"
+    },
+    {
+      "seg_id": 37,
+      "devices": [
+        "WARNING",
+        "PUZZLE_SOLUTION",
+        "DIRECT_ADDRESS",
+        "PUNCHLINE"
+      ],
+      "emotion": "DEFIANCE",
+      "intensity": 3,
+      "addressee": "LEADERS",
+      "topic": "FUTURE_WARNING",
+      "invites_applause": true,
+      "note": "'we will never forgive you'"
+    },
+    {
+      "seg_id": 38,
+      "devices": [
+        "WARNING",
+        "DIRECT_ADDRESS"
+      ],
+      "emotion": "DEFIANCE",
+      "intensity": 3,
+      "addressee": "LEADERS",
+      "topic": "FUTURE_WARNING",
+      "invites_applause": true,
+      "note": "'we will not let you get away with this'"
+    },
+    {
+      "seg_id": 39,
+      "devices": [
+        "ANAPHORA",
+        "PUNCHLINE"
+      ],
+      "emotion": "DEFIANCE",
+      "intensity": 3,
+      "addressee": "LEADERS",
+      "topic": "FUTURE_WARNING",
+      "invites_applause": true,
+      "note": "'right here, right now'"
+    },
+    {
+      "seg_id": 40,
+      "devices": [
+        "CONTRAST",
+        "WARNING",
+        "PUNCHLINE"
+      ],
+      "emotion": "DEFIANCE",
+      "intensity": 3,
+      "addressee": "LEADERS",
+      "topic": "FUTURE_WARNING",
+      "invites_applause": true,
+      "note": "'whether you like it or not'"
+    },
+    {
+      "seg_id": 41,
+      "devices": [
+        "NONE"
+      ],
+      "emotion": "NEUTRAL",
+      "intensity": 0,
+      "addressee": "NONE",
+      "topic": "GREETING_CLOSING",
+      "invites_applause": true,
+      "note": "closing"
+    }
+  ]
+}

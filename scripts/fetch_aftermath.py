@@ -21,6 +21,8 @@ ROOT = Path(__file__).resolve().parents[1]
 
 def main(speech_id: str) -> None:
     meta = json.loads((ROOT / "data" / "speeches" / speech_id / "meta.json").read_text())
+    if "aftermath" not in meta:
+        sys.exit(f"{speech_id}: no aftermath sources configured. {meta.get('aftermath_note', '')}")
     cfg = meta["aftermath"]
     start, end = (date.fromisoformat(d) for d in cfg["window"])
     out = ROOT / "output" / speech_id

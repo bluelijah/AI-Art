@@ -74,3 +74,60 @@ def to_table(ann: SpeechAnnotation) -> pd.DataFrame:
     df = pd.DataFrame([s.model_dump() for s in ann.sentences])
     df["devices"] = df["devices"].map(lambda d: "|".join(d))
     return df.sort_values("seg_id").reset_index(drop=True)
+
+
+GEMINI_MODEL = "gemini-3.8-flash"
+
+
+def _gemini_key() -> str:
+    """GEMINI_API_KEY from the environment, else from the gitignored .env file."""
+    import os
+
+    if os.environ.get("GEMINI_API_KEY"):
+        return os.environ["GEMINI_API_KEY"]
+    env = Path(__file__).resolve().parents[2] / ".env"
+    if env.exists():
+        for line in env.read_text().splitlines():
+            if line.startswith("GEMINI_API_KEY="):
+                return line.split("=", 1)[1].strip()
+    raise RuntimeError("Set GEMINI_API_KEY (environment or AI-Art/.env)")
+
+
+def tag_with_gemini(segments: pd.DataFrame, context: str, prompt_file: str = "rhetoric_v1.md",
+                    model: str = GEMINI_MODEL) -> SpeechAnnotation:
+    """Same prompt and schema as tag_with_claude, run on Gemini with JSON output."""
+    import os
+
+    import certifi
+    from google import genai
+    from google.genai import types
+
+    os.environ.setdefault("SSL_CERT_FILE", certifi.where())
+    import time
+
+    from google.genai import errors
+
+    client = genai.Client(api_key=_gemini_key())
+    for attempt in range(6):
+        try:
+            response = client.models.generate_content(
+                model=model,
+                contents=build_user_message(segments, context),
+                config=types.GenerateContentConfig(
+                    system_instruction=(PROMPTS / prompt_file).read_text(),
+                    response_mime_type="application/json",
+                    response_json_schema=SpeechAnnotation.model_json_schema(),
+                ),
+            )
+            break
+        except errors.ServerError as e:  # 503 "high demand" is common and temporary
+            if attempt == 5:
+                raise
+            wait = 15 * 2 ** attempt
+            print(f"{model}: {e.code}, retrying in {wait} s")
+            time.sleep(wait)
+    result = SpeechAnnotation.model_validate_json(response.text)  # enforce enums and 0-3 range
+    missing = set(segments.seg_id) - {s.seg_id for s in result.sentences}
+    if missing:
+        raise RuntimeError(f"no annotation for seg_ids {sorted(missing)}")
+    return result

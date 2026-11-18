@@ -57,3 +57,10 @@ def test_echo_summary():
     df = pd.DataFrame({"date": days, "article": "A", "views": views})
     e = echo_summary(df, date(2019, 9, 23)).iloc[0]
     assert e.baseline == 100 and e.peak == 4000 and e.days_after == 1 and e.x_baseline == 40
+
+
+def test_find_phrase_ignores_case_and_punctuation():
+    from speechart.art.charts import find_phrase
+
+    w = pd.DataFrame({"word": ["How", "dare", "you?", "I", "say", "how", "dare", "you."]})
+    assert find_phrase(w, "how dare you") == [0, 5]

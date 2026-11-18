@@ -9,7 +9,7 @@ First case study: **Greta Thunberg, UN Climate Action Summit, 23 September 2019.
 ## Layout
 
 ```
-data/speeches/<id>/       meta.json, annotations.json (sentence tags), recording (gitignored)
+data/speeches/<id>/       meta.json, annotations.json (sentence tags), recording (gitignored: size + copyright)
 prompts/                  LLM annotation prompts
 src/speechart/
   delivery.py             audio -> loudness, pitch, pauses (10 ms grid)
@@ -18,11 +18,14 @@ src/speechart/
   tagging.py              sentences -> rhetorical devices, emotion (Claude API)
   timeline.py             shared timeline: frame grid, word table, lead/lag
   aftermath.py            Wikipedia pageviews, GDELT news volume
-  art/breath_scroll.py    sketch: ink scroll
-  art/fingerprint.py      sketch: self-similarity matrix
+  art/breath_scroll.py    ink scroll: strokes = loudness/pitch, gold = applause
+  art/fingerprint.py      self-similarity matrix (what is said / how it is said)
+  art/landscape.py        mountain panorama: peaks = applause, water = pauses (+ depth map)
+  art/ripples.py          speech at the centre, daily echo rings (Wikipedia, GDELT)
+  art/charts.py           analysis charts: phrase repetitions, anatomy of applause
 scripts/                  one runnable script per pipeline step
 tests/                    synthetic checks (no models, no network)
-output/<id>/              generated tables and art (gitignored)
+output/<id>/              generated tables and art (committed, so results are shared)
 ```
 
 ## Setup
@@ -39,19 +42,19 @@ uv run python scripts/import_audio.py thunberg_2019_un path/to/video.mp4   # onc
 uv run python scripts/extract_delivery.py thunberg_2019_un                 # ~1 min
 uv run python scripts/transcribe.py thunberg_2019_un                       # ~6 min on an M2 CPU
 uv run python scripts/detect_reactions.py thunberg_2019_un                 # ~1 min
-uv run python scripts/tag_sentences.py thunberg_2019_un --force            # needs Anthropic credentials
+uv run python scripts/tag_sentences.py thunberg_2019_un --provider gemini --force  # or Claude; needs a key
 uv run python scripts/build_timeline.py thunberg_2019_un                   # joins everything
-uv run python scripts/draw.py thunberg_2019_un                             # art -> output/<id>/art/
 uv run python scripts/fetch_aftermath.py thunberg_2019_un                  # network
+uv run python scripts/draw.py thunberg_2019_un                             # art -> output/<id>/art/
 ```
 
 First runs download models (~2.5 GB in total: Whisper, the alignment model,
 PANNs, a small sentence-embedding model).
 
-`tag_sentences.py` needs `ANTHROPIC_API_KEY` (or `ant auth login`). The
-committed `annotations.json` is a manual first pass made with the same prompt
-and schema; it was made *after* applause had been detected, so it is not a
-blind test of `invites_applause`. Re-run the script to get a blind one.
+`tag_sentences.py` needs `ANTHROPIC_API_KEY` (Claude) or `GEMINI_API_KEY`
+(Gemini, in the environment or a gitignored `.env`). `annotations.json` is the
+blind run (gemini-3.8-flash, transcript only). `annotations_manual.json` is an
+earlier manual pass made after applause was known, kept for comparison.
 
 ## Outputs per speech
 
@@ -65,7 +68,7 @@ blind test of `invites_applause`. Re-run the script to get a blind one.
 | `words_timeline.csv` | word (main speaker) | delivery + reaction that followed + sentence tags |
 | `timeline_100ms.csv` | 100 ms | every continuous signal on one grid, for lead/lag |
 | `aftermath_*.csv` | day | Wikipedia pageviews, GDELT news volume, echo summary |
-| `art/*.png` | | Breath Scroll (long + preview), Speech Fingerprint |
+| `art/*.png` | | Breath Scroll, Speech Fingerprint, Applause Landscape (+ depth map), Ripples, phrase repetitions, anatomy of applause |
 
 ## Pipeline status
 
@@ -75,7 +78,8 @@ blind test of `invites_applause`. Re-run the script to get a blind one.
 | Word-level transcript | done |
 | Applause / laughter | done |
 | Shared timeline | done |
-| Rhetorical devices + emotion | code done; current tags are a manual, non-blind pass |
+| Rhetorical devices + emotion | done (blind Gemini run) |
 | Aftermath | Wikipedia + GDELT done; Google Trends not yet |
-| Sketches: Breath Scroll, Speech Fingerprint | first versions |
-| Applause Landscape, Ripples, Gallery of Moments | not started |
+| Breath Scroll, Fingerprint, Applause Landscape, Ripples | first versions |
+| Gallery of Moments | not started |
+| More speeches + cross-comparison | next |

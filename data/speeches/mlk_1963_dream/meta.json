@@ -1,0 +1,17 @@
+{
+  "id": "mlk_1963_dream",
+  "speaker": "Martin Luther King Jr.",
+  "title": "I Have a Dream",
+  "date": "1963-08-28",
+  "venue": "Lincoln Memorial, Washington, D.C. (March on Washington)",
+  "tracked_phrase": "i have a dream",
+  "language": "en",
+  "audio_file": "audio.wav",
+  "source": "I Have a Dream speech by Martin Luther King .Jr HD (subtitled).mp4 (local download, 406 s: an EXCERPT; the full speech is ~17 min)",
+  "speaker_start_s": 12.0,
+  "notes": "audio.wav is gitignored; create it with scripts/import_audio.py from the source video. Set speaker_start_s after transcription if the recording opens with someone else.",
+  "aftermath_note": "No aftermath data: Wikipedia pageview API starts July 2015, GDELT DOC API starts 2017.",
+  "excerpt": true,
+  "speaker_start_note": "Recording opens with an announcer and applause (0-12 s); King starts at 13.2 s.",
+  "excerpt_note": "Edited highlight cut, not continuous: jumps from 'one hundred years later' (~114 s) straight to 'I have a dream'. Timing across cuts is not real."
+}
