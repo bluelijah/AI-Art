@@ -76,7 +76,7 @@ def to_table(ann: SpeechAnnotation) -> pd.DataFrame:
     return df.sort_values("seg_id").reset_index(drop=True)
 
 
-GEMINI_MODEL = "gemini-3.8-flash"
+GEMINI_MODEL = "gemini-2.5-flash"  # 3.8-flash was too often overloaded (503) in Nov 2026
 
 
 def _gemini_key() -> str:
@@ -94,7 +94,7 @@ def _gemini_key() -> str:
 
 
 def tag_with_gemini(segments: pd.DataFrame, context: str, prompt_file: str = "rhetoric_v1.md",
-                    model: str = GEMINI_MODEL) -> SpeechAnnotation:
+                    model: str = GEMINI_MODEL, _attempt: int = 0) -> SpeechAnnotation:
     """Same prompt and schema as tag_with_claude, run on Gemini with JSON output."""
     import os
 
@@ -107,7 +107,8 @@ def tag_with_gemini(segments: pd.DataFrame, context: str, prompt_file: str = "rh
 
     from google.genai import errors
 
-    client = genai.Client(api_key=_gemini_key())
+    # v1beta: older models (e.g. 2.5-flash) reject system instructions on v1
+    client = genai.Client(api_key=_gemini_key(), http_options=types.HttpOptions(api_version="v1beta"))
     for attempt in range(6):
         try:
             response = client.models.generate_content(
@@ -126,7 +127,14 @@ def tag_with_gemini(segments: pd.DataFrame, context: str, prompt_file: str = "rh
             wait = 15 * 2 ** attempt
             print(f"{model}: {e.code}, retrying in {wait} s")
             time.sleep(wait)
-    result = SpeechAnnotation.model_validate_json(response.text)  # enforce enums and 0-3 range
+    try:
+        result = SpeechAnnotation.model_validate_json(response.text)  # enforce enums and 0-3 range
+    except ValueError as e:
+        # older models follow the schema loosely; a fresh sample usually validates
+        if _attempt >= 2:
+            raise
+        print(f"{model}: output failed validation ({str(e).splitlines()[0]}), retrying")
+        return tag_with_gemini(segments, context, prompt_file, model, _attempt + 1)
     missing = set(segments.seg_id) - {s.seg_id for s in result.sentences}
     if missing:
         raise RuntimeError(f"no annotation for seg_ids {sorted(missing)}")

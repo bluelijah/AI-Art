@@ -1,7 +1,7 @@
 {
-  "source": "gemini-3.8-flash via Gemini API (blind: transcript only)",
+  "source": "gemini-2.5-flash via Gemini API (blind: transcript only)",
   "prompt": "prompts/rhetoric_v1.md",
-  "date": "2026-11-17",
+  "date": "2026-11-18",
   "sentences": [
     {
       "seg_id": 3,
@@ -9,36 +9,36 @@
         "DIRECT_ADDRESS",
         "WARNING"
       ],
-      "emotion": "DEFIANCE",
+      "emotion": "RESOLVE",
       "intensity": 2,
       "addressee": "LEADERS",
       "topic": "FUTURE_WARNING",
       "invites_applause": false,
-      "note": "direct warning to leaders"
+      "note": "direct address and warning"
     },
     {
       "seg_id": 4,
       "devices": [
-        "PUNCHLINE"
+        "NONE"
       ],
       "emotion": "ANGER",
       "intensity": 2,
-      "addressee": "LEADERS",
-      "topic": "MORAL_JUDGEMENT",
+      "addressee": "NONE",
+      "topic": "INACTION",
       "invites_applause": false,
-      "note": "blunt opening declaration"
+      "note": "general statement of wrongness"
     },
     {
       "seg_id": 5,
       "devices": [
         "PERSONAL_TESTIMONY"
       ],
-      "emotion": "GRIEF",
-      "intensity": 2,
-      "addressee": "LEADERS",
+      "emotion": "DISBELIEF",
+      "intensity": 1,
+      "addressee": "SELF",
       "topic": "PERSONAL_STAKES",
       "invites_applause": false,
-      "note": "personal testimony on misplaced role"
+      "note": "personal statement"
     },
     {
       "seg_id": 6,
@@ -47,53 +47,51 @@
       ],
       "emotion": "GRIEF",
       "intensity": 2,
-      "addressee": "LEADERS",
+      "addressee": "SELF",
       "topic": "PERSONAL_STAKES",
       "invites_applause": false,
-      "note": "personal testimony on being in school"
+      "note": "personal testimony, longing"
     },
     {
       "seg_id": 7,
       "devices": [
         "CONTRAST",
-        "DIRECT_ADDRESS",
-        "ACCUSATION"
+        "DIRECT_ADDRESS"
       ],
       "emotion": "ANGER",
       "intensity": 2,
       "addressee": "LEADERS",
-      "topic": "MORAL_JUDGEMENT",
+      "topic": "INACTION",
       "invites_applause": false,
-      "note": "contrast between youth seeking hope vs leaders coming to youth"
+      "note": "contrast and direct address"
     },
     {
       "seg_id": 8,
       "devices": [
         "RHETORICAL_QUESTION",
-        "DIRECT_ADDRESS",
         "ACCUSATION",
-        "PUNCHLINE"
+        "DIRECT_ADDRESS"
       ],
       "emotion": "ANGER",
       "intensity": 3,
       "addressee": "LEADERS",
       "topic": "MORAL_JUDGEMENT",
       "invites_applause": true,
-      "note": "first 'How dare you?' punchline"
+      "note": "rhetorical question, direct accusation"
     },
     {
       "seg_id": 9,
       "devices": [
+        "ACCUSATION",
         "DIRECT_ADDRESS",
-        "PERSONAL_TESTIMONY",
-        "ACCUSATION"
+        "PERSONAL_TESTIMONY"
       ],
       "emotion": "ANGER",
       "intensity": 3,
       "addressee": "LEADERS",
       "topic": "PERSONAL_STAKES",
-      "invites_applause": false,
-      "note": "stolen dreams and childhood accusation"
+      "invites_applause": true,
+      "note": "direct accusation, personal impact"
     },
     {
       "seg_id": 10,
@@ -103,10 +101,10 @@
       ],
       "emotion": "GRIEF",
       "intensity": 2,
-      "addressee": "LEADERS",
+      "addressee": "NONE",
       "topic": "PERSONAL_STAKES",
       "invites_applause": false,
-      "note": "contrast acknowledging privilege"
+      "note": "personal testimony, contrast with others"
     },
     {
       "seg_id": 11,
@@ -115,8 +113,8 @@
       ],
       "emotion": "GRIEF",
       "intensity": 2,
-      "addressee": "LEADERS",
-      "topic": "MORAL_JUDGEMENT",
+      "addressee": "WORLD",
+      "topic": "OTHER",
       "invites_applause": false,
       "note": "first item of list of three"
     },
@@ -127,11 +125,11 @@
         "ANAPHORA"
       ],
       "emotion": "GRIEF",
-      "intensity": 3,
-      "addressee": "LEADERS",
-      "topic": "MORAL_JUDGEMENT",
+      "intensity": 2,
+      "addressee": "WORLD",
+      "topic": "OTHER",
       "invites_applause": false,
-      "note": "second item of list of three with anaphora"
+      "note": "second item of list of three, anaphora"
     },
     {
       "seg_id": 13,
@@ -140,8 +138,8 @@
       ],
       "emotion": "GRIEF",
       "intensity": 3,
-      "addressee": "LEADERS",
-      "topic": "MORAL_JUDGEMENT",
+      "addressee": "WORLD",
+      "topic": "OTHER",
       "invites_applause": true,
       "note": "third item of list of three"
     },
@@ -149,31 +147,30 @@
       "seg_id": 14,
       "devices": [
         "CONTRAST",
-        "DIRECT_ADDRESS",
-        "ACCUSATION"
+        "ACCUSATION",
+        "DIRECT_ADDRESS"
       ],
       "emotion": "ANGER",
       "intensity": 3,
       "addressee": "LEADERS",
       "topic": "INACTION",
       "invites_applause": true,
-      "note": "contrast mass extinction vs fairy tales of growth"
+      "note": "contrast between reality and leaders' focus, direct accusation"
     },
     {
       "seg_id": 15,
       "devices": [
         "RHETORICAL_QUESTION",
-        "DIRECT_ADDRESS",
-        "ANAPHORA",
         "ACCUSATION",
-        "PUNCHLINE"
+        "DIRECT_ADDRESS",
+        "ANAPHORA"
       ],
       "emotion": "ANGER",
       "intensity": 3,
       "addressee": "LEADERS",
       "topic": "MORAL_JUDGEMENT",
       "invites_applause": true,
-      "note": "second 'How dare you?'"
+      "note": "anaphora of rhetorical question, direct accusation"
     },
     {
       "seg_id": 16,
@@ -182,25 +179,25 @@
       ],
       "emotion": "NEUTRAL",
       "intensity": 1,
-      "addressee": "LEADERS",
+      "addressee": "NONE",
       "topic": "SCIENCE_NUMBERS",
       "invites_applause": false,
-      "note": "factual point on 30 years of science"
+      "note": "factual statement with statistic"
     },
     {
       "seg_id": 17,
       "devices": [
         "RHETORICAL_QUESTION",
+        "ACCUSATION",
         "DIRECT_ADDRESS",
-        "ANAPHORA",
-        "ACCUSATION"
+        "CONTRAST"
       ],
       "emotion": "ANGER",
       "intensity": 3,
       "addressee": "LEADERS",
       "topic": "INACTION",
       "invites_applause": true,
-      "note": "third 'How dare you' variant accusing of looking away"
+      "note": "rhetorical question, direct accusation, contrast"
     },
     {
       "seg_id": 18,
@@ -208,11 +205,11 @@
         "DIRECT_ADDRESS"
       ],
       "emotion": "NEUTRAL",
-      "intensity": 1,
+      "intensity": 0,
       "addressee": "LEADERS",
       "topic": "INACTION",
       "invites_applause": false,
-      "note": "stating what leaders claim"
+      "note": "stating leaders' claim"
     },
     {
       "seg_id": 19,
@@ -220,117 +217,116 @@
         "CONTRAST",
         "PERSONAL_TESTIMONY"
       ],
-      "emotion": "DISBELIEF",
+      "emotion": "ANGER",
       "intensity": 2,
-      "addressee": "LEADERS",
-      "topic": "MORAL_JUDGEMENT",
+      "addressee": "SELF",
+      "topic": "PERSONAL_STAKES",
       "invites_applause": false,
-      "note": "refusal to believe leaders understand"
+      "note": "personal testimony, contrast"
     },
     {
       "seg_id": 20,
       "devices": [
+        "NONE"
+      ],
+      "emotion": "NEUTRAL",
+      "intensity": 1,
+      "addressee": "LEADERS",
+      "topic": "INACTION",
+      "invites_applause": false,
+      "note": "conditional clause"
+    },
+    {
+      "seg_id": 21,
+      "devices": [
+        "PUZZLE_SOLUTION",
+        "PERSONAL_TESTIMONY",
+        "PUNCHLINE",
         "ACCUSATION"
+      ],
+      "emotion": "DEFIANCE",
+      "intensity": 3,
+      "addressee": "LEADERS",
+      "topic": "MORAL_JUDGEMENT",
+      "invites_applause": true,
+      "note": "solution to puzzle, personal refusal to believe them evil"
+    },
+    {
+      "seg_id": 22,
+      "devices": [
+        "STATISTIC"
+      ],
+      "emotion": "FEAR",
+      "intensity": 2,
+      "addressee": "NONE",
+      "topic": "SCIENCE_NUMBERS",
+      "invites_applause": false,
+      "note": "factual statement with statistics, warning"
+    },
+    {
+      "seg_id": 23,
+      "devices": [
+        "DIRECT_ADDRESS",
+        "CONTRAST"
+      ],
+      "emotion": "DISBELIEF",
+      "intensity": 1,
+      "addressee": "LEADERS",
+      "topic": "MORAL_JUDGEMENT",
+      "invites_applause": false,
+      "note": "direct address, challenges their perspective"
+    },
+    {
+      "seg_id": 24,
+      "devices": [
+        "CONTRAST"
+      ],
+      "emotion": "ANGER",
+      "intensity": 2,
+      "addressee": "NONE",
+      "topic": "SCIENCE_NUMBERS",
+      "invites_applause": false,
+      "note": "factual rebuttal, contrast with accepted numbers"
+    },
+    {
+      "seg_id": 25,
+      "devices": [
+        "ACCUSATION",
+        "DIRECT_ADDRESS",
+        "PERSONAL_TESTIMONY",
+        "STATISTIC"
       ],
       "emotion": "ANGER",
       "intensity": 2,
       "addressee": "LEADERS",
       "topic": "INACTION",
       "invites_applause": false,
-      "note": "conditional setup about failing to act"
-    },
-    {
-      "seg_id": 21,
-      "devices": [
-        "CONTRAST",
-        "PERSONAL_TESTIMONY",
-        "ACCUSATION"
-      ],
-      "emotion": "ANGER",
-      "intensity": 3,
-      "addressee": "LEADERS",
-      "topic": "MORAL_JUDGEMENT",
-      "invites_applause": true,
-      "note": "punchline calling inaction evil"
-    },
-    {
-      "seg_id": 22,
-      "devices": [
-        "STATISTIC",
-        "WARNING"
-      ],
-      "emotion": "FEAR",
-      "intensity": 2,
-      "addressee": "LEADERS",
-      "topic": "SCIENCE_NUMBERS",
-      "invites_applause": false,
-      "note": "50% risk statistic on 1.5 degrees"
-    },
-    {
-      "seg_id": 23,
-      "devices": [
-        "STATISTIC",
-        "DIRECT_ADDRESS"
-      ],
-      "emotion": "IRONY",
-      "intensity": 1,
-      "addressee": "LEADERS",
-      "topic": "MORAL_JUDGEMENT",
-      "invites_applause": false,
-      "note": "setup contrasting acceptability"
-    },
-    {
-      "seg_id": 24,
-      "devices": [
-        "CONTRAST",
-        "LIST_OF_THREE"
-      ],
-      "emotion": "NEUTRAL",
-      "intensity": 1,
-      "addressee": "LEADERS",
-      "topic": "SCIENCE_NUMBERS",
-      "invites_applause": false,
-      "note": "list of factors excluded from models"
-    },
-    {
-      "seg_id": 25,
-      "devices": [
-        "DIRECT_ADDRESS",
-        "STATISTIC",
-        "PERSONAL_TESTIMONY",
-        "ACCUSATION"
-      ],
-      "emotion": "ANGER",
-      "intensity": 2,
-      "addressee": "LEADERS",
-      "topic": "MORAL_JUDGEMENT",
-      "invites_applause": false,
-      "note": "reliance on youth cleaning up CO2"
+      "note": "direct accusation, statistic, personal stakes"
     },
     {
       "seg_id": 26,
       "devices": [
         "CONTRAST",
-        "STATISTIC"
+        "PERSONAL_TESTIMONY"
       ],
-      "emotion": "RESOLVE",
+      "emotion": "DEFIANCE",
       "intensity": 2,
       "addressee": "LEADERS",
-      "topic": "MORAL_JUDGEMENT",
-      "invites_applause": false,
-      "note": "contrast to line 23 on unacceptable risk"
+      "topic": "PERSONAL_STAKES",
+      "invites_applause": true,
+      "note": "personal statement, contrast with their acceptance"
     },
     {
       "seg_id": 27,
       "devices": [
         "PERSONAL_TESTIMONY"
       ],
-      "emotion": "RESOLVE",
-      "intensity": 2,
+      "emotion": "GRIEF",
+      "intensity": 1,
       "addressee": "LEADERS",
       "topic": "PERSONAL_STAKES",
-      "invites_applause": true,
-      "note": "completion clause: youth living with consequences"
+      "invites_applause": false,
+      "note": "elaborates on personal stakes"
     },
     {
       "seg_id": 28,
@@ -338,38 +334,39 @@
         "STATISTIC"
       ],
       "emotion": "NEUTRAL",
-      "intensity": 1,
-      "addressee": "LEADERS",
+      "intensity": 0,
+      "addressee": "NONE",
       "topic": "SCIENCE_NUMBERS",
       "invites_applause": false,
-      "note": "IPCC carbon budget statistics"
+      "note": "factual statement with multiple statistics"
     },
     {
       "seg_id": 29,
       "devices": [
-        "STATISTIC"
+        "STATISTIC",
+        "CONTRAST"
       ],
-      "emotion": "NEUTRAL",
+      "emotion": "ANGER",
       "intensity": 1,
-      "addressee": "LEADERS",
+      "addressee": "NONE",
       "topic": "SCIENCE_NUMBERS",
       "invites_applause": false,
-      "note": "updated carbon budget statistic"
+      "note": "factual update with statistic, implying urgency"
     },
     {
       "seg_id": 30,
       "devices": [
         "RHETORICAL_QUESTION",
+        "ACCUSATION",
         "DIRECT_ADDRESS",
-        "ANAPHORA",
-        "ACCUSATION"
+        "ANAPHORA"
       ],
       "emotion": "ANGER",
       "intensity": 3,
       "addressee": "LEADERS",
       "topic": "INACTION",
       "invites_applause": true,
-      "note": "fourth 'How dare you' rhetorical question"
+      "note": "anaphora of rhetorical question, direct accusation"
     },
     {
       "seg_id": 31,
@@ -379,10 +376,10 @@
       ],
       "emotion": "FEAR",
       "intensity": 2,
-      "addressee": "LEADERS",
-      "topic": "SCIENCE_NUMBERS",
+      "addressee": "NONE",
+      "topic": "FUTURE_WARNING",
       "invites_applause": false,
-      "note": "warning on eight and a half years remaining"
+      "note": "factual warning with statistic"
     },
     {
       "seg_id": 32,
@@ -390,30 +387,17 @@
         "ACCUSATION"
       ],
       "emotion": "ANGER",
-      "intensity": 1,
+      "intensity": 2,
       "addressee": "LEADERS",
       "topic": "INACTION",
       "invites_applause": false,
-      "note": "accusation that numbers are too uncomfortable"
+      "note": "accusation of avoiding uncomfortable truths"
     },
     {
       "seg_id": 33,
       "devices": [
-        "DIRECT_ADDRESS",
-        "ACCUSATION"
-      ],
-      "emotion": "ANGER",
-      "intensity": 3,
-      "addressee": "LEADERS",
-      "topic": "MORAL_JUDGEMENT",
-      "invites_applause": true,
-      "note": "accusing leaders of not being mature enough"
-    },
-    {
-      "seg_id": 34,
-      "devices": [
-        "DIRECT_ADDRESS",
         "ACCUSATION",
+        "DIRECT_ADDRESS",
         "PUNCHLINE"
       ],
       "emotion": "ANGER",
@@ -421,22 +405,34 @@
       "addressee": "LEADERS",
       "topic": "MORAL_JUDGEMENT",
       "invites_applause": true,
-      "note": "short direct accusation punchline"
+      "note": "direct accusation of immaturity"
+    },
+    {
+      "seg_id": 34,
+      "devices": [
+        "ACCUSATION",
+        "DIRECT_ADDRESS",
+        "PUNCHLINE"
+      ],
+      "emotion": "ANGER",
+      "intensity": 3,
+      "addressee": "LEADERS",
+      "topic": "INACTION",
+      "invites_applause": true,
+      "note": "direct accusation"
     },
     {
       "seg_id": 35,
       "devices": [
         "CONTRAST",
-        "DIRECT_ADDRESS",
-        "ACCUSATION",
-        "WARNING"
+        "ACCUSATION"
       ],
-      "emotion": "DEFIANCE",
+      "emotion": "RESOLVE",
       "intensity": 2,
       "addressee": "LEADERS",
-      "topic": "FUTURE_WARNING",
+      "topic": "MORAL_JUDGEMENT",
       "invites_applause": false,
-      "note": "warning of youth understanding betrayal"
+      "note": "contrast, accusation of betrayal"
     },
     {
       "seg_id": 36,
@@ -449,15 +445,27 @@
       "addressee": "LEADERS",
       "topic": "FUTURE_WARNING",
       "invites_applause": false,
-      "note": "eyes of future generations watching"
+      "note": "direct address, warning of future accountability"
     },
     {
       "seg_id": 37,
       "devices": [
-        "DIRECT_ADDRESS",
-        "PERSONAL_TESTIMONY",
-        "ACCUSATION",
         "WARNING",
+        "DIRECT_ADDRESS",
+        "PERSONAL_TESTIMONY"
+      ],
+      "emotion": "DEFIANCE",
+      "intensity": 3,
+      "addressee": "LEADERS",
+      "topic": "FUTURE_WARNING",
+      "invites_applause": true,
+      "note": "direct warning, personal testimony"
+    },
+    {
+      "seg_id": 38,
+      "devices": [
+        "WARNING",
+        "DIRECT_ADDRESS",
         "PUNCHLINE"
       ],
       "emotion": "DEFIANCE",
@@ -465,20 +473,7 @@
       "addressee": "LEADERS",
       "topic": "FUTURE_WARNING",
       "invites_applause": true,
-      "note": "explicit threat: we will never forgive you"
-    },
-    {
-      "seg_id": 38,
-      "devices": [
-        "DIRECT_ADDRESS",
-        "WARNING"
-      ],
-      "emotion": "DEFIANCE",
-      "intensity": 3,
-      "addressee": "LEADERS",
-      "topic": "FUTURE_WARNING",
-      "invites_applause": false,
-      "note": "defiant resolve not to let them get away"
+      "note": "direct warning, punchline of defiance"
     },
     {
       "seg_id": 39,
@@ -487,23 +482,23 @@
       ],
       "emotion": "RESOLVE",
       "intensity": 3,
-      "addressee": "LEADERS",
-      "topic": "FUTURE_WARNING",
+      "addressee": "WORLD",
+      "topic": "OTHER",
       "invites_applause": true,
-      "note": "drawing the line punchline"
+      "note": "strong punchline, declaration of resolve"
     },
     {
       "seg_id": 40,
       "devices": [
-        "WARNING",
-        "PUNCHLINE"
+        "PUNCHLINE",
+        "CONTRAST"
       ],
       "emotion": "RESOLVE",
       "intensity": 3,
       "addressee": "LEADERS",
       "topic": "FUTURE_WARNING",
       "invites_applause": true,
-      "note": "climactic closing punchline"
+      "note": "powerful punchline, contrast"
     },
     {
       "seg_id": 41,
@@ -512,10 +507,10 @@
       ],
       "emotion": "NEUTRAL",
       "intensity": 0,
-      "addressee": "LEADERS",
+      "addressee": "NONE",
       "topic": "GREETING_CLOSING",
       "invites_applause": true,
-      "note": "standard speech closing"
+      "note": "closing remark"
     }
   ]
 }

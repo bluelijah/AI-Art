@@ -53,7 +53,7 @@ PANNs, a small sentence-embedding model).
 
 `tag_sentences.py` needs `ANTHROPIC_API_KEY` (Claude) or `GEMINI_API_KEY`
 (Gemini, in the environment or a gitignored `.env`). `annotations.json` is the
-blind run (gemini-3.8-flash, transcript only). `annotations_manual.json` is an
+blind run (gemini-2.5-flash, transcript only, same model for every speech). `annotations_manual.json` is an
 earlier manual pass made after applause was known, kept for comparison.
 
 ## Outputs per speech

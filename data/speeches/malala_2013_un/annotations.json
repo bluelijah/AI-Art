@@ -1,0 +1,1587 @@
+{
+  "source": "gemini-2.5-flash via Gemini API (blind: transcript only)",
+  "prompt": "prompts/rhetoric_v1.md",
+  "date": "2026-11-18",
+  "sentences": [
+    {
+      "seg_id": 0,
+      "devices": [
+        "NONE"
+      ],
+      "emotion": "NEUTRAL",
+      "intensity": 0,
+      "addressee": "NONE",
+      "topic": "GREETING_CLOSING",
+      "invites_applause": false,
+      "note": "Religious opening."
+    },
+    {
+      "seg_id": 1,
+      "devices": [
+        "DIRECT_ADDRESS"
+      ],
+      "emotion": "NEUTRAL",
+      "intensity": 0,
+      "addressee": "LEADERS",
+      "topic": "GREETING_CLOSING",
+      "invites_applause": false,
+      "note": "Addressing specific leaders."
+    },
+    {
+      "seg_id": 2,
+      "devices": [
+        "DIRECT_ADDRESS"
+      ],
+      "emotion": "NEUTRAL",
+      "intensity": 0,
+      "addressee": "LEADERS",
+      "topic": "GREETING_CLOSING",
+      "invites_applause": false,
+      "note": "Addressing specific leaders and general audience."
+    },
+    {
+      "seg_id": 3,
+      "devices": [
+        "PERSONAL_TESTIMONY"
+      ],
+      "emotion": "HOPE",
+      "intensity": 1,
+      "addressee": "NONE",
+      "topic": "PERSONAL_STAKES",
+      "invites_applause": false,
+      "note": "Speaker's personal feeling about the event."
+    },
+    {
+      "seg_id": 4,
+      "devices": [
+        "NONE"
+      ],
+      "emotion": "NEUTRAL",
+      "intensity": 0,
+      "addressee": "LEADERS",
+      "topic": "OTHER",
+      "invites_applause": false,
+      "note": "Continuation of thought from seg_id 3."
+    },
+    {
+      "seg_id": 5,
+      "devices": [
+        "PERSONAL_TESTIMONY"
+      ],
+      "emotion": "HOPE",
+      "intensity": 1,
+      "addressee": "NONE",
+      "topic": "PERSONAL_STAKES",
+      "invites_applause": false,
+      "note": "Speaker's personal feeling."
+    },
+    {
+      "seg_id": 6,
+      "devices": [
+        "PERSONAL_TESTIMONY"
+      ],
+      "emotion": "HOPE",
+      "intensity": 1,
+      "addressee": "NONE",
+      "topic": "PERSONAL_STAKES",
+      "invites_applause": false,
+      "note": "Personal anecdote."
+    },
+    {
+      "seg_id": 7,
+      "devices": [
+        "PERSONAL_TESTIMONY"
+      ],
+      "emotion": "NEUTRAL",
+      "intensity": 0,
+      "addressee": "NONE",
+      "topic": "OTHER",
+      "invites_applause": false,
+      "note": "Speaker's personal reflection."
+    },
+    {
+      "seg_id": 8,
+      "devices": [
+        "PERSONAL_TESTIMONY"
+      ],
+      "emotion": "NEUTRAL",
+      "intensity": 0,
+      "addressee": "WORLD",
+      "topic": "OTHER",
+      "invites_applause": false,
+      "note": "Speaker's personal reflection."
+    },
+    {
+      "seg_id": 9,
+      "devices": [
+        "NONE"
+      ],
+      "emotion": "NEUTRAL",
+      "intensity": 0,
+      "addressee": "NONE",
+      "topic": "OTHER",
+      "invites_applause": false,
+      "note": "Part of an expression of gratitude."
+    },
+    {
+      "seg_id": 10,
+      "devices": [
+        "NONE"
+      ],
+      "emotion": "HOPE",
+      "intensity": 1,
+      "addressee": "WORLD",
+      "topic": "MORAL_JUDGEMENT",
+      "invites_applause": false,
+      "note": "Statement of equality."
+    },
+    {
+      "seg_id": 11,
+      "devices": [
+        "PERSONAL_TESTIMONY"
+      ],
+      "emotion": "HOPE",
+      "intensity": 1,
+      "addressee": "WORLD",
+      "topic": "PERSONAL_STAKES",
+      "invites_applause": false,
+      "note": "Expressing personal gratitude."
+    },
+    {
+      "seg_id": 12,
+      "devices": [
+        "PERSONAL_TESTIMONY"
+      ],
+      "emotion": "DISBELIEF",
+      "intensity": 2,
+      "addressee": "WORLD",
+      "topic": "PERSONAL_STAKES",
+      "invites_applause": false,
+      "note": "Expressing surprise and gratitude for global support."
+    },
+    {
+      "seg_id": 13,
+      "devices": [
+        "PERSONAL_TESTIMONY",
+        "STATISTIC"
+      ],
+      "emotion": "NEUTRAL",
+      "intensity": 1,
+      "addressee": "NONE",
+      "topic": "PERSONAL_STAKES",
+      "invites_applause": false,
+      "note": "Personal experience of receiving support."
+    },
+    {
+      "seg_id": 14,
+      "devices": [
+        "PERSONAL_TESTIMONY"
+      ],
+      "emotion": "NEUTRAL",
+      "intensity": 0,
+      "addressee": "WORLD",
+      "topic": "OTHER",
+      "invites_applause": false,
+      "note": "General thanks."
+    },
+    {
+      "seg_id": 15,
+      "devices": [
+        "PERSONAL_TESTIMONY"
+      ],
+      "emotion": "NEUTRAL",
+      "intensity": 0,
+      "addressee": "NONE",
+      "topic": "OTHER",
+      "invites_applause": false,
+      "note": "Shortened thanks."
+    },
+    {
+      "seg_id": 16,
+      "devices": [
+        "PERSONAL_TESTIMONY"
+      ],
+      "emotion": "HOPE",
+      "intensity": 1,
+      "addressee": "YOUTH",
+      "topic": "PERSONAL_STAKES",
+      "invites_applause": false,
+      "note": "Thanking children."
+    },
+    {
+      "seg_id": 17,
+      "devices": [
+        "PERSONAL_TESTIMONY"
+      ],
+      "emotion": "HOPE",
+      "intensity": 1,
+      "addressee": "WORLD",
+      "topic": "PERSONAL_STAKES",
+      "invites_applause": false,
+      "note": "Thanking elders."
+    },
+    {
+      "seg_id": 18,
+      "devices": [
+        "PERSONAL_TESTIMONY"
+      ],
+      "emotion": "NEUTRAL",
+      "intensity": 1,
+      "addressee": "NONE",
+      "topic": "PERSONAL_STAKES",
+      "invites_applause": false,
+      "note": "Extended personal thanks."
+    },
+    {
+      "seg_id": 19,
+      "devices": [
+        "PERSONAL_TESTIMONY"
+      ],
+      "emotion": "NEUTRAL",
+      "intensity": 0,
+      "addressee": "LEADERS",
+      "topic": "OTHER",
+      "invites_applause": false,
+      "note": "Stating support for specific initiatives and people."
+    },
+    {
+      "seg_id": 20,
+      "devices": [
+        "PERSONAL_TESTIMONY"
+      ],
+      "emotion": "NEUTRAL",
+      "intensity": 0,
+      "addressee": "LEADERS",
+      "topic": "OTHER",
+      "invites_applause": false,
+      "note": "Thanking leaders for leadership."
+    },
+    {
+      "seg_id": 21,
+      "devices": [
+        "NONE"
+      ],
+      "emotion": "HOPE",
+      "intensity": 1,
+      "addressee": "WORLD",
+      "topic": "OTHER",
+      "invites_applause": false,
+      "note": "Statement about inspiration."
+    },
+    {
+      "seg_id": 22,
+      "devices": [
+        "DIRECT_ADDRESS"
+      ],
+      "emotion": "NEUTRAL",
+      "intensity": 0,
+      "addressee": "WORLD",
+      "topic": "OTHER",
+      "invites_applause": false,
+      "note": "Addressing the audience."
+    },
+    {
+      "seg_id": 23,
+      "devices": [
+        "CONTRAST"
+      ],
+      "emotion": "RESOLVE",
+      "intensity": 2,
+      "addressee": "WORLD",
+      "topic": "PERSONAL_STAKES",
+      "invites_applause": false,
+      "note": "Setting up a contrast to reframe the day."
+    },
+    {
+      "seg_id": 24,
+      "devices": [
+        "LIST_OF_THREE",
+        "CONTRAST"
+      ],
+      "emotion": "RESOLVE",
+      "intensity": 2,
+      "addressee": "WORLD",
+      "topic": "MORAL_JUDGEMENT",
+      "invites_applause": true,
+      "note": "Rephrasing Malala Day as a universal day of advocacy."
+    },
+    {
+      "seg_id": 25,
+      "devices": [
+        "STATISTIC",
+        "LIST_OF_THREE",
+        "CONTRAST"
+      ],
+      "emotion": "RESOLVE",
+      "intensity": 1,
+      "addressee": "NONE",
+      "topic": "OTHER",
+      "invites_applause": false,
+      "note": "Broadening the scope of the struggle."
+    },
+    {
+      "seg_id": 26,
+      "devices": [
+        "STATISTIC",
+        "ACCUSATION"
+      ],
+      "emotion": "GRIEF",
+      "intensity": 2,
+      "addressee": "NONE",
+      "topic": "INACTION",
+      "invites_applause": false,
+      "note": "Citing numbers of victims."
+    },
+    {
+      "seg_id": 27,
+      "devices": [
+        "PERSONAL_TESTIMONY",
+        "CONTRAST"
+      ],
+      "emotion": "RESOLVE",
+      "intensity": 1,
+      "addressee": "NONE",
+      "topic": "PERSONAL_STAKES",
+      "invites_applause": false,
+      "note": "Humbling personal statement."
+    },
+    {
+      "seg_id": 28,
+      "devices": [
+        "PERSONAL_TESTIMONY"
+      ],
+      "emotion": "RESOLVE",
+      "intensity": 2,
+      "addressee": "NONE",
+      "topic": "PERSONAL_STAKES",
+      "invites_applause": false,
+      "note": "Declarative statement of presence."
+    },
+    {
+      "seg_id": 29,
+      "devices": [
+        "PERSONAL_TESTIMONY",
+        "ANAPHORA",
+        "CONTRAST"
+      ],
+      "emotion": "RESOLVE",
+      "intensity": 2,
+      "addressee": "NONE",
+      "topic": "PERSONAL_STAKES",
+      "invites_applause": false,
+      "note": "Reiterating presence with a humbling addition."
+    },
+    {
+      "seg_id": 30,
+      "devices": [
+        "PERSONAL_TESTIMONY",
+        "CONTRAST"
+      ],
+      "emotion": "RESOLVE",
+      "intensity": 2,
+      "addressee": "NONE",
+      "topic": "MORAL_JUDGEMENT",
+      "invites_applause": true,
+      "note": "Stating her purpose as a voice for the voiceless."
+    },
+    {
+      "seg_id": 31,
+      "devices": [
+        "NONE"
+      ],
+      "emotion": "RESOLVE",
+      "intensity": 1,
+      "addressee": "NONE",
+      "topic": "MORAL_JUDGEMENT",
+      "invites_applause": false,
+      "note": "First item in an implied list of rights."
+    },
+    {
+      "seg_id": 32,
+      "devices": [
+        "ANAPHORA"
+      ],
+      "emotion": "HOPE",
+      "intensity": 1,
+      "addressee": "NONE",
+      "topic": "MORAL_JUDGEMENT",
+      "invites_applause": false,
+      "note": "Second item in the list of rights."
+    },
+    {
+      "seg_id": 33,
+      "devices": [
+        "ANAPHORA",
+        "LIST_OF_THREE"
+      ],
+      "emotion": "HOPE",
+      "intensity": 2,
+      "addressee": "NONE",
+      "topic": "MORAL_JUDGEMENT",
+      "invites_applause": true,
+      "note": "Completion of the list of rights, building on the anaphora."
+    },
+    {
+      "seg_id": 34,
+      "devices": [
+        "DIRECT_ADDRESS",
+        "PERSONAL_TESTIMONY",
+        "ACCUSATION"
+      ],
+      "emotion": "ANGER",
+      "intensity": 2,
+      "addressee": "WORLD",
+      "topic": "PERSONAL_STAKES",
+      "invites_applause": false,
+      "note": "Recounting the attack."
+    },
+    {
+      "seg_id": 35,
+      "devices": [
+        "ACCUSATION",
+        "PERSONAL_TESTIMONY"
+      ],
+      "emotion": "ANGER",
+      "intensity": 2,
+      "addressee": "NONE",
+      "topic": "PERSONAL_STAKES",
+      "invites_applause": false,
+      "note": "Extending the accusation to friends."
+    },
+    {
+      "seg_id": 36,
+      "devices": [
+        "CONTRAST",
+        "ACCUSATION"
+      ],
+      "emotion": "ANGER",
+      "intensity": 2,
+      "addressee": "NONE",
+      "topic": "INACTION",
+      "invites_applause": false,
+      "note": "Stating the intention of the attackers."
+    },
+    {
+      "seg_id": 37,
+      "devices": [
+        "CONTRAST",
+        "PUNCHLINE"
+      ],
+      "emotion": "DEFIANCE",
+      "intensity": 3,
+      "addressee": "NONE",
+      "topic": "PERSONAL_STAKES",
+      "invites_applause": true,
+      "note": "Direct statement of defiance."
+    },
+    {
+      "seg_id": 38,
+      "devices": [
+        "CONTRAST",
+        "STATISTIC"
+      ],
+      "emotion": "HOPE",
+      "intensity": 2,
+      "addressee": "NONE",
+      "topic": "MORAL_JUDGEMENT",
+      "invites_applause": true,
+      "note": "Explaining the consequence of their failure."
+    },
+    {
+      "seg_id": 39,
+      "devices": [
+        "ACCUSATION",
+        "CONTRAST"
+      ],
+      "emotion": "ANGER",
+      "intensity": 2,
+      "addressee": "NONE",
+      "topic": "PERSONAL_STAKES",
+      "invites_applause": false,
+      "note": "Stating another intention of the attackers."
+    },
+    {
+      "seg_id": 40,
+      "devices": [
+        "CONTRAST"
+      ],
+      "emotion": "NEUTRAL",
+      "intensity": 1,
+      "addressee": "NONE",
+      "topic": "PERSONAL_STAKES",
+      "invites_applause": false,
+      "note": "Continuation of the contrast."
+    },
+    {
+      "seg_id": 41,
+      "devices": [
+        "LIST_OF_THREE",
+        "CONTRAST"
+      ],
+      "emotion": "RESOLVE",
+      "intensity": 2,
+      "addressee": "NONE",
+      "topic": "PERSONAL_STAKES",
+      "invites_applause": false,
+      "note": "Describing what died."
+    },
+    {
+      "seg_id": 42,
+      "devices": [
+        "LIST_OF_THREE",
+        "CONTRAST",
+        "PUNCHLINE"
+      ],
+      "emotion": "RESOLVE",
+      "intensity": 3,
+      "addressee": "NONE",
+      "topic": "PERSONAL_STAKES",
+      "invites_applause": true,
+      "note": "Describing what was born."
+    },
+    {
+      "seg_id": 43,
+      "devices": [
+        "PERSONAL_TESTIMONY"
+      ],
+      "emotion": "RESOLVE",
+      "intensity": 2,
+      "addressee": "NONE",
+      "topic": "PERSONAL_STAKES",
+      "invites_applause": false,
+      "note": "Declarative statement about identity."
+    },
+    {
+      "seg_id": 44,
+      "devices": [
+        "PERSONAL_TESTIMONY",
+        "ANAPHORA"
+      ],
+      "emotion": "RESOLVE",
+      "intensity": 2,
+      "addressee": "NONE",
+      "topic": "PERSONAL_STAKES",
+      "invites_applause": false,
+      "note": "First item in a list with anaphora."
+    },
+    {
+      "seg_id": 45,
+      "devices": [
+        "PERSONAL_TESTIMONY",
+        "ANAPHORA"
+      ],
+      "emotion": "RESOLVE",
+      "intensity": 2,
+      "addressee": "NONE",
+      "topic": "PERSONAL_STAKES",
+      "invites_applause": false,
+      "note": "Second item in a list with anaphora."
+    },
+    {
+      "seg_id": 46,
+      "devices": [
+        "PERSONAL_TESTIMONY",
+        "ANAPHORA",
+        "LIST_OF_THREE"
+      ],
+      "emotion": "RESOLVE",
+      "intensity": 3,
+      "addressee": "NONE",
+      "topic": "PERSONAL_STAKES",
+      "invites_applause": true,
+      "note": "Third item in a list with anaphora."
+    },
+    {
+      "seg_id": 47,
+      "devices": [
+        "DIRECT_ADDRESS",
+        "PERSONAL_TESTIMONY",
+        "CONTRAST"
+      ],
+      "emotion": "NEUTRAL",
+      "intensity": 1,
+      "addressee": "WORLD",
+      "topic": "MORAL_JUDGEMENT",
+      "invites_applause": false,
+      "note": "Stating her stance of non-opposition."
+    },
+    {
+      "seg_id": 48,
+      "devices": [
+        "PERSONAL_TESTIMONY",
+        "CONTRAST"
+      ],
+      "emotion": "RESOLVE",
+      "intensity": 2,
+      "addressee": "NONE",
+      "topic": "MORAL_JUDGEMENT",
+      "invites_applause": false,
+      "note": "Clarifying her purpose."
+    },
+    {
+      "seg_id": 49,
+      "devices": [
+        "PERSONAL_TESTIMONY",
+        "CONTRAST",
+        "PUNCHLINE"
+      ],
+      "emotion": "RESOLVE",
+      "intensity": 3,
+      "addressee": "WORLD",
+      "topic": "MORAL_JUDGEMENT",
+      "invites_applause": true,
+      "note": "Stating her true purpose."
+    },
+    {
+      "seg_id": 50,
+      "devices": [
+        "PERSONAL_TESTIMONY",
+        "CONTRAST",
+        "PUNCHLINE"
+      ],
+      "emotion": "RESOLVE",
+      "intensity": 3,
+      "addressee": "WORLD",
+      "topic": "MORAL_JUDGEMENT",
+      "invites_applause": true,
+      "note": "Expressing a radical stance of forgiveness and inclusivity."
+    },
+    {
+      "seg_id": 51,
+      "devices": [
+        "PERSONAL_TESTIMONY",
+        "CONTRAST"
+      ],
+      "emotion": "RESOLVE",
+      "intensity": 3,
+      "addressee": "NONE",
+      "topic": "MORAL_JUDGEMENT",
+      "invites_applause": false,
+      "note": "Explicit statement of no hate."
+    },
+    {
+      "seg_id": 52,
+      "devices": [
+        "PERSONAL_TESTIMONY",
+        "CONTRAST"
+      ],
+      "emotion": "RESOLVE",
+      "intensity": 3,
+      "addressee": "NONE",
+      "topic": "MORAL_JUDGEMENT",
+      "invites_applause": true,
+      "note": "Hypothetical demonstration of non-violence."
+    },
+    {
+      "seg_id": 53,
+      "devices": [
+        "ANAPHORA",
+        "PERSONAL_TESTIMONY",
+        "LIST_OF_THREE"
+      ],
+      "emotion": "RESOLVE",
+      "intensity": 2,
+      "addressee": "NONE",
+      "topic": "MORAL_JUDGEMENT",
+      "invites_applause": false,
+      "note": "Attributing her compassion to religious figures."
+    },
+    {
+      "seg_id": 54,
+      "devices": [
+        "ANAPHORA",
+        "PERSONAL_TESTIMONY",
+        "LIST_OF_THREE"
+      ],
+      "emotion": "RESOLVE",
+      "intensity": 2,
+      "addressee": "NONE",
+      "topic": "MORAL_JUDGEMENT",
+      "invites_applause": false,
+      "note": "Attributing her stance to historical figures of change."
+    },
+    {
+      "seg_id": 55,
+      "devices": [
+        "ANAPHORA",
+        "PERSONAL_TESTIMONY",
+        "LIST_OF_THREE"
+      ],
+      "emotion": "RESOLVE",
+      "intensity": 2,
+      "addressee": "NONE",
+      "topic": "MORAL_JUDGEMENT",
+      "invites_applause": false,
+      "note": "Attributing her philosophy to figures of non-violence."
+    },
+    {
+      "seg_id": 56,
+      "devices": [
+        "ANAPHORA",
+        "PERSONAL_TESTIMONY"
+      ],
+      "emotion": "RESOLVE",
+      "intensity": 2,
+      "addressee": "NONE",
+      "topic": "MORAL_JUDGEMENT",
+      "invites_applause": true,
+      "note": "Attributing her forgiveness to her parents."
+    },
+    {
+      "seg_id": 57,
+      "devices": [
+        "PERSONAL_TESTIMONY"
+      ],
+      "emotion": "RESOLVE",
+      "intensity": 2,
+      "addressee": "NONE",
+      "topic": "MORAL_JUDGEMENT",
+      "invites_applause": false,
+      "note": "Internal source of conviction."
+    },
+    {
+      "seg_id": 58,
+      "devices": [
+        "PUNCHLINE"
+      ],
+      "emotion": "RESOLVE",
+      "intensity": 3,
+      "addressee": "WORLD",
+      "topic": "MORAL_JUDGEMENT",
+      "invites_applause": true,
+      "note": "Simple, strong moral directive."
+    },
+    {
+      "seg_id": 59,
+      "devices": [
+        "DIRECT_ADDRESS"
+      ],
+      "emotion": "NEUTRAL",
+      "intensity": 0,
+      "addressee": "WORLD",
+      "topic": "OTHER",
+      "invites_applause": false,
+      "note": "Transition."
+    },
+    {
+      "seg_id": 60,
+      "devices": [
+        "CONTRAST",
+        "PUZZLE_SOLUTION"
+      ],
+      "emotion": "RESOLVE",
+      "intensity": 1,
+      "addressee": "WORLD",
+      "topic": "MORAL_JUDGEMENT",
+      "invites_applause": false,
+      "note": "General truth about perception."
+    },
+    {
+      "seg_id": 61,
+      "devices": [
+        "CONTRAST",
+        "PUZZLE_SOLUTION",
+        "ANAPHORA"
+      ],
+      "emotion": "RESOLVE",
+      "intensity": 2,
+      "addressee": "WORLD",
+      "topic": "PERSONAL_STAKES",
+      "invites_applause": false,
+      "note": "Applying the truth to the importance of voice."
+    },
+    {
+      "seg_id": 62,
+      "devices": [
+        "CONTRAST",
+        "PUZZLE_SOLUTION",
+        "PERSONAL_TESTIMONY"
+      ],
+      "emotion": "RESOLVE",
+      "intensity": 2,
+      "addressee": "WORLD",
+      "topic": "PERSONAL_STAKES",
+      "invites_applause": true,
+      "note": "Specific application of the truth to Swat experience."
+    },
+    {
+      "seg_id": 63,
+      "devices": [
+        "NONE"
+      ],
+      "emotion": "NEUTRAL",
+      "intensity": 0,
+      "addressee": "NONE",
+      "topic": "OTHER",
+      "invites_applause": false,
+      "note": "Introduces a saying."
+    },
+    {
+      "seg_id": 64,
+      "devices": [
+        "CONTRAST",
+        "ACCUSATION",
+        "ANAPHORA"
+      ],
+      "emotion": "ANGER",
+      "intensity": 2,
+      "addressee": "NONE",
+      "topic": "MORAL_JUDGEMENT",
+      "invites_applause": false,
+      "note": "Explanation of why extremists fear education and women."
+    },
+    {
+      "seg_id": 65,
+      "devices": [
+        "ACCUSATION",
+        "STATISTIC"
+      ],
+      "emotion": "ANGER",
+      "intensity": 2,
+      "addressee": "NONE",
+      "topic": "INACTION",
+      "invites_applause": false,
+      "note": "Specific example of extremist violence."
+    },
+    {
+      "seg_id": 66,
+      "devices": [
+        "ACCUSATION",
+        "ANAPHORA"
+      ],
+      "emotion": "ANGER",
+      "intensity": 2,
+      "addressee": "NONE",
+      "topic": "INACTION",
+      "invites_applause": false,
+      "note": "Second example of violence, building on anaphora."
+    },
+    {
+      "seg_id": 67,
+      "devices": [
+        "ACCUSATION",
+        "ANAPHORA"
+      ],
+      "emotion": "ANGER",
+      "intensity": 2,
+      "addressee": "NONE",
+      "topic": "INACTION",
+      "invites_applause": false,
+      "note": "Third example of violence, continuing anaphora."
+    },
+    {
+      "seg_id": 68,
+      "devices": [
+        "ACCUSATION",
+        "CONTRAST",
+        "PUNCHLINE"
+      ],
+      "emotion": "ANGER",
+      "intensity": 3,
+      "addressee": "NONE",
+      "topic": "MORAL_JUDGEMENT",
+      "invites_applause": true,
+      "note": "Reason for extremist actions."
+    },
+    {
+      "seg_id": 69,
+      "devices": [
+        "PERSONAL_TESTIMONY"
+      ],
+      "emotion": "NEUTRAL",
+      "intensity": 0,
+      "addressee": "NONE",
+      "topic": "OTHER",
+      "invites_applause": false,
+      "note": "Transition to an anecdote."
+    },
+    {
+      "seg_id": 70,
+      "devices": [
+        "PERSONAL_TESTIMONY",
+        "RHETORICAL_QUESTION"
+      ],
+      "emotion": "NEUTRAL",
+      "intensity": 1,
+      "addressee": "NONE",
+      "topic": "MORAL_JUDGEMENT",
+      "invites_applause": false,
+      "note": "Setting up a child's response."
+    },
+    {
+      "seg_id": 71,
+      "devices": [
+        "ACCUSATION",
+        "CONTRAST"
+      ],
+      "emotion": "ANGER",
+      "intensity": 2,
+      "addressee": "NONE",
+      "topic": "MORAL_JUDGEMENT",
+      "invites_applause": true,
+      "note": "Critique of the Taliban's worldview."
+    },
+    {
+      "seg_id": 72,
+      "devices": [
+        "ACCUSATION"
+      ],
+      "emotion": "ANGER",
+      "intensity": 2,
+      "addressee": "NONE",
+      "topic": "MORAL_JUDGEMENT",
+      "invites_applause": false,
+      "note": "Direct accusation of misuse of religion/culture."
+    },
+    {
+      "seg_id": 73,
+      "devices": [
+        "CONTRAST"
+      ],
+      "emotion": "HOPE",
+      "intensity": 1,
+      "addressee": "NONE",
+      "topic": "OTHER",
+      "invites_applause": false,
+      "note": "Reclaiming national identity."
+    },
+    {
+      "seg_id": 74,
+      "devices": [
+        "CONTRAST"
+      ],
+      "emotion": "HOPE",
+      "intensity": 1,
+      "addressee": "NONE",
+      "topic": "OTHER",
+      "invites_applause": false,
+      "note": "Reclaiming cultural values."
+    },
+    {
+      "seg_id": 75,
+      "devices": [
+        "LIST_OF_THREE",
+        "CONTRAST"
+      ],
+      "emotion": "HOPE",
+      "intensity": 2,
+      "addressee": "NONE",
+      "topic": "MORAL_JUDGEMENT",
+      "invites_applause": true,
+      "note": "Reclaiming religious identity."
+    },
+    {
+      "seg_id": 76,
+      "devices": [
+        "CONTRAST",
+        "PUZZLE_SOLUTION"
+      ],
+      "emotion": "RESOLVE",
+      "intensity": 2,
+      "addressee": "NONE",
+      "topic": "MORAL_JUDGEMENT",
+      "invites_applause": false,
+      "note": "Stating a religious imperative for education."
+    },
+    {
+      "seg_id": 77,
+      "devices": [
+        "DIRECT_ADDRESS"
+      ],
+      "emotion": "NEUTRAL",
+      "intensity": 0,
+      "addressee": "LEADERS",
+      "topic": "OTHER",
+      "invites_applause": false,
+      "note": "Addressing the Secretary-General."
+    },
+    {
+      "seg_id": 78,
+      "devices": [
+        "LIST_OF_THREE"
+      ],
+      "emotion": "GRIEF",
+      "intensity": 1,
+      "addressee": "NONE",
+      "topic": "INACTION",
+      "invites_applause": false,
+      "note": "Stating the problem of conflict."
+    },
+    {
+      "seg_id": 79,
+      "devices": [
+        "PERSONAL_TESTIMONY"
+      ],
+      "emotion": "ANGER",
+      "intensity": 2,
+      "addressee": "NONE",
+      "topic": "INACTION",
+      "invites_applause": false,
+      "note": "Expressing collective fatigue with conflict."
+    },
+    {
+      "seg_id": 80,
+      "devices": [
+        "NONE"
+      ],
+      "emotion": "GRIEF",
+      "intensity": 1,
+      "addressee": "NONE",
+      "topic": "INACTION",
+      "invites_applause": false,
+      "note": "General statement of suffering."
+    },
+    {
+      "seg_id": 81,
+      "devices": [
+        "NONE"
+      ],
+      "emotion": "GRIEF",
+      "intensity": 1,
+      "addressee": "NONE",
+      "topic": "INACTION",
+      "invites_applause": false,
+      "note": "Example of child labor."
+    },
+    {
+      "seg_id": 82,
+      "devices": [
+        "NONE"
+      ],
+      "emotion": "GRIEF",
+      "intensity": 1,
+      "addressee": "NONE",
+      "topic": "INACTION",
+      "invites_applause": false,
+      "note": "Example of school destruction."
+    },
+    {
+      "seg_id": 83,
+      "devices": [
+        "NONE",
+        "STATISTIC"
+      ],
+      "emotion": "GRIEF",
+      "intensity": 1,
+      "addressee": "NONE",
+      "topic": "INACTION",
+      "invites_applause": false,
+      "note": "Example of extremism's impact."
+    },
+    {
+      "seg_id": 84,
+      "devices": [
+        "NONE"
+      ],
+      "emotion": "GRIEF",
+      "intensity": 2,
+      "addressee": "NONE",
+      "topic": "INACTION",
+      "invites_applause": false,
+      "note": "Example of forced labor and marriage."
+    },
+    {
+      "seg_id": 85,
+      "devices": [
+        "LIST_OF_THREE"
+      ],
+      "emotion": "GRIEF",
+      "intensity": 2,
+      "addressee": "NONE",
+      "topic": "INACTION",
+      "invites_applause": false,
+      "note": "List of global problems."
+    },
+    {
+      "seg_id": 86,
+      "devices": [
+        "CONTRAST"
+      ],
+      "emotion": "NEUTRAL",
+      "intensity": 1,
+      "addressee": "NONE",
+      "topic": "INACTION",
+      "invites_applause": false,
+      "note": "Completing the thought from [85]."
+    },
+    {
+      "seg_id": 87,
+      "devices": [
+        "DIRECT_ADDRESS",
+        "PERSONAL_TESTIMONY"
+      ],
+      "emotion": "RESOLVE",
+      "intensity": 1,
+      "addressee": "WORLD",
+      "topic": "MORAL_JUDGEMENT",
+      "invites_applause": false,
+      "note": "Stating her specific focus."
+    },
+    {
+      "seg_id": 88,
+      "devices": [
+        "CONTRAST",
+        "PERSONAL_TESTIMONY"
+      ],
+      "emotion": "RESOLVE",
+      "intensity": 2,
+      "addressee": "WORLD",
+      "topic": "MORAL_JUDGEMENT",
+      "invites_applause": true,
+      "note": "Declaring women's self-empowerment."
+    },
+    {
+      "seg_id": 89,
+      "devices": [
+        "PERSONAL_TESTIMONY",
+        "CONTRAST"
+      ],
+      "emotion": "NEUTRAL",
+      "intensity": 1,
+      "addressee": "WORLD",
+      "topic": "MORAL_JUDGEMENT",
+      "invites_applause": false,
+      "note": "Clarifying her message."
+    },
+    {
+      "seg_id": 90,
+      "devices": [
+        "PERSONAL_TESTIMONY",
+        "CONTRAST",
+        "PUNCHLINE"
+      ],
+      "emotion": "RESOLVE",
+      "intensity": 2,
+      "addressee": "WORLD",
+      "topic": "MORAL_JUDGEMENT",
+      "invites_applause": true,
+      "note": "Completing the clarification about women's independence."
+    },
+    {
+      "seg_id": 91,
+      "devices": [
+        "DIRECT_ADDRESS",
+        "PUNCHLINE"
+      ],
+      "emotion": "RESOLVE",
+      "intensity": 2,
+      "addressee": "WORLD",
+      "topic": "MORAL_JUDGEMENT",
+      "invites_applause": true,
+      "note": "Direct call to action."
+    },
+    {
+      "seg_id": 92,
+      "devices": [
+        "DIRECT_ADDRESS",
+        "ANAPHORA"
+      ],
+      "emotion": "RESOLVE",
+      "intensity": 2,
+      "addressee": "LEADERS",
+      "topic": "INACTION",
+      "invites_applause": false,
+      "note": "First in a series of calls to action to leaders."
+    },
+    {
+      "seg_id": 93,
+      "devices": [
+        "DIRECT_ADDRESS",
+        "ANAPHORA"
+      ],
+      "emotion": "RESOLVE",
+      "intensity": 2,
+      "addressee": "LEADERS",
+      "topic": "INACTION",
+      "invites_applause": false,
+      "note": "Second call for leaders on rights."
+    },
+    {
+      "seg_id": 94,
+      "devices": [
+        "PUNCHLINE"
+      ],
+      "emotion": "DEFIANCE",
+      "intensity": 3,
+      "addressee": "LEADERS",
+      "topic": "MORAL_JUDGEMENT",
+      "invites_applause": true,
+      "note": "Strong, declarative, non-negotiable statement."
+    },
+    {
+      "seg_id": 95,
+      "devices": [
+        "ANAPHORA"
+      ],
+      "emotion": "RESOLVE",
+      "intensity": 2,
+      "addressee": "LEADERS",
+      "topic": "INACTION",
+      "invites_applause": false,
+      "note": "Begins another series of calls to governments."
+    },
+    {
+      "seg_id": 96,
+      "devices": [
+        "NONE"
+      ],
+      "emotion": "HOPE",
+      "intensity": 2,
+      "addressee": "LEADERS",
+      "topic": "MORAL_JUDGEMENT",
+      "invites_applause": false,
+      "note": "Call for universal education."
+    },
+    {
+      "seg_id": 97,
+      "devices": [
+        "ANAPHORA"
+      ],
+      "emotion": "RESOLVE",
+      "intensity": 2,
+      "addressee": "LEADERS",
+      "topic": "INACTION",
+      "invites_applause": false,
+      "note": "Call to governments to fight terrorism."
+    },
+    {
+      "seg_id": 98,
+      "devices": [
+        "ANAPHORA"
+      ],
+      "emotion": "RESOLVE",
+      "intensity": 2,
+      "addressee": "LEADERS",
+      "topic": "INACTION",
+      "invites_applause": false,
+      "note": "Call to developed nations for girls' education."
+    },
+    {
+      "seg_id": 99,
+      "devices": [
+        "ANAPHORA"
+      ],
+      "emotion": "RESOLVE",
+      "intensity": 2,
+      "addressee": "WORLD",
+      "topic": "MORAL_JUDGEMENT",
+      "invites_applause": false,
+      "note": "Call for tolerance."
+    },
+    {
+      "seg_id": 100,
+      "devices": [
+        "LIST_OF_THREE"
+      ],
+      "emotion": "RESOLVE",
+      "intensity": 2,
+      "addressee": "WORLD",
+      "topic": "MORAL_JUDGEMENT",
+      "invites_applause": false,
+      "note": "Call to reject prejudice."
+    },
+    {
+      "seg_id": 101,
+      "devices": [
+        "NONE"
+      ],
+      "emotion": "RESOLVE",
+      "intensity": 2,
+      "addressee": "WORLD",
+      "topic": "MORAL_JUDGEMENT",
+      "invites_applause": false,
+      "note": "Call for women's freedom and equality."
+    },
+    {
+      "seg_id": 102,
+      "devices": [
+        "NONE"
+      ],
+      "emotion": "HOPE",
+      "intensity": 1,
+      "addressee": "WORLD",
+      "topic": "MORAL_JUDGEMENT",
+      "invites_applause": false,
+      "note": "Desired outcome."
+    },
+    {
+      "seg_id": 103,
+      "devices": [
+        "PUNCHLINE",
+        "CONTRAST"
+      ],
+      "emotion": "RESOLVE",
+      "intensity": 3,
+      "addressee": "WORLD",
+      "topic": "MORAL_JUDGEMENT",
+      "invites_applause": true,
+      "note": "Strong argument for equality."
+    },
+    {
+      "seg_id": 104,
+      "devices": [
+        "DIRECT_ADDRESS",
+        "LIST_OF_THREE",
+        "ANAPHORA"
+      ],
+      "emotion": "HOPE",
+      "intensity": 2,
+      "addressee": "WORLD",
+      "topic": "MORAL_JUDGEMENT",
+      "invites_applause": true,
+      "note": "Call to women for self-empowerment."
+    },
+    {
+      "seg_id": 105,
+      "devices": [
+        "DIRECT_ADDRESS",
+        "ANAPHORA"
+      ],
+      "emotion": "HOPE",
+      "intensity": 2,
+      "addressee": "WORLD",
+      "topic": "MORAL_JUDGEMENT",
+      "invites_applause": false,
+      "note": "First statement of what \"we\" want."
+    },
+    {
+      "seg_id": 106,
+      "devices": [
+        "NONE"
+      ],
+      "emotion": "HOPE",
+      "intensity": 2,
+      "addressee": "WORLD",
+      "topic": "MORAL_JUDGEMENT",
+      "invites_applause": true,
+      "note": "Completion of the statement of desire for education."
+    },
+    {
+      "seg_id": 107,
+      "devices": [
+        "NONE"
+      ],
+      "emotion": "HOPE",
+      "intensity": 2,
+      "addressee": "NONE",
+      "topic": "FUTURE_WARNING",
+      "invites_applause": false,
+      "note": "Statement of ongoing commitment."
+    },
+    {
+      "seg_id": 108,
+      "devices": [
+        "PUNCHLINE"
+      ],
+      "emotion": "DEFIANCE",
+      "intensity": 3,
+      "addressee": "NONE",
+      "topic": "FUTURE_WARNING",
+      "invites_applause": true,
+      "note": "Strong declaration of unstoppable resolve."
+    },
+    {
+      "seg_id": 109,
+      "devices": [
+        "ANAPHORA"
+      ],
+      "emotion": "RESOLVE",
+      "intensity": 2,
+      "addressee": "NONE",
+      "topic": "FUTURE_WARNING",
+      "invites_applause": true,
+      "note": "Further declaration of future action."
+    },
+    {
+      "seg_id": 110,
+      "devices": [
+        "PERSONAL_TESTIMONY"
+      ],
+      "emotion": "NEUTRAL",
+      "intensity": 1,
+      "addressee": "NONE",
+      "topic": "OTHER",
+      "invites_applause": false,
+      "note": "Introduces a belief."
+    },
+    {
+      "seg_id": 111,
+      "devices": [
+        "NONE"
+      ],
+      "emotion": "HOPE",
+      "intensity": 2,
+      "addressee": "NONE",
+      "topic": "MORAL_JUDGEMENT",
+      "invites_applause": false,
+      "note": "Statement of belief in words."
+    },
+    {
+      "seg_id": 112,
+      "devices": [
+        "PUNCHLINE",
+        "CONTRAST"
+      ],
+      "emotion": "HOPE",
+      "intensity": 3,
+      "addressee": "WORLD",
+      "topic": "MORAL_JUDGEMENT",
+      "invites_applause": true,
+      "note": "Emphasizing the power of collective words."
+    },
+    {
+      "seg_id": 113,
+      "devices": [
+        "PUZZLE_SOLUTION",
+        "CONTRAST"
+      ],
+      "emotion": "RESOLVE",
+      "intensity": 2,
+      "addressee": "WORLD",
+      "topic": "MORAL_JUDGEMENT",
+      "invites_applause": false,
+      "note": "Call to empower with knowledge."
+    },
+    {
+      "seg_id": 114,
+      "devices": [
+        "ANAPHORA",
+        "CONTRAST"
+      ],
+      "emotion": "RESOLVE",
+      "intensity": 2,
+      "addressee": "WORLD",
+      "topic": "MORAL_JUDGEMENT",
+      "invites_applause": true,
+      "note": "Call to unity."
+    },
+    {
+      "seg_id": 115,
+      "devices": [
+        "DIRECT_ADDRESS",
+        "ANAPHORA",
+        "STATISTIC",
+        "LIST_OF_THREE"
+      ],
+      "emotion": "GRIEF",
+      "intensity": 2,
+      "addressee": "WORLD",
+      "topic": "INACTION",
+      "invites_applause": false,
+      "note": "Reminder of global suffering."
+    },
+    {
+      "seg_id": 116,
+      "devices": [
+        "ANAPHORA",
+        "STATISTIC"
+      ],
+      "emotion": "GRIEF",
+      "intensity": 2,
+      "addressee": "WORLD",
+      "topic": "INACTION",
+      "invites_applause": false,
+      "note": "Reminder of children out of school."
+    },
+    {
+      "seg_id": 117,
+      "devices": [
+        "ANAPHORA"
+      ],
+      "emotion": "HOPE",
+      "intensity": 2,
+      "addressee": "WORLD",
+      "topic": "FUTURE_WARNING",
+      "invites_applause": true,
+      "note": "Reminder of the hope for a better future."
+    },
+    {
+      "seg_id": 118,
+      "devices": [
+        "LIST_OF_THREE",
+        "ANAPHORA"
+      ],
+      "emotion": "RESOLVE",
+      "intensity": 3,
+      "addressee": "WORLD",
+      "topic": "MORAL_JUDGEMENT",
+      "invites_applause": true,
+      "note": "Call for a global struggle."
+    },
+    {
+      "seg_id": 119,
+      "devices": [
+        "ANAPHORA",
+        "CONTRAST"
+      ],
+      "emotion": "RESOLVE",
+      "intensity": 2,
+      "addressee": "WORLD",
+      "topic": "MORAL_JUDGEMENT",
+      "invites_applause": false,
+      "note": "Call to action using symbols of education."
+    },
+    {
+      "seg_id": 120,
+      "devices": [
+        "CONTRAST",
+        "PUNCHLINE"
+      ],
+      "emotion": "RESOLVE",
+      "intensity": 3,
+      "addressee": "WORLD",
+      "topic": "MORAL_JUDGEMENT",
+      "invites_applause": true,
+      "note": "Declaring books/pens as weapons."
+    },
+    {
+      "seg_id": 121,
+      "devices": [
+        "LIST_OF_THREE",
+        "PUNCHLINE"
+      ],
+      "emotion": "HOPE",
+      "intensity": 3,
+      "addressee": "WORLD",
+      "topic": "MORAL_JUDGEMENT",
+      "invites_applause": true,
+      "note": "Iconic statement on the power of education."
+    },
+    {
+      "seg_id": 122,
+      "devices": [
+        "PUNCHLINE"
+      ],
+      "emotion": "RESOLVE",
+      "intensity": 3,
+      "addressee": "WORLD",
+      "topic": "MORAL_JUDGEMENT",
+      "invites_applause": true,
+      "note": "Definitive statement."
+    },
+    {
+      "seg_id": 123,
+      "devices": [
+        "PUNCHLINE"
+      ],
+      "emotion": "RESOLVE",
+      "intensity": 3,
+      "addressee": "WORLD",
+      "topic": "MORAL_JUDGEMENT",
+      "invites_applause": true,
+      "note": "Slogan-like closing."
+    },
+    {
+      "seg_id": 124,
+      "devices": [
+        "NONE"
+      ],
+      "emotion": "NEUTRAL",
+      "intensity": 0,
+      "addressee": "WORLD",
+      "topic": "GREETING_CLOSING",
+      "invites_applause": true,
+      "note": "Standard closing."
+    }
+  ]
+}

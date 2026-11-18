@@ -34,14 +34,20 @@ def main(speech_id: str) -> None:
     print("Wikipedia echo (peak vs. median of the 14 days before):")
     print(echo.round(1).to_string(index=False))
 
+    gpath = out / "aftermath_gdelt.csv"
+    previous = pd.read_csv(gpath) if gpath.exists() else pd.DataFrame(columns=["date", "query", "articles"])
     frames = []
     for q in cfg.get("gdelt_queries", []):
         try:
             frames.append(gdelt_volume(q, start, end))
-        except Exception as e:  # GDELT rate-limits hard; don't lose the rest
-            print(f"GDELT skipped for {q!r}: {e}")
+        except Exception as e:  # GDELT rate-limits hard; keep earlier results for this query
+            old = previous[previous["query"] == q]
+            note = f", kept {len(old)} earlier rows" if len(old) else ""
+            print(f"GDELT skipped for {q!r}: {e}{note}")
+            if len(old):
+                frames.append(old)
     if frames:
-        pd.concat(frames).to_csv(out / "aftermath_gdelt.csv", index=False)
+        pd.concat(frames).to_csv(gpath, index=False)
         print(f"wrote aftermath_gdelt.csv ({len(frames)} queries)")
 
 

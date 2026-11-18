@@ -1,0 +1,566 @@
+{
+  "source": "gemini-2.5-flash via Gemini API (blind: transcript only)",
+  "prompt": "prompts/rhetoric_v1.md",
+  "date": "2026-11-18",
+  "sentences": [
+    {
+      "seg_id": 1,
+      "devices": [
+        "DIRECT_ADDRESS",
+        "PERSONAL_TESTIMONY"
+      ],
+      "emotion": "HOPE",
+      "intensity": 1,
+      "addressee": "WORLD",
+      "topic": "GREETING_CLOSING",
+      "invites_applause": true,
+      "note": "opening greeting and positive statement"
+    },
+    {
+      "seg_id": 2,
+      "devices": [
+        "STATISTIC",
+        "DIRECT_ADDRESS"
+      ],
+      "emotion": "NEUTRAL",
+      "intensity": 0,
+      "addressee": "WORLD",
+      "topic": "OTHER",
+      "invites_applause": false,
+      "note": "historical context, statistic"
+    },
+    {
+      "seg_id": 3,
+      "devices": [
+        "NONE"
+      ],
+      "emotion": "HOPE",
+      "intensity": 1,
+      "addressee": "NONE",
+      "topic": "OTHER",
+      "invites_applause": false,
+      "note": "historical context, positive imagery"
+    },
+    {
+      "seg_id": 4,
+      "devices": [
+        "NONE"
+      ],
+      "emotion": "GRIEF",
+      "intensity": 2,
+      "addressee": "NONE",
+      "topic": "MORAL_JUDGEMENT",
+      "invites_applause": false,
+      "note": "describes past suffering"
+    },
+    {
+      "seg_id": 5,
+      "devices": [
+        "NONE"
+      ],
+      "emotion": "HOPE",
+      "intensity": 1,
+      "addressee": "NONE",
+      "topic": "OTHER",
+      "invites_applause": false,
+      "note": "positive imagery, metaphor"
+    },
+    {
+      "seg_id": 6,
+      "devices": [
+        "CONTRAST",
+        "STATISTIC"
+      ],
+      "emotion": "ANGER",
+      "intensity": 2,
+      "addressee": "LEADERS",
+      "topic": "INACTION",
+      "invites_applause": true,
+      "note": "contrast, statement of continued unfreedom"
+    },
+    {
+      "seg_id": 7,
+      "devices": [
+        "ANAPHORA",
+        "STATISTIC"
+      ],
+      "emotion": "ANGER",
+      "intensity": 1,
+      "addressee": "LEADERS",
+      "topic": "INACTION",
+      "invites_applause": false,
+      "note": "anaphora, statistic"
+    },
+    {
+      "seg_id": 8,
+      "devices": [
+        "NONE"
+      ],
+      "emotion": "ANGER",
+      "intensity": 2,
+      "addressee": "LEADERS",
+      "topic": "MORAL_JUDGEMENT",
+      "invites_applause": false,
+      "note": "vivid description of oppression"
+    },
+    {
+      "seg_id": 9,
+      "devices": [
+        "ANAPHORA",
+        "STATISTIC"
+      ],
+      "emotion": "ANGER",
+      "intensity": 2,
+      "addressee": "LEADERS",
+      "topic": "MORAL_JUDGEMENT",
+      "invites_applause": true,
+      "note": "anaphora, statistic, vivid description"
+    },
+    {
+      "seg_id": 10,
+      "devices": [
+        "PERSONAL_TESTIMONY",
+        "PUNCHLINE"
+      ],
+      "emotion": "HOPE",
+      "intensity": 2,
+      "addressee": "WORLD",
+      "topic": "FUTURE_WARNING",
+      "invites_applause": true,
+      "note": "start of 'I have a dream' anaphora"
+    },
+    {
+      "seg_id": 11,
+      "devices": [
+        "NONE"
+      ],
+      "emotion": "RESOLVE",
+      "intensity": 1,
+      "addressee": "WORLD",
+      "topic": "MORAL_JUDGEMENT",
+      "invites_applause": false,
+      "note": "quote from Declaration of Independence"
+    },
+    {
+      "seg_id": 12,
+      "devices": [
+        "ANAPHORA",
+        "CONTRAST"
+      ],
+      "emotion": "HOPE",
+      "intensity": 2,
+      "addressee": "WORLD",
+      "topic": "FUTURE_WARNING",
+      "invites_applause": false,
+      "note": "anaphora, contrast"
+    },
+    {
+      "seg_id": 13,
+      "devices": [
+        "PUNCHLINE"
+      ],
+      "emotion": "HOPE",
+      "intensity": 2,
+      "addressee": "WORLD",
+      "topic": "FUTURE_WARNING",
+      "invites_applause": true,
+      "note": "completion of dream image"
+    },
+    {
+      "seg_id": 14,
+      "devices": [
+        "ANAPHORA",
+        "CONTRAST"
+      ],
+      "emotion": "HOPE",
+      "intensity": 3,
+      "addressee": "WORLD",
+      "topic": "FUTURE_WARNING",
+      "invites_applause": true,
+      "note": "anaphora, contrast, vivid imagery"
+    },
+    {
+      "seg_id": 15,
+      "devices": [
+        "ANAPHORA"
+      ],
+      "emotion": "HOPE",
+      "intensity": 2,
+      "addressee": "WORLD",
+      "topic": "FUTURE_WARNING",
+      "invites_applause": true,
+      "note": "anaphora, powerful short statement"
+    },
+    {
+      "seg_id": 16,
+      "devices": [
+        "PERSONAL_TESTIMONY",
+        "CONTRAST"
+      ],
+      "emotion": "HOPE",
+      "intensity": 3,
+      "addressee": "WORLD",
+      "topic": "PERSONAL_STAKES",
+      "invites_applause": true,
+      "note": "personal testimony, contrast, highly emotional vision"
+    },
+    {
+      "seg_id": 17,
+      "devices": [
+        "ANAPHORA"
+      ],
+      "emotion": "HOPE",
+      "intensity": 2,
+      "addressee": "WORLD",
+      "topic": "FUTURE_WARNING",
+      "invites_applause": true,
+      "note": "anaphora, punchline effect"
+    },
+    {
+      "seg_id": 18,
+      "devices": [
+        "ANAPHORA"
+      ],
+      "emotion": "HOPE",
+      "intensity": 2,
+      "addressee": "WORLD",
+      "topic": "FUTURE_WARNING",
+      "invites_applause": false,
+      "note": "anaphora"
+    },
+    {
+      "seg_id": 19,
+      "devices": [
+        "ACCUSATION"
+      ],
+      "emotion": "ANGER",
+      "intensity": 2,
+      "addressee": "LEADERS",
+      "topic": "MORAL_JUDGEMENT",
+      "invites_applause": false,
+      "note": "vivid imagery of hateful rhetoric, accusation"
+    },
+    {
+      "seg_id": 20,
+      "devices": [
+        "CONTRAST"
+      ],
+      "emotion": "HOPE",
+      "intensity": 3,
+      "addressee": "WORLD",
+      "topic": "FUTURE_WARNING",
+      "invites_applause": true,
+      "note": "powerful contrast and vision of future"
+    },
+    {
+      "seg_id": 21,
+      "devices": [
+        "ANAPHORA"
+      ],
+      "emotion": "HOPE",
+      "intensity": 2,
+      "addressee": "WORLD",
+      "topic": "FUTURE_WARNING",
+      "invites_applause": true,
+      "note": "anaphora, punchline effect"
+    },
+    {
+      "seg_id": 22,
+      "devices": [
+        "ANAPHORA",
+        "CONTRAST"
+      ],
+      "emotion": "HOPE",
+      "intensity": 2,
+      "addressee": "WORLD",
+      "topic": "FUTURE_WARNING",
+      "invites_applause": false,
+      "note": "anaphora, biblical allusion, contrast"
+    },
+    {
+      "seg_id": 23,
+      "devices": [
+        "LIST_OF_THREE",
+        "PUNCHLINE"
+      ],
+      "emotion": "HOPE",
+      "intensity": 3,
+      "addressee": "WORLD",
+      "topic": "FUTURE_WARNING",
+      "invites_applause": true,
+      "note": "biblical allusion, list of three, powerful vision"
+    },
+    {
+      "seg_id": 24,
+      "devices": [
+        "PUNCHLINE"
+      ],
+      "emotion": "HOPE",
+      "intensity": 2,
+      "addressee": "WORLD",
+      "topic": "FUTURE_WARNING",
+      "invites_applause": true,
+      "note": "summary statement"
+    },
+    {
+      "seg_id": 25,
+      "devices": [
+        "PERSONAL_TESTIMONY",
+        "ANAPHORA"
+      ],
+      "emotion": "RESOLVE",
+      "intensity": 1,
+      "addressee": "WORLD",
+      "topic": "OTHER",
+      "invites_applause": false,
+      "note": "personal commitment, anaphora setup"
+    },
+    {
+      "seg_id": 26,
+      "devices": [
+        "PUNCHLINE",
+        "CONTRAST"
+      ],
+      "emotion": "HOPE",
+      "intensity": 3,
+      "addressee": "WORLD",
+      "topic": "FUTURE_WARNING",
+      "invites_applause": true,
+      "note": "powerful metaphor, contrast"
+    },
+    {
+      "seg_id": 27,
+      "devices": [
+        "ANAPHORA",
+        "CONTRAST"
+      ],
+      "emotion": "HOPE",
+      "intensity": 3,
+      "addressee": "WORLD",
+      "topic": "FUTURE_WARNING",
+      "invites_applause": true,
+      "note": "anaphora, contrast, metaphor"
+    },
+    {
+      "seg_id": 28,
+      "devices": [
+        "ANAPHORA",
+        "PUNCHLINE"
+      ],
+      "emotion": "RESOLVE",
+      "intensity": 3,
+      "addressee": "WORLD",
+      "topic": "FUTURE_WARNING",
+      "invites_applause": true,
+      "note": "anaphora, extensive list of actions, strong resolve"
+    },
+    {
+      "seg_id": 29,
+      "devices": [
+        "PUNCHLINE"
+      ],
+      "emotion": "HOPE",
+      "intensity": 2,
+      "addressee": "WORLD",
+      "topic": "FUTURE_WARNING",
+      "invites_applause": false,
+      "note": "sets up anthem, vision of future"
+    },
+    {
+      "seg_id": 30,
+      "devices": [
+        "NONE"
+      ],
+      "emotion": "HOPE",
+      "intensity": 1,
+      "addressee": "NONE",
+      "topic": "OTHER",
+      "invites_applause": false,
+      "note": "song lyrics"
+    },
+    {
+      "seg_id": 31,
+      "devices": [
+        "ANAPHORA"
+      ],
+      "emotion": "HOPE",
+      "intensity": 1,
+      "addressee": "NONE",
+      "topic": "OTHER",
+      "invites_applause": false,
+      "note": "song lyrics, anaphora"
+    },
+    {
+      "seg_id": 32,
+      "devices": [
+        "ANAPHORA",
+        "PUNCHLINE"
+      ],
+      "emotion": "HOPE",
+      "intensity": 2,
+      "addressee": "WORLD",
+      "topic": "FUTURE_WARNING",
+      "invites_applause": true,
+      "note": "song lyrics, call to action, anaphora setup"
+    },
+    {
+      "seg_id": 33,
+      "devices": [
+        "PUNCHLINE"
+      ],
+      "emotion": "RESOLVE",
+      "intensity": 2,
+      "addressee": "WORLD",
+      "topic": "MORAL_JUDGEMENT",
+      "invites_applause": true,
+      "note": "conditional statement, strong declaration"
+    },
+    {
+      "seg_id": 34,
+      "devices": [
+        "ANAPHORA"
+      ],
+      "emotion": "RESOLVE",
+      "intensity": 2,
+      "addressee": "WORLD",
+      "topic": "FUTURE_WARNING",
+      "invites_applause": false,
+      "note": "anaphora, start of list"
+    },
+    {
+      "seg_id": 35,
+      "devices": [
+        "ANAPHORA"
+      ],
+      "emotion": "RESOLVE",
+      "intensity": 2,
+      "addressee": "WORLD",
+      "topic": "FUTURE_WARNING",
+      "invites_applause": false,
+      "note": "anaphora"
+    },
+    {
+      "seg_id": 36,
+      "devices": [
+        "ANAPHORA"
+      ],
+      "emotion": "RESOLVE",
+      "intensity": 2,
+      "addressee": "WORLD",
+      "topic": "FUTURE_WARNING",
+      "invites_applause": false,
+      "note": "anaphora"
+    },
+    {
+      "seg_id": 37,
+      "devices": [
+        "ANAPHORA"
+      ],
+      "emotion": "RESOLVE",
+      "intensity": 2,
+      "addressee": "WORLD",
+      "topic": "FUTURE_WARNING",
+      "invites_applause": false,
+      "note": "anaphora"
+    },
+    {
+      "seg_id": 38,
+      "devices": [
+        "ANAPHORA"
+      ],
+      "emotion": "RESOLVE",
+      "intensity": 2,
+      "addressee": "WORLD",
+      "topic": "FUTURE_WARNING",
+      "invites_applause": false,
+      "note": "anaphora"
+    },
+    {
+      "seg_id": 39,
+      "devices": [
+        "CONTRAST",
+        "ANAPHORA"
+      ],
+      "emotion": "RESOLVE",
+      "intensity": 2,
+      "addressee": "WORLD",
+      "topic": "FUTURE_WARNING",
+      "invites_applause": false,
+      "note": "anaphora, contrast (geographical shift)"
+    },
+    {
+      "seg_id": 40,
+      "devices": [
+        "ANAPHORA"
+      ],
+      "emotion": "RESOLVE",
+      "intensity": 2,
+      "addressee": "WORLD",
+      "topic": "FUTURE_WARNING",
+      "invites_applause": false,
+      "note": "anaphora"
+    },
+    {
+      "seg_id": 41,
+      "devices": [
+        "ANAPHORA"
+      ],
+      "emotion": "RESOLVE",
+      "intensity": 2,
+      "addressee": "WORLD",
+      "topic": "FUTURE_WARNING",
+      "invites_applause": true,
+      "note": "anaphora, exhaustive list"
+    },
+    {
+      "seg_id": 42,
+      "devices": [
+        "ANAPHORA",
+        "PUNCHLINE"
+      ],
+      "emotion": "RESOLVE",
+      "intensity": 2,
+      "addressee": "WORLD",
+      "topic": "FUTURE_WARNING",
+      "invites_applause": true,
+      "note": "anaphora, confident statement"
+    },
+    {
+      "seg_id": 43,
+      "devices": [
+        "ANAPHORA"
+      ],
+      "emotion": "RESOLVE",
+      "intensity": 2,
+      "addressee": "WORLD",
+      "topic": "FUTURE_WARNING",
+      "invites_applause": false,
+      "note": "extensive anaphora and parallelism"
+    },
+    {
+      "seg_id": 44,
+      "devices": [
+        "LIST_OF_THREE",
+        "PUNCHLINE"
+      ],
+      "emotion": "HOPE",
+      "intensity": 3,
+      "addressee": "WORLD",
+      "topic": "FUTURE_WARNING",
+      "invites_applause": true,
+      "note": "list of three pairs, quote, climax of speech"
+    },
+    {
+      "seg_id": 45,
+      "devices": [
+        "PUNCHLINE"
+      ],
+      "emotion": "HOPE",
+      "intensity": 3,
+      "addressee": "NONE",
+      "topic": "GREETING_CLOSING",
+      "invites_applause": true,
+      "note": "triumphant closing statement"
+    }
+  ]
+}

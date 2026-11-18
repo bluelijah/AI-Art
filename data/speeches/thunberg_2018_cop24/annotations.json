@@ -1,0 +1,441 @@
+{
+  "source": "gemini-2.5-flash via Gemini API (blind: transcript only)",
+  "prompt": "prompts/rhetoric_v1.md",
+  "date": "2026-11-18",
+  "sentences": [
+    {
+      "seg_id": 2,
+      "devices": [
+        "NONE"
+      ],
+      "emotion": "NEUTRAL",
+      "intensity": 0,
+      "addressee": "WORLD",
+      "topic": "GREETING_CLOSING",
+      "invites_applause": false,
+      "note": "Self-introduction"
+    },
+    {
+      "seg_id": 3,
+      "devices": [
+        "PERSONAL_TESTIMONY"
+      ],
+      "emotion": "NEUTRAL",
+      "intensity": 0,
+      "addressee": "WORLD",
+      "topic": "PERSONAL_STAKES",
+      "invites_applause": false,
+      "note": "States age and origin"
+    },
+    {
+      "seg_id": 4,
+      "devices": [
+        "PERSONAL_TESTIMONY"
+      ],
+      "emotion": "RESOLVE",
+      "intensity": 1,
+      "addressee": "WORLD",
+      "topic": "PERSONAL_STAKES",
+      "invites_applause": false,
+      "note": "States purpose"
+    },
+    {
+      "seg_id": 5,
+      "devices": [
+        "CONTRAST"
+      ],
+      "emotion": "NEUTRAL",
+      "intensity": 0,
+      "addressee": "NONE",
+      "topic": "OTHER",
+      "invites_applause": false,
+      "note": "Sets up a contrasting idea"
+    },
+    {
+      "seg_id": 6,
+      "devices": [
+        "CONTRAST",
+        "PERSONAL_TESTIMONY"
+      ],
+      "emotion": "RESOLVE",
+      "intensity": 1,
+      "addressee": "WORLD",
+      "topic": "MORAL_JUDGEMENT",
+      "invites_applause": false,
+      "note": "Completes the contrast, personal lesson"
+    },
+    {
+      "seg_id": 7,
+      "devices": [
+        "RHETORICAL_QUESTION",
+        "PERSONAL_TESTIMONY"
+      ],
+      "emotion": "HOPE",
+      "intensity": 2,
+      "addressee": "WORLD",
+      "topic": "MORAL_JUDGEMENT",
+      "invites_applause": false,
+      "note": "Rhetorical question about collective power"
+    },
+    {
+      "seg_id": 8,
+      "devices": [
+        "NONE"
+      ],
+      "emotion": "RESOLVE",
+      "intensity": 1,
+      "addressee": "WORLD",
+      "topic": "OTHER",
+      "invites_applause": false,
+      "note": "Statement about clear communication"
+    },
+    {
+      "seg_id": 9,
+      "devices": [
+        "DIRECT_ADDRESS",
+        "ACCUSATION"
+      ],
+      "emotion": "ANGER",
+      "intensity": 2,
+      "addressee": "LEADERS",
+      "topic": "INACTION",
+      "invites_applause": false,
+      "note": "Accusation of inaction due to fear"
+    },
+    {
+      "seg_id": 10,
+      "devices": [
+        "ANAPHORA",
+        "DIRECT_ADDRESS",
+        "ACCUSATION"
+      ],
+      "emotion": "ANGER",
+      "intensity": 2,
+      "addressee": "LEADERS",
+      "topic": "INACTION",
+      "invites_applause": false,
+      "note": "Anaphora and accusation"
+    },
+    {
+      "seg_id": 11,
+      "devices": [
+        "CONTRAST",
+        "ACCUSATION"
+      ],
+      "emotion": "ANGER",
+      "intensity": 2,
+      "addressee": "LEADERS",
+      "topic": "INACTION",
+      "invites_applause": false,
+      "note": "Completes accusation with contrast"
+    },
+    {
+      "seg_id": 12,
+      "devices": [
+        "DIRECT_ADDRESS",
+        "ACCUSATION",
+        "PUNCHLINE"
+      ],
+      "emotion": "ANGER",
+      "intensity": 3,
+      "addressee": "LEADERS",
+      "topic": "MORAL_JUDGEMENT",
+      "invites_applause": true,
+      "note": "Direct accusation of immaturity"
+    },
+    {
+      "seg_id": 13,
+      "devices": [
+        "DIRECT_ADDRESS",
+        "ACCUSATION",
+        "CONTRAST"
+      ],
+      "emotion": "ANGER",
+      "intensity": 3,
+      "addressee": "LEADERS",
+      "topic": "MORAL_JUDGEMENT",
+      "invites_applause": true,
+      "note": "Accusation of shirking responsibility"
+    },
+    {
+      "seg_id": 14,
+      "devices": [
+        "PERSONAL_TESTIMONY",
+        "CONTRAST"
+      ],
+      "emotion": "DEFIANCE",
+      "intensity": 2,
+      "addressee": "LEADERS",
+      "topic": "PERSONAL_STAKES",
+      "invites_applause": false,
+      "note": "Personal statement of defiance"
+    },
+    {
+      "seg_id": 15,
+      "devices": [
+        "PERSONAL_TESTIMONY"
+      ],
+      "emotion": "RESOLVE",
+      "intensity": 2,
+      "addressee": "LEADERS",
+      "topic": "PERSONAL_STAKES",
+      "invites_applause": true,
+      "note": "Statement of core values"
+    },
+    {
+      "seg_id": 16,
+      "devices": [
+        "ACCUSATION"
+      ],
+      "emotion": "ANGER",
+      "intensity": 2,
+      "addressee": "LEADERS",
+      "topic": "MORAL_JUDGEMENT",
+      "invites_applause": false,
+      "note": "Accusation of sacrificing civilization for profit"
+    },
+    {
+      "seg_id": 17,
+      "devices": [
+        "ANAPHORA",
+        "ACCUSATION",
+        "PERSONAL_TESTIMONY"
+      ],
+      "emotion": "ANGER",
+      "intensity": 2,
+      "addressee": "LEADERS",
+      "topic": "MORAL_JUDGEMENT",
+      "invites_applause": false,
+      "note": "Anaphora and accusation about biosphere"
+    },
+    {
+      "seg_id": 18,
+      "devices": [
+        "CONTRAST",
+        "PUNCHLINE"
+      ],
+      "emotion": "ANGER",
+      "intensity": 3,
+      "addressee": "LEADERS",
+      "topic": "MORAL_JUDGEMENT",
+      "invites_applause": true,
+      "note": "Concise contrast between many's suffering and few's luxury"
+    },
+    {
+      "seg_id": 19,
+      "devices": [
+        "NONE"
+      ],
+      "emotion": "NEUTRAL",
+      "intensity": 0,
+      "addressee": "NONE",
+      "topic": "FUTURE_WARNING",
+      "invites_applause": false,
+      "note": "Sets up future date"
+    },
+    {
+      "seg_id": 20,
+      "devices": [
+        "PERSONAL_TESTIMONY"
+      ],
+      "emotion": "NEUTRAL",
+      "intensity": 0,
+      "addressee": "WORLD",
+      "topic": "PERSONAL_STAKES",
+      "invites_applause": false,
+      "note": "Personal future event"
+    },
+    {
+      "seg_id": 21,
+      "devices": [
+        "PERSONAL_TESTIMONY"
+      ],
+      "emotion": "NEUTRAL",
+      "intensity": 0,
+      "addressee": "WORLD",
+      "topic": "PERSONAL_STAKES",
+      "invites_applause": false,
+      "note": "Hypothetical future scenario"
+    },
+    {
+      "seg_id": 22,
+      "devices": [
+        "DIRECT_ADDRESS"
+      ],
+      "emotion": "NEUTRAL",
+      "intensity": 1,
+      "addressee": "LEADERS",
+      "topic": "FUTURE_WARNING",
+      "invites_applause": false,
+      "note": "Hypothetical future question about current leaders"
+    },
+    {
+      "seg_id": 23,
+      "devices": [
+        "RHETORICAL_QUESTION",
+        "DIRECT_ADDRESS",
+        "ACCUSATION"
+      ],
+      "emotion": "ANGER",
+      "intensity": 2,
+      "addressee": "LEADERS",
+      "topic": "INACTION",
+      "invites_applause": false,
+      "note": "Rhetorical question and accusation"
+    },
+    {
+      "seg_id": 24,
+      "devices": [
+        "CONTRAST",
+        "DIRECT_ADDRESS",
+        "ACCUSATION"
+      ],
+      "emotion": "ANGER",
+      "intensity": 3,
+      "addressee": "LEADERS",
+      "topic": "INACTION",
+      "invites_applause": true,
+      "note": "Strong contrast and accusation"
+    },
+    {
+      "seg_id": 25,
+      "devices": [
+        "CONTRAST",
+        "DIRECT_ADDRESS",
+        "WARNING"
+      ],
+      "emotion": "DEFIANCE",
+      "intensity": 2,
+      "addressee": "LEADERS",
+      "topic": "INACTION",
+      "invites_applause": false,
+      "note": "Warning and contrast of priorities"
+    },
+    {
+      "seg_id": 26,
+      "devices": [
+        "PUZZLE_SOLUTION",
+        "PUNCHLINE"
+      ],
+      "emotion": "RESOLVE",
+      "intensity": 2,
+      "addressee": "WORLD",
+      "topic": "MORAL_JUDGEMENT",
+      "invites_applause": true,
+      "note": "Statement about crisis recognition"
+    },
+    {
+      "seg_id": 27,
+      "devices": [
+        "NONE"
+      ],
+      "emotion": "RESOLVE",
+      "intensity": 1,
+      "addressee": "WORLD",
+      "topic": "INACTION",
+      "invites_applause": false,
+      "note": "Call to action"
+    },
+    {
+      "seg_id": 28,
+      "devices": [
+        "PUZZLE_SOLUTION",
+        "PUNCHLINE"
+      ],
+      "emotion": "DEFIANCE",
+      "intensity": 2,
+      "addressee": "WORLD",
+      "topic": "INACTION",
+      "invites_applause": true,
+      "note": "Suggestion to change the system"
+    },
+    {
+      "seg_id": 29,
+      "devices": [
+        "CONTRAST"
+      ],
+      "emotion": "DEFIANCE",
+      "intensity": 2,
+      "addressee": "LEADERS",
+      "topic": "PERSONAL_STAKES",
+      "invites_applause": false,
+      "note": "Statement of purpose (negative)"
+    },
+    {
+      "seg_id": 30,
+      "devices": [
+        "DIRECT_ADDRESS",
+        "ACCUSATION"
+      ],
+      "emotion": "ANGER",
+      "intensity": 2,
+      "addressee": "LEADERS",
+      "topic": "INACTION",
+      "invites_applause": false,
+      "note": "Accusation of past and future ignorance"
+    },
+    {
+      "seg_id": 31,
+      "devices": [
+        "ANAPHORA"
+      ],
+      "emotion": "DEFIANCE",
+      "intensity": 3,
+      "addressee": "LEADERS",
+      "topic": "FUTURE_WARNING",
+      "invites_applause": false,
+      "note": "Parallel structure about running out"
+    },
+    {
+      "seg_id": 32,
+      "devices": [
+        "CONTRAST",
+        "DIRECT_ADDRESS",
+        "PUNCHLINE",
+        "WARNING"
+      ],
+      "emotion": "DEFIANCE",
+      "intensity": 3,
+      "addressee": "LEADERS",
+      "topic": "FUTURE_WARNING",
+      "invites_applause": true,
+      "note": "Defiant warning about inevitable change"
+    },
+    {
+      "seg_id": 33,
+      "devices": [
+        "PUNCHLINE"
+      ],
+      "emotion": "RESOLVE",
+      "intensity": 2,
+      "addressee": "WORLD",
+      "topic": "MORAL_JUDGEMENT",
+      "invites_applause": true,
+      "note": "Statement about where real power lies"
+    },
+    {
+      "seg_id": 34,
+      "devices": [
+        "NONE"
+      ],
+      "emotion": "NEUTRAL",
+      "intensity": 0,
+      "addressee": "WORLD",
+      "topic": "GREETING_CLOSING",
+      "invites_applause": true,
+      "note": "Standard closing"
+    },
+    {
+      "seg_id": 35,
+      "devices": [
+        "NONE"
+      ],
+      "emotion": "NEUTRAL",
+      "intensity": 0,
+      "addressee": "NONE",
+      "topic": "OTHER",
+      "invites_applause": false,
+      "note": "Single word"
+    }
+  ]
+}
