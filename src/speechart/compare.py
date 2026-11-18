@@ -245,3 +245,26 @@ def contact_sheet(ids: list[str], image: str, path: str, labels: list[str], cols
         sheet.paste(im, (x, y + 40))
     sheet.thumbnail((3600, 3600))
     sheet.save(path)
+
+
+def combined_tables(ids: list[str], out: Path) -> dict[str, int]:
+    """Stack each speech's per-item tables into one long table per kind, with a speech column.
+
+    These are the rows every number in metrics.csv and every comparison chart
+    is computed from, so any cross-speech claim can be checked item by item.
+    """
+    counts = {}
+    for name in ["sentences", "reaction_moments", "runup_curves"]:
+        parts = []
+        for sid in ids:
+            p = ROOT / "output" / sid / f"{name}.csv"
+            if p.exists():
+                d = pd.read_csv(p)
+                d.insert(0, "speech", short_label(load(sid)["meta"]))
+                d.insert(0, "speech_id", sid)
+                parts.append(d)
+        if parts:
+            table = pd.concat(parts, ignore_index=True)
+            table.to_csv(out / f"{name}_all.csv", index=False)
+            counts[name] = len(table)
+    return counts

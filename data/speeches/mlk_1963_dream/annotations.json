@@ -1,6 +1,7 @@
 {
   "source": "gemini-2.5-flash via Gemini API (blind: transcript only)",
   "prompt": "prompts/rhetoric_v1.md",
+  "run_log": "data/speeches/mlk_1963_dream/tagging_runs/2026-11-18T144216_gemini-2.5-flash.json",
   "date": "2026-11-18",
   "sentences": [
     {
@@ -13,21 +14,20 @@
       "intensity": 1,
       "addressee": "WORLD",
       "topic": "GREETING_CLOSING",
-      "invites_applause": true,
-      "note": "opening greeting and positive statement"
+      "invites_applause": false,
+      "note": "Direct address to audience, speaker's feeling"
     },
     {
       "seg_id": 2,
       "devices": [
-        "STATISTIC",
-        "DIRECT_ADDRESS"
+        "STATISTIC"
       ],
       "emotion": "NEUTRAL",
       "intensity": 0,
-      "addressee": "WORLD",
+      "addressee": "NONE",
       "topic": "OTHER",
       "invites_applause": false,
-      "note": "historical context, statistic"
+      "note": "Historical statistic"
     },
     {
       "seg_id": 3,
@@ -39,7 +39,7 @@
       "addressee": "NONE",
       "topic": "OTHER",
       "invites_applause": false,
-      "note": "historical context, positive imagery"
+      "note": "Describes historical event's impact"
     },
     {
       "seg_id": 4,
@@ -49,34 +49,35 @@
       "emotion": "GRIEF",
       "intensity": 2,
       "addressee": "NONE",
-      "topic": "MORAL_JUDGEMENT",
+      "topic": "OTHER",
       "invites_applause": false,
-      "note": "describes past suffering"
+      "note": "Describes past suffering"
     },
     {
       "seg_id": 5,
       "devices": [
-        "NONE"
+        "CONTRAST"
       ],
       "emotion": "HOPE",
-      "intensity": 1,
+      "intensity": 2,
       "addressee": "NONE",
       "topic": "OTHER",
       "invites_applause": false,
-      "note": "positive imagery, metaphor"
+      "note": "Contrast between daybreak and long night"
     },
     {
       "seg_id": 6,
       "devices": [
         "CONTRAST",
-        "STATISTIC"
+        "STATISTIC",
+        "PUNCHLINE"
       ],
       "emotion": "ANGER",
       "intensity": 2,
-      "addressee": "LEADERS",
+      "addressee": "WORLD",
       "topic": "INACTION",
       "invites_applause": true,
-      "note": "contrast, statement of continued unfreedom"
+      "note": "Contrast of 100 years later with lack of freedom"
     },
     {
       "seg_id": 7,
@@ -86,10 +87,10 @@
       ],
       "emotion": "ANGER",
       "intensity": 1,
-      "addressee": "LEADERS",
+      "addressee": "NONE",
       "topic": "INACTION",
       "invites_applause": false,
-      "note": "anaphora, statistic"
+      "note": "Repetition of statistic"
     },
     {
       "seg_id": 8,
@@ -98,36 +99,37 @@
       ],
       "emotion": "ANGER",
       "intensity": 2,
-      "addressee": "LEADERS",
-      "topic": "MORAL_JUDGEMENT",
+      "addressee": "NONE",
+      "topic": "INACTION",
       "invites_applause": false,
-      "note": "vivid description of oppression"
+      "note": "Describes ongoing injustice"
     },
     {
       "seg_id": 9,
       "devices": [
         "ANAPHORA",
-        "STATISTIC"
+        "STATISTIC",
+        "PUNCHLINE"
       ],
-      "emotion": "ANGER",
+      "emotion": "GRIEF",
       "intensity": 2,
-      "addressee": "LEADERS",
-      "topic": "MORAL_JUDGEMENT",
+      "addressee": "NONE",
+      "topic": "INACTION",
       "invites_applause": true,
-      "note": "anaphora, statistic, vivid description"
+      "note": "Repetition of statistic, describes ongoing injustice"
     },
     {
       "seg_id": 10,
       "devices": [
-        "PERSONAL_TESTIMONY",
-        "PUNCHLINE"
+        "ANAPHORA",
+        "PERSONAL_TESTIMONY"
       ],
       "emotion": "HOPE",
       "intensity": 2,
       "addressee": "WORLD",
-      "topic": "FUTURE_WARNING",
-      "invites_applause": true,
-      "note": "start of 'I have a dream' anaphora"
+      "topic": "MORAL_JUDGEMENT",
+      "invites_applause": false,
+      "note": "First 'I have a dream' statement"
     },
     {
       "seg_id": 11,
@@ -139,20 +141,20 @@
       "addressee": "WORLD",
       "topic": "MORAL_JUDGEMENT",
       "invites_applause": false,
-      "note": "quote from Declaration of Independence"
+      "note": "Citing a foundational truth"
     },
     {
       "seg_id": 12,
       "devices": [
         "ANAPHORA",
-        "CONTRAST"
+        "PERSONAL_TESTIMONY"
       ],
       "emotion": "HOPE",
       "intensity": 2,
       "addressee": "WORLD",
       "topic": "FUTURE_WARNING",
       "invites_applause": false,
-      "note": "anaphora, contrast"
+      "note": "Second 'I have a dream'"
     },
     {
       "seg_id": 13,
@@ -164,69 +166,76 @@
       "addressee": "WORLD",
       "topic": "FUTURE_WARNING",
       "invites_applause": true,
-      "note": "completion of dream image"
+      "note": "Vision of racial harmony"
     },
     {
       "seg_id": 14,
       "devices": [
         "ANAPHORA",
-        "CONTRAST"
-      ],
-      "emotion": "HOPE",
-      "intensity": 3,
-      "addressee": "WORLD",
-      "topic": "FUTURE_WARNING",
-      "invites_applause": true,
-      "note": "anaphora, contrast, vivid imagery"
-    },
-    {
-      "seg_id": 15,
-      "devices": [
-        "ANAPHORA"
-      ],
-      "emotion": "HOPE",
-      "intensity": 2,
-      "addressee": "WORLD",
-      "topic": "FUTURE_WARNING",
-      "invites_applause": true,
-      "note": "anaphora, powerful short statement"
-    },
-    {
-      "seg_id": 16,
-      "devices": [
         "PERSONAL_TESTIMONY",
         "CONTRAST"
       ],
       "emotion": "HOPE",
       "intensity": 3,
       "addressee": "WORLD",
+      "topic": "FUTURE_WARNING",
+      "invites_applause": true,
+      "note": "Third 'I have a dream', strong contrast"
+    },
+    {
+      "seg_id": 15,
+      "devices": [
+        "ANAPHORA",
+        "PERSONAL_TESTIMONY",
+        "PUNCHLINE"
+      ],
+      "emotion": "HOPE",
+      "intensity": 3,
+      "addressee": "WORLD",
+      "topic": "FUTURE_WARNING",
+      "invites_applause": true,
+      "note": "Emphatic repetition"
+    },
+    {
+      "seg_id": 16,
+      "devices": [
+        "PERSONAL_TESTIMONY",
+        "CONTRAST",
+        "PUNCHLINE"
+      ],
+      "emotion": "HOPE",
+      "intensity": 3,
+      "addressee": "WORLD",
       "topic": "PERSONAL_STAKES",
       "invites_applause": true,
-      "note": "personal testimony, contrast, highly emotional vision"
+      "note": "Personal stakes, contrast"
     },
     {
       "seg_id": 17,
       "devices": [
-        "ANAPHORA"
+        "ANAPHORA",
+        "PERSONAL_TESTIMONY",
+        "PUNCHLINE"
       ],
       "emotion": "HOPE",
-      "intensity": 2,
+      "intensity": 3,
       "addressee": "WORLD",
       "topic": "FUTURE_WARNING",
       "invites_applause": true,
-      "note": "anaphora, punchline effect"
+      "note": "Emphatic repetition"
     },
     {
       "seg_id": 18,
       "devices": [
-        "ANAPHORA"
+        "ANAPHORA",
+        "PERSONAL_TESTIMONY"
       ],
       "emotion": "HOPE",
       "intensity": 2,
       "addressee": "WORLD",
       "topic": "FUTURE_WARNING",
       "invites_applause": false,
-      "note": "anaphora"
+      "note": "Another 'I have a dream'"
     },
     {
       "seg_id": 19,
@@ -236,51 +245,14 @@
       "emotion": "ANGER",
       "intensity": 2,
       "addressee": "LEADERS",
-      "topic": "MORAL_JUDGEMENT",
+      "topic": "INACTION",
       "invites_applause": false,
-      "note": "vivid imagery of hateful rhetoric, accusation"
+      "note": "Accusation against state leaders"
     },
     {
       "seg_id": 20,
       "devices": [
-        "CONTRAST"
-      ],
-      "emotion": "HOPE",
-      "intensity": 3,
-      "addressee": "WORLD",
-      "topic": "FUTURE_WARNING",
-      "invites_applause": true,
-      "note": "powerful contrast and vision of future"
-    },
-    {
-      "seg_id": 21,
-      "devices": [
-        "ANAPHORA"
-      ],
-      "emotion": "HOPE",
-      "intensity": 2,
-      "addressee": "WORLD",
-      "topic": "FUTURE_WARNING",
-      "invites_applause": true,
-      "note": "anaphora, punchline effect"
-    },
-    {
-      "seg_id": 22,
-      "devices": [
-        "ANAPHORA",
-        "CONTRAST"
-      ],
-      "emotion": "HOPE",
-      "intensity": 2,
-      "addressee": "WORLD",
-      "topic": "FUTURE_WARNING",
-      "invites_applause": false,
-      "note": "anaphora, biblical allusion, contrast"
-    },
-    {
-      "seg_id": 23,
-      "devices": [
-        "LIST_OF_THREE",
+        "CONTRAST",
         "PUNCHLINE"
       ],
       "emotion": "HOPE",
@@ -288,7 +260,49 @@
       "addressee": "WORLD",
       "topic": "FUTURE_WARNING",
       "invites_applause": true,
-      "note": "biblical allusion, list of three, powerful vision"
+      "note": "Vision of racial harmony in Alabama"
+    },
+    {
+      "seg_id": 21,
+      "devices": [
+        "ANAPHORA",
+        "PERSONAL_TESTIMONY",
+        "PUNCHLINE"
+      ],
+      "emotion": "HOPE",
+      "intensity": 3,
+      "addressee": "WORLD",
+      "topic": "FUTURE_WARNING",
+      "invites_applause": true,
+      "note": "Emphatic repetition"
+    },
+    {
+      "seg_id": 22,
+      "devices": [
+        "ANAPHORA",
+        "PERSONAL_TESTIMONY",
+        "CONTRAST"
+      ],
+      "emotion": "HOPE",
+      "intensity": 2,
+      "addressee": "WORLD",
+      "topic": "FUTURE_WARNING",
+      "invites_applause": false,
+      "note": "Biblical allusion, contrast"
+    },
+    {
+      "seg_id": 23,
+      "devices": [
+        "LIST_OF_THREE",
+        "CONTRAST",
+        "PUNCHLINE"
+      ],
+      "emotion": "HOPE",
+      "intensity": 3,
+      "addressee": "WORLD",
+      "topic": "FUTURE_WARNING",
+      "invites_applause": true,
+      "note": "List of three parallel clauses from Isaiah"
     },
     {
       "seg_id": 24,
@@ -300,7 +314,7 @@
       "addressee": "WORLD",
       "topic": "FUTURE_WARNING",
       "invites_applause": true,
-      "note": "summary statement"
+      "note": "Emphatic statement"
     },
     {
       "seg_id": 25,
@@ -309,24 +323,23 @@
         "ANAPHORA"
       ],
       "emotion": "RESOLVE",
-      "intensity": 1,
+      "intensity": 2,
       "addressee": "WORLD",
-      "topic": "OTHER",
+      "topic": "PERSONAL_STAKES",
       "invites_applause": false,
-      "note": "personal commitment, anaphora setup"
+      "note": "Personal statement of faith, anaphora"
     },
     {
       "seg_id": 26,
       "devices": [
-        "PUNCHLINE",
         "CONTRAST"
       ],
       "emotion": "HOPE",
       "intensity": 3,
       "addressee": "WORLD",
       "topic": "FUTURE_WARNING",
-      "invites_applause": true,
-      "note": "powerful metaphor, contrast"
+      "invites_applause": false,
+      "note": "Metaphor, contrast"
     },
     {
       "seg_id": 27,
@@ -338,33 +351,32 @@
       "intensity": 3,
       "addressee": "WORLD",
       "topic": "FUTURE_WARNING",
-      "invites_applause": true,
-      "note": "anaphora, contrast, metaphor"
+      "invites_applause": false,
+      "note": "Anaphora, contrast"
     },
     {
       "seg_id": 28,
       "devices": [
-        "ANAPHORA",
-        "PUNCHLINE"
+        "ANAPHORA"
       ],
       "emotion": "RESOLVE",
       "intensity": 3,
       "addressee": "WORLD",
       "topic": "FUTURE_WARNING",
       "invites_applause": true,
-      "note": "anaphora, extensive list of actions, strong resolve"
+      "note": "Anaphora, list of collective actions"
     },
     {
       "seg_id": 29,
       "devices": [
-        "PUNCHLINE"
+        "NONE"
       ],
       "emotion": "HOPE",
       "intensity": 2,
       "addressee": "WORLD",
       "topic": "FUTURE_WARNING",
       "invites_applause": false,
-      "note": "sets up anthem, vision of future"
+      "note": "Vision of future unity"
     },
     {
       "seg_id": 30,
@@ -376,19 +388,19 @@
       "addressee": "NONE",
       "topic": "OTHER",
       "invites_applause": false,
-      "note": "song lyrics"
+      "note": "Song lyrics"
     },
     {
       "seg_id": 31,
       "devices": [
         "ANAPHORA"
       ],
-      "emotion": "HOPE",
-      "intensity": 1,
+      "emotion": "NEUTRAL",
+      "intensity": 0,
       "addressee": "NONE",
       "topic": "OTHER",
       "invites_applause": false,
-      "note": "song lyrics, anaphora"
+      "note": "Song lyrics with anaphora"
     },
     {
       "seg_id": 32,
@@ -401,7 +413,7 @@
       "addressee": "WORLD",
       "topic": "FUTURE_WARNING",
       "invites_applause": true,
-      "note": "song lyrics, call to action, anaphora setup"
+      "note": "First 'let freedom ring'"
     },
     {
       "seg_id": 33,
@@ -413,104 +425,106 @@
       "addressee": "WORLD",
       "topic": "MORAL_JUDGEMENT",
       "invites_applause": true,
-      "note": "conditional statement, strong declaration"
+      "note": "Conditional statement, punchline"
     },
     {
       "seg_id": 34,
       "devices": [
         "ANAPHORA"
       ],
-      "emotion": "RESOLVE",
+      "emotion": "HOPE",
       "intensity": 2,
       "addressee": "WORLD",
       "topic": "FUTURE_WARNING",
       "invites_applause": false,
-      "note": "anaphora, start of list"
+      "note": "Anaphora, first location"
     },
     {
       "seg_id": 35,
       "devices": [
         "ANAPHORA"
       ],
-      "emotion": "RESOLVE",
+      "emotion": "HOPE",
       "intensity": 2,
       "addressee": "WORLD",
       "topic": "FUTURE_WARNING",
       "invites_applause": false,
-      "note": "anaphora"
+      "note": "Anaphora, second location"
     },
     {
       "seg_id": 36,
       "devices": [
         "ANAPHORA"
       ],
-      "emotion": "RESOLVE",
+      "emotion": "HOPE",
       "intensity": 2,
       "addressee": "WORLD",
       "topic": "FUTURE_WARNING",
       "invites_applause": false,
-      "note": "anaphora"
+      "note": "Anaphora, third location"
     },
     {
       "seg_id": 37,
       "devices": [
         "ANAPHORA"
       ],
-      "emotion": "RESOLVE",
+      "emotion": "HOPE",
       "intensity": 2,
       "addressee": "WORLD",
       "topic": "FUTURE_WARNING",
       "invites_applause": false,
-      "note": "anaphora"
+      "note": "Anaphora, fourth location"
     },
     {
       "seg_id": 38,
       "devices": [
         "ANAPHORA"
       ],
-      "emotion": "RESOLVE",
+      "emotion": "HOPE",
       "intensity": 2,
       "addressee": "WORLD",
       "topic": "FUTURE_WARNING",
       "invites_applause": false,
-      "note": "anaphora"
+      "note": "Anaphora, fifth location"
     },
     {
       "seg_id": 39,
       "devices": [
-        "CONTRAST",
-        "ANAPHORA"
+        "ANAPHORA",
+        "CONTRAST"
       ],
-      "emotion": "RESOLVE",
+      "emotion": "HOPE",
       "intensity": 2,
       "addressee": "WORLD",
       "topic": "FUTURE_WARNING",
       "invites_applause": false,
-      "note": "anaphora, contrast (geographical shift)"
+      "note": "Anaphora, shift to Southern locations"
     },
     {
       "seg_id": 40,
       "devices": [
         "ANAPHORA"
       ],
-      "emotion": "RESOLVE",
+      "emotion": "HOPE",
       "intensity": 2,
       "addressee": "WORLD",
       "topic": "FUTURE_WARNING",
       "invites_applause": false,
-      "note": "anaphora"
+      "note": "Anaphora"
     },
     {
       "seg_id": 41,
       "devices": [
-        "ANAPHORA"
+        "ANAPHORA",
+        "LIST_OF_THREE",
+        "PUNCHLINE"
       ],
-      "emotion": "RESOLVE",
-      "intensity": 2,
+      "emotion": "HOPE",
+      "intensity": 3,
       "addressee": "WORLD",
       "topic": "FUTURE_WARNING",
       "invites_applause": true,
-      "note": "anaphora, exhaustive list"
+      "note": "Anaphora, list of three places"
     },
     {
       "seg_id": 42,
@@ -520,27 +534,28 @@
       ],
       "emotion": "RESOLVE",
       "intensity": 2,
-      "addressee": "WORLD",
+      "addressee": "NONE",
       "topic": "FUTURE_WARNING",
       "invites_applause": true,
-      "note": "anaphora, confident statement"
+      "note": "Anaphora with added resolve"
     },
     {
       "seg_id": 43,
       "devices": [
         "ANAPHORA"
       ],
-      "emotion": "RESOLVE",
+      "emotion": "HOPE",
       "intensity": 2,
       "addressee": "WORLD",
       "topic": "FUTURE_WARNING",
       "invites_applause": false,
-      "note": "extensive anaphora and parallelism"
+      "note": "Anaphora, list of places"
     },
     {
       "seg_id": 44,
       "devices": [
         "LIST_OF_THREE",
+        "CONTRAST",
         "PUNCHLINE"
       ],
       "emotion": "HOPE",
@@ -548,7 +563,7 @@
       "addressee": "WORLD",
       "topic": "FUTURE_WARNING",
       "invites_applause": true,
-      "note": "list of three pairs, quote, climax of speech"
+      "note": "Climactic list of three contrasting groups, punchline"
     },
     {
       "seg_id": 45,
@@ -560,7 +575,7 @@
       "addressee": "NONE",
       "topic": "GREETING_CLOSING",
       "invites_applause": true,
-      "note": "triumphant closing statement"
+      "note": "Final exclamation, punchline"
     }
   ]
 }

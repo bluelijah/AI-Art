@@ -1,19 +1,20 @@
 {
   "source": "gemini-2.5-flash via Gemini API (blind: transcript only)",
   "prompt": "prompts/rhetoric_v1.md",
+  "run_log": "data/speeches/thunberg_2018_cop24/tagging_runs/2026-11-18T143829_gemini-2.5-flash.json",
   "date": "2026-11-18",
   "sentences": [
     {
       "seg_id": 2,
       "devices": [
-        "NONE"
+        "PERSONAL_TESTIMONY"
       ],
       "emotion": "NEUTRAL",
       "intensity": 0,
       "addressee": "WORLD",
       "topic": "GREETING_CLOSING",
       "invites_applause": false,
-      "note": "Self-introduction"
+      "note": "Introduction of self"
     },
     {
       "seg_id": 3,
@@ -25,7 +26,7 @@
       "addressee": "WORLD",
       "topic": "PERSONAL_STAKES",
       "invites_applause": false,
-      "note": "States age and origin"
+      "note": "Stating age and origin"
     },
     {
       "seg_id": 4,
@@ -37,84 +38,85 @@
       "addressee": "WORLD",
       "topic": "PERSONAL_STAKES",
       "invites_applause": false,
-      "note": "States purpose"
+      "note": "Stating purpose"
     },
     {
       "seg_id": 5,
       "devices": [
-        "CONTRAST"
+        "NONE"
       ],
       "emotion": "NEUTRAL",
       "intensity": 0,
-      "addressee": "NONE",
+      "addressee": "WORLD",
       "topic": "OTHER",
       "invites_applause": false,
-      "note": "Sets up a contrasting idea"
+      "note": "Setting up a common belief"
     },
     {
       "seg_id": 6,
       "devices": [
         "CONTRAST",
-        "PERSONAL_TESTIMONY"
+        "PERSONAL_TESTIMONY",
+        "PUNCHLINE"
       ],
       "emotion": "RESOLVE",
       "intensity": 1,
       "addressee": "WORLD",
-      "topic": "MORAL_JUDGEMENT",
-      "invites_applause": false,
-      "note": "Completes the contrast, personal lesson"
+      "topic": "OTHER",
+      "invites_applause": true,
+      "note": "Contrast to previous sentence, personal learning, punchline"
     },
     {
       "seg_id": 7,
       "devices": [
-        "RHETORICAL_QUESTION",
-        "PERSONAL_TESTIMONY"
+        "DIRECT_ADDRESS",
+        "PUZZLE_SOLUTION"
       ],
       "emotion": "HOPE",
       "intensity": 2,
       "addressee": "WORLD",
-      "topic": "MORAL_JUDGEMENT",
-      "invites_applause": false,
-      "note": "Rhetorical question about collective power"
+      "topic": "OTHER",
+      "invites_applause": true,
+      "note": "Sets up hypothetical, invites imagination of collective action"
     },
     {
       "seg_id": 8,
       "devices": [
-        "NONE"
+        "CONTRAST"
       ],
       "emotion": "RESOLVE",
       "intensity": 1,
       "addressee": "WORLD",
       "topic": "OTHER",
       "invites_applause": false,
-      "note": "Statement about clear communication"
+      "note": "Call for clear speaking"
     },
     {
       "seg_id": 9,
       "devices": [
-        "DIRECT_ADDRESS",
-        "ACCUSATION"
+        "ACCUSATION",
+        "DIRECT_ADDRESS"
       ],
       "emotion": "ANGER",
       "intensity": 2,
       "addressee": "LEADERS",
       "topic": "INACTION",
-      "invites_applause": false,
-      "note": "Accusation of inaction due to fear"
+      "invites_applause": true,
+      "note": "Accusation of leaders' fear of unpopularity"
     },
     {
       "seg_id": 10,
       "devices": [
-        "ANAPHORA",
+        "ACCUSATION",
         "DIRECT_ADDRESS",
-        "ACCUSATION"
+        "ANAPHORA"
       ],
       "emotion": "ANGER",
       "intensity": 2,
       "addressee": "LEADERS",
       "topic": "INACTION",
       "invites_applause": false,
-      "note": "Anaphora and accusation"
+      "note": "Anaphora ('You only'), accusation"
     },
     {
       "seg_id": 11,
@@ -126,14 +128,14 @@
       "intensity": 2,
       "addressee": "LEADERS",
       "topic": "INACTION",
-      "invites_applause": false,
-      "note": "Completes accusation with contrast"
+      "invites_applause": true,
+      "note": "Contrast 'moving forward' with 'pull emergency brake'"
     },
     {
       "seg_id": 12,
       "devices": [
-        "DIRECT_ADDRESS",
         "ACCUSATION",
+        "DIRECT_ADDRESS",
         "PUNCHLINE"
       ],
       "emotion": "ANGER",
@@ -141,13 +143,13 @@
       "addressee": "LEADERS",
       "topic": "MORAL_JUDGEMENT",
       "invites_applause": true,
-      "note": "Direct accusation of immaturity"
+      "note": "Accusation of immaturity"
     },
     {
       "seg_id": 13,
       "devices": [
-        "DIRECT_ADDRESS",
         "ACCUSATION",
+        "DIRECT_ADDRESS",
         "CONTRAST"
       ],
       "emotion": "ANGER",
@@ -155,20 +157,20 @@
       "addressee": "LEADERS",
       "topic": "MORAL_JUDGEMENT",
       "invites_applause": true,
-      "note": "Accusation of shirking responsibility"
+      "note": "Accusation of burdening children"
     },
     {
       "seg_id": 14,
       "devices": [
-        "PERSONAL_TESTIMONY",
-        "CONTRAST"
+        "CONTRAST",
+        "PERSONAL_TESTIMONY"
       ],
       "emotion": "DEFIANCE",
       "intensity": 2,
       "addressee": "LEADERS",
       "topic": "PERSONAL_STAKES",
       "invites_applause": false,
-      "note": "Personal statement of defiance"
+      "note": "Contrast to leaders' popularity concern, personal testimony"
     },
     {
       "seg_id": 15,
@@ -180,46 +182,48 @@
       "addressee": "LEADERS",
       "topic": "PERSONAL_STAKES",
       "invites_applause": true,
-      "note": "Statement of core values"
+      "note": "Personal testimony of values"
     },
     {
       "seg_id": 16,
       "devices": [
-        "ACCUSATION"
+        "ACCUSATION",
+        "CONTRAST"
       ],
       "emotion": "ANGER",
-      "intensity": 2,
-      "addressee": "LEADERS",
+      "intensity": 3,
+      "addressee": "WORLD",
       "topic": "MORAL_JUDGEMENT",
       "invites_applause": false,
-      "note": "Accusation of sacrificing civilization for profit"
+      "note": "Accusation of civilization sacrifice for profit"
     },
     {
       "seg_id": 17,
       "devices": [
-        "ANAPHORA",
         "ACCUSATION",
-        "PERSONAL_TESTIMONY"
+        "CONTRAST",
+        "ANAPHORA"
       ],
       "emotion": "ANGER",
-      "intensity": 2,
-      "addressee": "LEADERS",
+      "intensity": 3,
+      "addressee": "WORLD",
       "topic": "MORAL_JUDGEMENT",
       "invites_applause": false,
-      "note": "Anaphora and accusation about biosphere"
+      "note": "Anaphora ('Our... is being sacrificed'), accusation"
     },
     {
       "seg_id": 18,
       "devices": [
         "CONTRAST",
+        "ACCUSATION",
         "PUNCHLINE"
       ],
       "emotion": "ANGER",
       "intensity": 3,
-      "addressee": "LEADERS",
+      "addressee": "WORLD",
       "topic": "MORAL_JUDGEMENT",
       "invites_applause": true,
-      "note": "Concise contrast between many's suffering and few's luxury"
+      "note": "Contrast 'many' vs 'few', punchline, accusation"
     },
     {
       "seg_id": 19,
@@ -231,7 +235,7 @@
       "addressee": "NONE",
       "topic": "FUTURE_WARNING",
       "invites_applause": false,
-      "note": "Sets up future date"
+      "note": "Setting a future date"
     },
     {
       "seg_id": 20,
@@ -241,7 +245,7 @@
       "emotion": "NEUTRAL",
       "intensity": 0,
       "addressee": "WORLD",
-      "topic": "PERSONAL_STAKES",
+      "topic": "FUTURE_WARNING",
       "invites_applause": false,
       "note": "Personal future event"
     },
@@ -250,79 +254,80 @@
       "devices": [
         "PERSONAL_TESTIMONY"
       ],
-      "emotion": "NEUTRAL",
-      "intensity": 0,
+      "emotion": "FEAR",
+      "intensity": 1,
       "addressee": "WORLD",
-      "topic": "PERSONAL_STAKES",
+      "topic": "FUTURE_WARNING",
       "invites_applause": false,
-      "note": "Hypothetical future scenario"
+      "note": "Hypothetical personal future event"
     },
     {
       "seg_id": 22,
       "devices": [
-        "DIRECT_ADDRESS"
+        "DIRECT_ADDRESS",
+        "RHETORICAL_QUESTION"
       ],
-      "emotion": "NEUTRAL",
-      "intensity": 1,
+      "emotion": "FEAR",
+      "intensity": 2,
       "addressee": "LEADERS",
       "topic": "FUTURE_WARNING",
       "invites_applause": false,
-      "note": "Hypothetical future question about current leaders"
+      "note": "Direct address, implicit rhetorical question"
     },
     {
       "seg_id": 23,
       "devices": [
-        "RHETORICAL_QUESTION",
         "DIRECT_ADDRESS",
+        "RHETORICAL_QUESTION",
         "ACCUSATION"
       ],
-      "emotion": "ANGER",
-      "intensity": 2,
+      "emotion": "FEAR",
+      "intensity": 3,
       "addressee": "LEADERS",
-      "topic": "INACTION",
-      "invites_applause": false,
-      "note": "Rhetorical question and accusation"
+      "topic": "FUTURE_WARNING",
+      "invites_applause": true,
+      "note": "Direct address, rhetorical question, accusation of future inaction"
     },
     {
       "seg_id": 24,
       "devices": [
         "CONTRAST",
+        "ACCUSATION",
         "DIRECT_ADDRESS",
-        "ACCUSATION"
+        "PUNCHLINE"
       ],
       "emotion": "ANGER",
       "intensity": 3,
       "addressee": "LEADERS",
-      "topic": "INACTION",
+      "topic": "MORAL_JUDGEMENT",
       "invites_applause": true,
-      "note": "Strong contrast and accusation"
+      "note": "Contrast between words and actions, accusation, punchline"
     },
     {
       "seg_id": 25,
       "devices": [
         "CONTRAST",
-        "DIRECT_ADDRESS",
-        "WARNING"
+        "WARNING",
+        "DIRECT_ADDRESS"
       ],
       "emotion": "DEFIANCE",
       "intensity": 2,
       "addressee": "LEADERS",
       "topic": "INACTION",
       "invites_applause": false,
-      "note": "Warning and contrast of priorities"
+      "note": "Contrast 'needs to be done' vs 'politically possible', warning of no hope"
     },
     {
       "seg_id": 26,
       "devices": [
-        "PUZZLE_SOLUTION",
         "PUNCHLINE"
       ],
       "emotion": "RESOLVE",
       "intensity": 2,
       "addressee": "WORLD",
-      "topic": "MORAL_JUDGEMENT",
+      "topic": "INACTION",
       "invites_applause": true,
-      "note": "Statement about crisis recognition"
+      "note": "Punchline, inherent logical truth"
     },
     {
       "seg_id": 27,
@@ -332,9 +337,9 @@
       "emotion": "RESOLVE",
       "intensity": 1,
       "addressee": "WORLD",
-      "topic": "INACTION",
+      "topic": "OTHER",
       "invites_applause": false,
-      "note": "Call to action"
+      "note": "Call to action (two specific points)"
     },
     {
       "seg_id": 28,
@@ -345,9 +350,9 @@
       "emotion": "DEFIANCE",
       "intensity": 2,
       "addressee": "WORLD",
-      "topic": "INACTION",
+      "topic": "OTHER",
       "invites_applause": true,
-      "note": "Suggestion to change the system"
+      "note": "Puzzle/solution, punchline, call for systemic change"
     },
     {
       "seg_id": 29,
@@ -357,34 +362,34 @@
       "emotion": "DEFIANCE",
       "intensity": 2,
       "addressee": "LEADERS",
-      "topic": "PERSONAL_STAKES",
+      "topic": "OTHER",
       "invites_applause": false,
-      "note": "Statement of purpose (negative)"
+      "note": "Sets up a contrast, statement of defiance"
     },
     {
       "seg_id": 30,
       "devices": [
-        "DIRECT_ADDRESS",
-        "ACCUSATION"
+        "ACCUSATION",
+        "DIRECT_ADDRESS"
       ],
       "emotion": "ANGER",
       "intensity": 2,
       "addressee": "LEADERS",
       "topic": "INACTION",
       "invites_applause": false,
-      "note": "Accusation of past and future ignorance"
+      "note": "Accusation of past and future inaction"
     },
     {
       "seg_id": 31,
       "devices": [
-        "ANAPHORA"
+        "WARNING"
       ],
-      "emotion": "DEFIANCE",
-      "intensity": 3,
-      "addressee": "LEADERS",
+      "emotion": "FEAR",
+      "intensity": 2,
+      "addressee": "WORLD",
       "topic": "FUTURE_WARNING",
       "invites_applause": false,
-      "note": "Parallel structure about running out"
+      "note": "Two parallel phrases highlighting urgency"
     },
     {
       "seg_id": 32,
@@ -399,19 +404,19 @@
       "addressee": "LEADERS",
       "topic": "FUTURE_WARNING",
       "invites_applause": true,
-      "note": "Defiant warning about inevitable change"
+      "note": "Contrast, direct address, punchline, warning"
     },
     {
       "seg_id": 33,
       "devices": [
         "PUNCHLINE"
       ],
-      "emotion": "RESOLVE",
-      "intensity": 2,
+      "emotion": "DEFIANCE",
+      "intensity": 3,
       "addressee": "WORLD",
-      "topic": "MORAL_JUDGEMENT",
+      "topic": "OTHER",
       "invites_applause": true,
-      "note": "Statement about where real power lies"
+      "note": "Punchline, statement about power"
     },
     {
       "seg_id": 34,
@@ -422,8 +427,8 @@
       "intensity": 0,
       "addressee": "WORLD",
       "topic": "GREETING_CLOSING",
-      "invites_applause": true,
-      "note": "Standard closing"
+      "invites_applause": false,
+      "note": "Closing remark"
     },
     {
       "seg_id": 35,
@@ -435,7 +440,7 @@
       "addressee": "NONE",
       "topic": "OTHER",
       "invites_applause": false,
-      "note": "Single word"
+      "note": "Stray word from transcription or final direct address"
     }
   ]
 }

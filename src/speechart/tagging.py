@@ -49,7 +49,8 @@ def build_user_message(segments: pd.DataFrame, context: str) -> str:
             "using the number in brackets as seg_id.\n\n" + "\n".join(lines))
 
 
-def tag_with_claude(segments: pd.DataFrame, context: str, prompt_file: str = "rhetoric_v1.md") -> SpeechAnnotation:
+def tag_with_claude(segments: pd.DataFrame, context: str, prompt_file: str = "rhetoric_v1.md",
+                    log: list | None = None) -> SpeechAnnotation:
     import anthropic
 
     client = anthropic.Anthropic()
@@ -61,6 +62,10 @@ def tag_with_claude(segments: pd.DataFrame, context: str, prompt_file: str = "rh
         messages=[{"role": "user", "content": build_user_message(segments, context)}],
         output_format=SpeechAnnotation,
     )
+    if log is not None:
+        log.append({"time": _now(), "model": MODEL, "status": response.stop_reason,
+                    "request_id": response._request_id,
+                    "raw_response": "".join(b.text for b in response.content if b.type == "text")})
     if response.stop_reason == "refusal":
         raise RuntimeError(f"model declined: {response.stop_details}")
     result = response.parsed_output
@@ -93,49 +98,64 @@ def _gemini_key() -> str:
     raise RuntimeError("Set GEMINI_API_KEY (environment or AI-Art/.env)")
 
 
+def _now() -> str:
+    from datetime import datetime, timezone
+
+    return datetime.now(timezone.utc).isoformat(timespec="seconds")
+
+
 def tag_with_gemini(segments: pd.DataFrame, context: str, prompt_file: str = "rhetoric_v1.md",
-                    model: str = GEMINI_MODEL, _attempt: int = 0) -> SpeechAnnotation:
-    """Same prompt and schema as tag_with_claude, run on Gemini with JSON output."""
+                    model: str = GEMINI_MODEL, log: list | None = None) -> SpeechAnnotation:
+    """Same prompt and schema as tag_with_claude, run on Gemini with JSON output.
+
+    Retries on 503 overload (with backoff) and on replies that fail schema
+    validation (older models follow the schema loosely). Every attempt, its
+    error and the raw reply text are appended to `log` when given.
+    """
     import os
+    import time
 
     import certifi
     from google import genai
-    from google.genai import types
+    from google.genai import errors, types
 
     os.environ.setdefault("SSL_CERT_FILE", certifi.where())
-    import time
-
-    from google.genai import errors
-
+    log = log if log is not None else []
     # v1beta: older models (e.g. 2.5-flash) reject system instructions on v1
     client = genai.Client(api_key=_gemini_key(), http_options=types.HttpOptions(api_version="v1beta"))
-    for attempt in range(6):
+    config = types.GenerateContentConfig(
+        system_instruction=(PROMPTS / prompt_file).read_text(),
+        response_mime_type="application/json",
+        response_json_schema=SpeechAnnotation.model_json_schema(),
+    )
+    overloads = invalid = 0
+    while True:
+        entry = {"time": _now(), "model": model}
         try:
             response = client.models.generate_content(
-                model=model,
-                contents=build_user_message(segments, context),
-                config=types.GenerateContentConfig(
-                    system_instruction=(PROMPTS / prompt_file).read_text(),
-                    response_mime_type="application/json",
-                    response_json_schema=SpeechAnnotation.model_json_schema(),
-                ),
-            )
-            break
+                model=model, contents=build_user_message(segments, context), config=config)
         except errors.ServerError as e:  # 503 "high demand" is common and temporary
-            if attempt == 5:
+            log.append({**entry, "status": "server_error", "error": f"{e.code} {e.status}"})
+            overloads += 1
+            if overloads > 5:
                 raise
-            wait = 15 * 2 ** attempt
+            wait = 15 * 2 ** (overloads - 1)
             print(f"{model}: {e.code}, retrying in {wait} s")
             time.sleep(wait)
-    try:
-        result = SpeechAnnotation.model_validate_json(response.text)  # enforce enums and 0-3 range
-    except ValueError as e:
-        # older models follow the schema loosely; a fresh sample usually validates
-        if _attempt >= 2:
-            raise
-        print(f"{model}: output failed validation ({str(e).splitlines()[0]}), retrying")
-        return tag_with_gemini(segments, context, prompt_file, model, _attempt + 1)
-    missing = set(segments.seg_id) - {s.seg_id for s in result.sentences}
-    if missing:
-        raise RuntimeError(f"no annotation for seg_ids {sorted(missing)}")
-    return result
+            continue
+        try:
+            result = SpeechAnnotation.model_validate_json(response.text)  # enforce enums and 0-3 range
+        except ValueError as e:
+            log.append({**entry, "status": "invalid_output", "error": str(e), "raw_response": response.text})
+            invalid += 1
+            if invalid > 2:
+                raise
+            print(f"{model}: output failed validation ({str(e).splitlines()[0]}), retrying")
+            continue
+        missing = set(segments.seg_id) - {s.seg_id for s in result.sentences}
+        if missing:
+            log.append({**entry, "status": "incomplete", "error": f"missing seg_ids {sorted(missing)}",
+                        "raw_response": response.text})
+            raise RuntimeError(f"no annotation for seg_ids {sorted(missing)}")
+        log.append({**entry, "status": "ok", "raw_response": response.text})
+        return result

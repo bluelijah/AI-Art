@@ -8,6 +8,16 @@ reaction_scores.csv, reaction_events.csv; optional
 data/speeches/<id>/annotations.json (sentence tags, see tag_sentences.py).
 
 Writes:
+  sentences.csv         one row per sentence: text, tags (devices, emotion, ...),
+                        the reaction that followed, and how its ending was
+                        delivered (loudness, pitch fall, pace, pause after)
+  runup_curves.csv      loudness / pitch around every sentence ending (-6..+2 s),
+                        relative to the speaker's typical level: the data
+                        behind the anatomy-of-applause charts
+  reaction_moments.csv  every detected reaction with the word and sentence
+                        before it, its tags, the AI's prediction, the delivery
+                        run-up, and whether the crowd broke in mid-sentence
+  speaker_levels.json   the speaker's typical loudness and pitch (the reference)
   words_timeline.csv    one row per word spoken by the main speaker:
                         delivery + reaction that followed + sentence tags
   timeline_100ms.csv    100 ms grid: loudness, pitch, pause, reactions,
@@ -21,6 +31,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
+from speechart.process import ending_stats, reaction_moments, runup_curves, speaker_levels
 from speechart.tagging import SpeechAnnotation, to_table
 from speechart.timeline import (clip_long_words, mark_intervals, reaction_after,
                                 resample, words_with_delivery)
@@ -47,6 +58,25 @@ def main(speech_id: str) -> None:
         ann = to_table(SpeechAnnotation.model_validate(json.loads(ann_path.read_text())))
         words = words.merge(ann, on="seg_id", how="left")
     words.to_csv(out / "words_timeline.csv", index=False)
+
+    # one readable row per sentence: text next to its tags and what followed it
+    seg = pd.read_csv(out / "segments.csv")
+    seg = seg[seg.seg_id.isin(words.seg_id.unique())][["seg_id", "text"]]
+    per = words.groupby("seg_id").agg(start=("start", "min"), end=("end", "max"),
+                                      reaction_after=("reaction_after", lambda x: next((r for r in x if r), "")))
+    sentences = seg.merge(per, on="seg_id")
+    if ann_path.exists():
+        sentences = sentences.merge(ann, on="seg_id", how="left")
+
+    # process data: how each sentence ending was delivered, and the curves behind it
+    levels = speaker_levels(frames, words)
+    sentences = sentences.merge(ending_stats(words, frames, levels), on="seg_id", how="left")
+    sentences.round(3).to_csv(out / "sentences.csv", index=False)
+    curves = runup_curves(words, frames, levels)
+    curves.round(3).to_csv(out / "runup_curves.csv", index=False)
+    moments = reaction_moments(events[events.end > t0], words, sentences)
+    moments.round(3).to_csv(out / "reaction_moments.csv", index=False)
+    (out / "speaker_levels.json").write_text(json.dumps({k: round(v, 3) for k, v in levels.items()}, indent=2) + "\n")
 
     # 100 ms grid
     grid = mark_intervals(frames, pauses, "pause")

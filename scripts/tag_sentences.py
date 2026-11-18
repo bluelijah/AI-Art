@@ -8,16 +8,20 @@ GEMINI_API_KEY in the environment or in AI-Art/.env (gitignored).
 Reads output/<id>/segments.csv (sentences before meta.speaker_start_s are
 skipped) and writes data/speeches/<id>/annotations.json, which is kept in
 git because it is costly to regenerate and is part of the research record.
+Every run (successful or not) also writes data/speeches/<id>/tagging_runs/
+<time>_<model>.json: the prompt hash, the exact message sent, and every
+attempt with its error or raw reply.
 """
 
 import argparse
+import hashlib
 import json
-from datetime import date
+from datetime import date, datetime, timezone
 from pathlib import Path
 
 import pandas as pd
 
-from speechart.tagging import GEMINI_MODEL, MODEL, tag_with_claude, tag_with_gemini
+from speechart.tagging import GEMINI_MODEL, MODEL, PROMPTS, build_user_message, tag_with_claude, tag_with_gemini
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -40,12 +44,34 @@ def main() -> None:
     seg = pd.read_csv(ROOT / "output" / args.speech_id / "segments.csv")
     seg = seg[seg.start >= meta.get("speaker_start_s", 0)]
     context = f"{meta['speaker']}, {meta['title']}, {meta['venue']}, {meta['date']}."
-    if args.provider == "gemini":
-        ann, source = tag_with_gemini(seg, context, model=args.model), f"{args.model} via Gemini API (blind: transcript only)"
-    else:
-        ann, source = tag_with_claude(seg, context), f"{MODEL} via Claude API (blind: transcript only)"
+    prompt_file = "rhetoric_v1.md"
+    model = args.model if args.provider == "gemini" else MODEL
 
-    dest.write_text(json.dumps({"source": source, "prompt": "prompts/rhetoric_v1.md",
+    # process record: everything sent and everything received, kept even if the run fails
+    prompt_text = (PROMPTS / prompt_file).read_text()
+    run = {"speech_id": args.speech_id, "started": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+           "provider": args.provider, "model": model, "prompt_file": f"prompts/{prompt_file}",
+           "prompt_sha256": hashlib.sha256(prompt_text.encode()).hexdigest(),
+           "user_message": build_user_message(seg, context), "attempts": []}
+    runs_dir = speech_dir / "tagging_runs"
+    runs_dir.mkdir(exist_ok=True)
+    run_path = runs_dir / f"{run['started'][:19].replace(':', '')}_{model}.json"
+    try:
+        if args.provider == "gemini":
+            ann = tag_with_gemini(seg, context, prompt_file, model=model, log=run["attempts"])
+        else:
+            ann = tag_with_claude(seg, context, prompt_file, log=run["attempts"])
+        run["status"] = "ok"
+    except Exception as e:
+        run["status"] = f"failed: {type(e).__name__}: {str(e)[:300]}"
+        raise
+    finally:
+        run["finished"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
+        run_path.write_text(json.dumps(run, indent=2) + "\n")
+        print(f"logged {run_path.relative_to(ROOT)} ({len(run['attempts'])} attempts, {run.get('status')})")
+    source = f"{model} via {'Gemini' if args.provider == 'gemini' else 'Claude'} API (blind: transcript only)"
+
+    dest.write_text(json.dumps({"source": source, "prompt": f"prompts/{prompt_file}", "run_log": str(run_path.relative_to(ROOT)),
                                 "date": date.today().isoformat(), **ann.model_dump()}, indent=2) + "\n")
     print(f"wrote {dest.relative_to(ROOT)} ({len(ann.sentences)} sentences)")
 

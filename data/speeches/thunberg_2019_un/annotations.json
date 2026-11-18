@@ -1,11 +1,13 @@
 {
   "source": "gemini-2.5-flash via Gemini API (blind: transcript only)",
   "prompt": "prompts/rhetoric_v1.md",
+  "run_log": "data/speeches/thunberg_2019_un/tagging_runs/2026-11-18T143941_gemini-2.5-flash.json",
   "date": "2026-11-18",
   "sentences": [
     {
       "seg_id": 3,
       "devices": [
+        "PERSONAL_TESTIMONY",
         "DIRECT_ADDRESS",
         "WARNING"
       ],
@@ -14,43 +16,44 @@
       "addressee": "LEADERS",
       "topic": "FUTURE_WARNING",
       "invites_applause": false,
-      "note": "direct address and warning"
+      "note": "Personal testimony, direct address and warning"
     },
     {
       "seg_id": 4,
       "devices": [
-        "NONE"
+        "ACCUSATION"
       ],
       "emotion": "ANGER",
       "intensity": 2,
-      "addressee": "NONE",
-      "topic": "INACTION",
+      "addressee": "LEADERS",
+      "topic": "MORAL_JUDGEMENT",
       "invites_applause": false,
-      "note": "general statement of wrongness"
+      "note": "General statement of disapproval"
     },
     {
       "seg_id": 5,
       "devices": [
         "PERSONAL_TESTIMONY"
       ],
-      "emotion": "DISBELIEF",
+      "emotion": "ANGER",
       "intensity": 1,
       "addressee": "SELF",
       "topic": "PERSONAL_STAKES",
       "invites_applause": false,
-      "note": "personal statement"
+      "note": "Speaker's personal situation"
     },
     {
       "seg_id": 6,
       "devices": [
-        "PERSONAL_TESTIMONY"
+        "PERSONAL_TESTIMONY",
+        "CONTRAST"
       ],
-      "emotion": "GRIEF",
+      "emotion": "ANGER",
       "intensity": 2,
       "addressee": "SELF",
       "topic": "PERSONAL_STAKES",
       "invites_applause": false,
-      "note": "personal testimony, longing"
+      "note": "Personal testimony about her rightful place"
     },
     {
       "seg_id": 7,
@@ -61,29 +64,29 @@
       "emotion": "ANGER",
       "intensity": 2,
       "addressee": "LEADERS",
-      "topic": "INACTION",
+      "topic": "MORAL_JUDGEMENT",
       "invites_applause": false,
-      "note": "contrast and direct address"
+      "note": "Contrast between her situation and leaders' actions"
     },
     {
       "seg_id": 8,
       "devices": [
         "RHETORICAL_QUESTION",
-        "ACCUSATION",
-        "DIRECT_ADDRESS"
+        "DIRECT_ADDRESS",
+        "ACCUSATION"
       ],
       "emotion": "ANGER",
       "intensity": 3,
       "addressee": "LEADERS",
       "topic": "MORAL_JUDGEMENT",
       "invites_applause": true,
-      "note": "rhetorical question, direct accusation"
+      "note": "Rhetorical question, direct accusation"
     },
     {
       "seg_id": 9,
       "devices": [
-        "ACCUSATION",
         "DIRECT_ADDRESS",
+        "ACCUSATION",
         "PERSONAL_TESTIMONY"
       ],
       "emotion": "ANGER",
@@ -91,7 +94,7 @@
       "addressee": "LEADERS",
       "topic": "PERSONAL_STAKES",
       "invites_applause": true,
-      "note": "direct accusation, personal impact"
+      "note": "Direct accusation of personal loss"
     },
     {
       "seg_id": 10,
@@ -101,10 +104,10 @@
       ],
       "emotion": "GRIEF",
       "intensity": 2,
-      "addressee": "NONE",
+      "addressee": "WORLD",
       "topic": "PERSONAL_STAKES",
       "invites_applause": false,
-      "note": "personal testimony, contrast with others"
+      "note": "Contrast, setting up the next list"
     },
     {
       "seg_id": 11,
@@ -114,9 +117,9 @@
       "emotion": "GRIEF",
       "intensity": 2,
       "addressee": "WORLD",
-      "topic": "OTHER",
+      "topic": "MORAL_JUDGEMENT",
       "invites_applause": false,
-      "note": "first item of list of three"
+      "note": "First item in a list of three"
     },
     {
       "seg_id": 12,
@@ -127,9 +130,9 @@
       "emotion": "GRIEF",
       "intensity": 2,
       "addressee": "WORLD",
-      "topic": "OTHER",
+      "topic": "MORAL_JUDGEMENT",
       "invites_applause": false,
-      "note": "second item of list of three, anaphora"
+      "note": "Second item in a list of three, anaphora"
     },
     {
       "seg_id": 13,
@@ -139,30 +142,31 @@
       "emotion": "GRIEF",
       "intensity": 3,
       "addressee": "WORLD",
-      "topic": "OTHER",
+      "topic": "FUTURE_WARNING",
       "invites_applause": true,
-      "note": "third item of list of three"
+      "note": "Third item in a list of three"
     },
     {
       "seg_id": 14,
       "devices": [
+        "WARNING",
         "CONTRAST",
-        "ACCUSATION",
-        "DIRECT_ADDRESS"
+        "DIRECT_ADDRESS",
+        "ACCUSATION"
       ],
       "emotion": "ANGER",
       "intensity": 3,
       "addressee": "LEADERS",
-      "topic": "INACTION",
+      "topic": "FUTURE_WARNING",
       "invites_applause": true,
-      "note": "contrast between reality and leaders' focus, direct accusation"
+      "note": "Warning, contrast between reality and leaders' focus"
     },
     {
       "seg_id": 15,
       "devices": [
         "RHETORICAL_QUESTION",
-        "ACCUSATION",
         "DIRECT_ADDRESS",
+        "ACCUSATION",
         "ANAPHORA"
       ],
       "emotion": "ANGER",
@@ -170,7 +174,7 @@
       "addressee": "LEADERS",
       "topic": "MORAL_JUDGEMENT",
       "invites_applause": true,
-      "note": "anaphora of rhetorical question, direct accusation"
+      "note": "Repetition of 'How dare you?'"
     },
     {
       "seg_id": 16,
@@ -178,18 +182,19 @@
         "STATISTIC"
       ],
       "emotion": "NEUTRAL",
-      "intensity": 1,
+      "intensity": 0,
       "addressee": "NONE",
       "topic": "SCIENCE_NUMBERS",
       "invites_applause": false,
-      "note": "factual statement with statistic"
+      "note": "Statistic, factual statement"
     },
     {
       "seg_id": 17,
       "devices": [
         "RHETORICAL_QUESTION",
-        "ACCUSATION",
         "DIRECT_ADDRESS",
+        "ACCUSATION",
+        "ANAPHORA",
         "CONTRAST"
       ],
       "emotion": "ANGER",
@@ -197,19 +202,20 @@
       "addressee": "LEADERS",
       "topic": "INACTION",
       "invites_applause": true,
-      "note": "rhetorical question, direct accusation, contrast"
+      "note": "Third 'How dare you?', direct accusation of inaction and deception"
     },
     {
       "seg_id": 18,
       "devices": [
-        "DIRECT_ADDRESS"
+        "DIRECT_ADDRESS",
+        "CONTRAST"
       ],
-      "emotion": "NEUTRAL",
-      "intensity": 0,
+      "emotion": "IRONY",
+      "intensity": 1,
       "addressee": "LEADERS",
       "topic": "INACTION",
       "invites_applause": false,
-      "note": "stating leaders' claim"
+      "note": "Direct address, setting up a contrast"
     },
     {
       "seg_id": 19,
@@ -222,78 +228,82 @@
       "addressee": "SELF",
       "topic": "PERSONAL_STAKES",
       "invites_applause": false,
-      "note": "personal testimony, contrast"
+      "note": "Personal testimony, contrast of emotion and belief"
     },
     {
       "seg_id": 20,
       "devices": [
-        "NONE"
+        "DIRECT_ADDRESS",
+        "ACCUSATION"
       ],
-      "emotion": "NEUTRAL",
+      "emotion": "ANGER",
       "intensity": 1,
       "addressee": "LEADERS",
       "topic": "INACTION",
       "invites_applause": false,
-      "note": "conditional clause"
+      "note": "Conditional accusation"
     },
     {
       "seg_id": 21,
       "devices": [
-        "PUZZLE_SOLUTION",
+        "DIRECT_ADDRESS",
+        "ACCUSATION",
         "PERSONAL_TESTIMONY",
-        "PUNCHLINE",
-        "ACCUSATION"
+        "PUZZLE_SOLUTION"
       ],
-      "emotion": "DEFIANCE",
-      "intensity": 3,
+      "emotion": "ANGER",
+      "intensity": 2,
       "addressee": "LEADERS",
       "topic": "MORAL_JUDGEMENT",
-      "invites_applause": true,
-      "note": "solution to puzzle, personal refusal to believe them evil"
+      "invites_applause": false,
+      "note": "Completes the conditional accusation, personal testimony"
     },
     {
       "seg_id": 22,
       "devices": [
-        "STATISTIC"
+        "STATISTIC",
+        "WARNING"
       ],
       "emotion": "FEAR",
       "intensity": 2,
-      "addressee": "NONE",
+      "addressee": "WORLD",
       "topic": "SCIENCE_NUMBERS",
       "invites_applause": false,
-      "note": "factual statement with statistics, warning"
+      "note": "Statistics and warning"
     },
     {
       "seg_id": 23,
       "devices": [
+        "STATISTIC",
         "DIRECT_ADDRESS",
         "CONTRAST"
       ],
-      "emotion": "DISBELIEF",
+      "emotion": "IRONY",
       "intensity": 1,
       "addressee": "LEADERS",
-      "topic": "MORAL_JUDGEMENT",
+      "topic": "SCIENCE_NUMBERS",
       "invites_applause": false,
-      "note": "direct address, challenges their perspective"
+      "note": "Statistic, direct address, setting up a contrast"
     },
     {
       "seg_id": 24,
       "devices": [
-        "CONTRAST"
+        "CONTRAST",
+        "STATISTIC"
       ],
       "emotion": "ANGER",
       "intensity": 2,
-      "addressee": "NONE",
+      "addressee": "WORLD",
       "topic": "SCIENCE_NUMBERS",
       "invites_applause": false,
-      "note": "factual rebuttal, contrast with accepted numbers"
+      "note": "Contrast, explaining flaws in statistics"
     },
     {
       "seg_id": 25,
       "devices": [
         "ACCUSATION",
-        "DIRECT_ADDRESS",
         "PERSONAL_TESTIMONY",
+        "DIRECT_ADDRESS",
         "STATISTIC"
       ],
       "emotion": "ANGER",
@@ -301,11 +311,12 @@
       "addressee": "LEADERS",
       "topic": "INACTION",
       "invites_applause": false,
-      "note": "direct accusation, statistic, personal stakes"
+      "note": "Accusation, statistic, personal stakes"
     },
     {
       "seg_id": 26,
       "devices": [
+        "STATISTIC",
         "CONTRAST",
         "PERSONAL_TESTIMONY"
       ],
@@ -314,19 +325,19 @@
       "addressee": "LEADERS",
       "topic": "PERSONAL_STAKES",
       "invites_applause": true,
-      "note": "personal statement, contrast with their acceptance"
+      "note": "Statistic, defiance, contrast to previous statement"
     },
     {
       "seg_id": 27,
       "devices": [
         "PERSONAL_TESTIMONY"
       ],
-      "emotion": "GRIEF",
+      "emotion": "ANGER",
       "intensity": 1,
       "addressee": "LEADERS",
       "topic": "PERSONAL_STAKES",
       "invites_applause": false,
-      "note": "elaborates on personal stakes"
+      "note": "Clarification of 'us'"
     },
     {
       "seg_id": 28,
@@ -338,7 +349,7 @@
       "addressee": "NONE",
       "topic": "SCIENCE_NUMBERS",
       "invites_applause": false,
-      "note": "factual statement with multiple statistics"
+      "note": "Scientific statistics and dates"
     },
     {
       "seg_id": 29,
@@ -346,19 +357,19 @@
         "STATISTIC",
         "CONTRAST"
       ],
-      "emotion": "ANGER",
+      "emotion": "FEAR",
       "intensity": 1,
       "addressee": "NONE",
       "topic": "SCIENCE_NUMBERS",
       "invites_applause": false,
-      "note": "factual update with statistic, implying urgency"
+      "note": "Updated statistic, implicit contrast"
     },
     {
       "seg_id": 30,
       "devices": [
         "RHETORICAL_QUESTION",
-        "ACCUSATION",
         "DIRECT_ADDRESS",
+        "ACCUSATION",
         "ANAPHORA"
       ],
       "emotion": "ANGER",
@@ -366,7 +377,7 @@
       "addressee": "LEADERS",
       "topic": "INACTION",
       "invites_applause": true,
-      "note": "anaphora of rhetorical question, direct accusation"
+      "note": "Fourth 'How dare you?', direct accusation of deception"
     },
     {
       "seg_id": 31,
@@ -376,14 +387,16 @@
       ],
       "emotion": "FEAR",
       "intensity": 2,
-      "addressee": "NONE",
+      "addressee": "WORLD",
       "topic": "FUTURE_WARNING",
       "invites_applause": false,
-      "note": "factual warning with statistic"
+      "note": "Statistic, warning about timeline"
     },
     {
       "seg_id": 32,
       "devices": [
+        "WARNING",
+        "STATISTIC",
         "ACCUSATION"
       ],
       "emotion": "ANGER",
@@ -391,27 +404,26 @@
       "addressee": "LEADERS",
       "topic": "INACTION",
       "invites_applause": false,
-      "note": "accusation of avoiding uncomfortable truths"
+      "note": "Prediction of inaction, accusation of discomfort"
     },
     {
       "seg_id": 33,
       "devices": [
-        "ACCUSATION",
         "DIRECT_ADDRESS",
-        "PUNCHLINE"
+        "ACCUSATION"
       ],
       "emotion": "ANGER",
-      "intensity": 3,
+      "intensity": 2,
       "addressee": "LEADERS",
       "topic": "MORAL_JUDGEMENT",
       "invites_applause": true,
-      "note": "direct accusation of immaturity"
+      "note": "Direct accusation of immaturity and dishonesty"
     },
     {
       "seg_id": 34,
       "devices": [
-        "ACCUSATION",
         "DIRECT_ADDRESS",
+        "ACCUSATION",
         "PUNCHLINE"
       ],
       "emotion": "ANGER",
@@ -419,7 +431,7 @@
       "addressee": "LEADERS",
       "topic": "INACTION",
       "invites_applause": true,
-      "note": "direct accusation"
+      "note": "Direct and concise accusation"
     },
     {
       "seg_id": 35,
@@ -427,12 +439,12 @@
         "CONTRAST",
         "ACCUSATION"
       ],
-      "emotion": "RESOLVE",
+      "emotion": "ANGER",
       "intensity": 2,
       "addressee": "LEADERS",
       "topic": "MORAL_JUDGEMENT",
       "invites_applause": false,
-      "note": "contrast, accusation of betrayal"
+      "note": "Contrast, accusation of betrayal"
     },
     {
       "seg_id": 36,
@@ -445,27 +457,28 @@
       "addressee": "LEADERS",
       "topic": "FUTURE_WARNING",
       "invites_applause": false,
-      "note": "direct address, warning of future accountability"
+      "note": "Direct address, warning of future judgment"
     },
     {
       "seg_id": 37,
       "devices": [
-        "WARNING",
         "DIRECT_ADDRESS",
-        "PERSONAL_TESTIMONY"
+        "WARNING",
+        "PERSONAL_TESTIMONY",
+        "ACCUSATION"
       ],
       "emotion": "DEFIANCE",
       "intensity": 3,
       "addressee": "LEADERS",
       "topic": "FUTURE_WARNING",
       "invites_applause": true,
-      "note": "direct warning, personal testimony"
+      "note": "Conditional warning, direct address, personal testimony"
     },
     {
       "seg_id": 38,
       "devices": [
-        "WARNING",
         "DIRECT_ADDRESS",
+        "WARNING",
         "PUNCHLINE"
       ],
       "emotion": "DEFIANCE",
@@ -473,7 +486,7 @@
       "addressee": "LEADERS",
       "topic": "FUTURE_WARNING",
       "invites_applause": true,
-      "note": "direct warning, punchline of defiance"
+      "note": "Direct address, warning, defiance"
     },
     {
       "seg_id": 39,
@@ -482,15 +495,17 @@
       ],
       "emotion": "RESOLVE",
       "intensity": 3,
-      "addressee": "WORLD",
+      "addressee": "LEADERS",
       "topic": "OTHER",
       "invites_applause": true,
-      "note": "strong punchline, declaration of resolve"
+      "note": "Powerful statement of resolve, punchline"
     },
     {
       "seg_id": 40,
       "devices": [
         "PUNCHLINE",
+        "WARNING",
+        "DIRECT_ADDRESS",
         "CONTRAST"
       ],
       "emotion": "RESOLVE",
@@ -498,7 +513,7 @@
       "addressee": "LEADERS",
       "topic": "FUTURE_WARNING",
       "invites_applause": true,
-      "note": "powerful punchline, contrast"
+      "note": "Punchline, warning, statement of inevitable change"
     },
     {
       "seg_id": 41,
@@ -509,8 +524,8 @@
       "intensity": 0,
       "addressee": "NONE",
       "topic": "GREETING_CLOSING",
-      "invites_applause": true,
-      "note": "closing remark"
+      "invites_applause": false,
+      "note": "Standard closing"
     }
   ]
 }

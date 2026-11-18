@@ -12,21 +12,62 @@ configures no sources (e.g. speeches before 2015).
 After `transcribe`, check output/<id>/segments.csv: if the recording opens
 with someone else (host, interviewer), set speaker_start_s in meta.json and
 rerun with --from tag.
+
+Every run appends to output/<id>/pipeline_log.jsonl: the git commit, all
+step settings (thresholds, models), and each step's command, duration
+and status.
 """
 
 import argparse
 import json
 import subprocess
 import sys
+import time
+from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 STEPS = ["delivery", "transcribe", "reactions", "tag", "timeline", "aftermath", "draw"]
 
 
-def run(*args: str) -> None:
+LOG: Path | None = None
+
+
+def settings() -> dict:
+    """The parameters every step ran with, so results can be traced to their settings."""
+    from dataclasses import asdict
+
+    from speechart.delivery import DeliveryConfig
+    from speechart.reactions import ReactionConfig
+    from speechart.tagging import GEMINI_MODEL, MODEL
+    from speechart.transcribe import TranscribeConfig
+
+    return {"delivery": asdict(DeliveryConfig()), "transcribe": asdict(TranscribeConfig()),
+            "reactions": asdict(ReactionConfig()), "tagging": {"gemini": GEMINI_MODEL, "claude": MODEL}}
+
+
+def log(entry: dict) -> None:
+    if LOG is not None:
+        with LOG.open("a") as fh:
+            fh.write(json.dumps(entry) + "\n")
+
+
+def now() -> str:
+    return datetime.now(timezone.utc).isoformat(timespec="seconds")
+
+
+def run(step: str, *args: str) -> None:
     print(f"\n=== {' '.join(args)}", flush=True)
-    subprocess.run([sys.executable, *args], cwd=ROOT, check=True)
+    start, t = now(), time.time()
+    status = "ok"
+    try:
+        subprocess.run([sys.executable, *args], cwd=ROOT, check=True)
+    except subprocess.CalledProcessError as e:
+        status = f"failed (exit {e.returncode})"
+        raise
+    finally:
+        log({"step": step, "command": " ".join(args), "started": start, "seconds": round(time.time() - t, 1),
+             "status": status})
 
 
 def main() -> None:
@@ -42,27 +83,37 @@ def main() -> None:
     if not (speech_dir / meta["audio_file"]).exists():
         sys.exit(f"no {meta['audio_file']} in {speech_dir}: run scripts/import_audio.py {sid} <video> first")
 
+    global LOG
+    LOG = ROOT / "output" / sid / "pipeline_log.jsonl"
+    LOG.parent.mkdir(parents=True, exist_ok=True)
+    commit = subprocess.run(["git", "rev-parse", "--short", "HEAD"], cwd=ROOT, capture_output=True, text=True)
+    log({"step": "run", "started": now(), "from_step": a.start, "provider": a.provider,
+         "git_commit": commit.stdout.strip(), "settings": settings(),
+         "speaker_start_s": meta.get("speaker_start_s"), "tracked_phrase": meta.get("tracked_phrase")})
+
     for step in STEPS[STEPS.index(a.start):]:
         if step == "delivery":
-            run("scripts/extract_delivery.py", sid)
+            run(step, "scripts/extract_delivery.py", sid)
         elif step == "transcribe":
-            run("scripts/transcribe.py", sid)
+            run(step, "scripts/transcribe.py", sid)
         elif step == "reactions":
-            run("scripts/detect_reactions.py", sid)
+            run(step, "scripts/detect_reactions.py", sid)
         elif step == "tag":
             if (speech_dir / "annotations.json").exists():
                 print("\n=== tag: annotations.json exists, skipping")
+                log({"step": step, "status": "skipped: annotations.json exists"})
             else:
-                run("scripts/tag_sentences.py", sid, "--provider", a.provider)
+                run(step, "scripts/tag_sentences.py", sid, "--provider", a.provider)
         elif step == "timeline":
-            run("scripts/build_timeline.py", sid)
+            run(step, "scripts/build_timeline.py", sid)
         elif step == "aftermath":
             if "aftermath" in meta:
-                run("scripts/fetch_aftermath.py", sid)
+                run(step, "scripts/fetch_aftermath.py", sid)
             else:
                 print(f"\n=== aftermath: skipped. {meta.get('aftermath_note', 'no sources configured')}")
+                log({"step": step, "status": "skipped: " + meta.get("aftermath_note", "no sources configured")})
         elif step == "draw":
-            run("scripts/draw.py", sid)
+            run(step, "scripts/draw.py", sid)
 
 
 if __name__ == "__main__":

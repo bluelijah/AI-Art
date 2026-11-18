@@ -105,109 +105,109 @@ date,query,articles
 2019-02-26 00:00:00,"""not mature enough"" thunberg",0
 2019-02-27 00:00:00,"""not mature enough"" thunberg",0
 2019-02-28 00:00:00,"""not mature enough"" thunberg",1
-2018-11-15,thunberg,2
-2018-11-16,thunberg,6
-2018-11-17,thunberg,4
-2018-11-18,thunberg,2
-2018-11-19,thunberg,6
-2018-11-20,thunberg,5
-2018-11-21,thunberg,5
-2018-11-22,thunberg,35
-2018-11-23,thunberg,9
-2018-11-24,thunberg,3
-2018-11-25,thunberg,9
-2018-11-26,thunberg,7
-2018-11-27,thunberg,22
-2018-11-28,thunberg,9
-2018-11-29,thunberg,21
-2018-11-30,thunberg,239
-2018-12-01,thunberg,22
-2018-12-02,thunberg,13
-2018-12-03,thunberg,365
-2018-12-04,thunberg,126
-2018-12-05,thunberg,78
-2018-12-06,thunberg,22
-2018-12-07,thunberg,37
-2018-12-08,thunberg,52
-2018-12-09,thunberg,44
-2018-12-10,thunberg,76
-2018-12-11,thunberg,56
-2018-12-12,thunberg,15
-2018-12-13,thunberg,46
-2018-12-14,thunberg,303
-2018-12-15,thunberg,70
-2018-12-16,thunberg,150
-2018-12-17,thunberg,171
-2018-12-18,thunberg,42
-2018-12-19,thunberg,34
-2018-12-20,thunberg,29
-2018-12-21,thunberg,46
-2018-12-22,thunberg,30
-2018-12-23,thunberg,9
-2018-12-24,thunberg,15
-2018-12-25,thunberg,11
-2018-12-26,thunberg,9
-2018-12-27,thunberg,13
-2018-12-28,thunberg,20
-2018-12-29,thunberg,13
-2018-12-30,thunberg,19
-2018-12-31,thunberg,26
-2019-01-01,thunberg,7
-2019-01-02,thunberg,12
-2019-01-03,thunberg,13
-2019-01-04,thunberg,12
-2019-01-05,thunberg,13
-2019-01-06,thunberg,10
-2019-01-07,thunberg,6
-2019-01-08,thunberg,13
-2019-01-09,thunberg,14
-2019-01-10,thunberg,19
-2019-01-11,thunberg,21
-2019-01-12,thunberg,8
-2019-01-13,thunberg,10
-2019-01-14,thunberg,24
-2019-01-15,thunberg,17
-2019-01-16,thunberg,6
-2019-01-17,thunberg,48
-2019-01-18,thunberg,111
-2019-01-19,thunberg,48
-2019-01-20,thunberg,14
-2019-01-21,thunberg,38
-2019-01-22,thunberg,38
-2019-01-23,thunberg,152
-2019-01-24,thunberg,221
-2019-01-25,thunberg,193
-2019-01-26,thunberg,96
-2019-01-27,thunberg,54
-2019-01-28,thunberg,103
-2019-01-29,thunberg,29
-2019-01-30,thunberg,52
-2019-01-31,thunberg,54
-2019-02-01,thunberg,49
-2019-02-02,thunberg,35
-2019-02-03,thunberg,25
-2019-02-04,thunberg,30
-2019-02-05,thunberg,30
-2019-02-06,thunberg,33
-2019-02-07,thunberg,36
-2019-02-08,thunberg,26
-2019-02-09,thunberg,55
-2019-02-10,thunberg,65
-2019-02-11,thunberg,40
-2019-02-12,thunberg,21
-2019-02-13,thunberg,73
-2019-02-14,thunberg,78
-2019-02-15,thunberg,641
-2019-02-16,thunberg,98
-2019-02-17,thunberg,47
-2019-02-18,thunberg,53
-2019-02-19,thunberg,51
-2019-02-20,thunberg,55
-2019-02-21,thunberg,360
-2019-02-22,thunberg,253
-2019-02-23,thunberg,75
-2019-02-24,thunberg,41
-2019-02-25,thunberg,63
-2019-02-26,thunberg,38
-2019-02-27,thunberg,46
-2019-02-28,thunberg,97
+2018-11-15 00:00:00,thunberg,2
+2018-11-16 00:00:00,thunberg,6
+2018-11-17 00:00:00,thunberg,4
+2018-11-18 00:00:00,thunberg,2
+2018-11-19 00:00:00,thunberg,6
+2018-11-20 00:00:00,thunberg,5
+2018-11-21 00:00:00,thunberg,5
+2018-11-22 00:00:00,thunberg,35
+2018-11-23 00:00:00,thunberg,9
+2018-11-24 00:00:00,thunberg,3
+2018-11-25 00:00:00,thunberg,9
+2018-11-26 00:00:00,thunberg,7
+2018-11-27 00:00:00,thunberg,22
+2018-11-28 00:00:00,thunberg,9
+2018-11-29 00:00:00,thunberg,21
+2018-11-30 00:00:00,thunberg,239
+2018-12-01 00:00:00,thunberg,22
+2018-12-02 00:00:00,thunberg,13
+2018-12-03 00:00:00,thunberg,365
+2018-12-04 00:00:00,thunberg,126
+2018-12-05 00:00:00,thunberg,78
+2018-12-06 00:00:00,thunberg,22
+2018-12-07 00:00:00,thunberg,37
+2018-12-08 00:00:00,thunberg,52
+2018-12-09 00:00:00,thunberg,44
+2018-12-10 00:00:00,thunberg,76
+2018-12-11 00:00:00,thunberg,56
+2018-12-12 00:00:00,thunberg,15
+2018-12-13 00:00:00,thunberg,46
+2018-12-14 00:00:00,thunberg,303
+2018-12-15 00:00:00,thunberg,70
+2018-12-16 00:00:00,thunberg,150
+2018-12-17 00:00:00,thunberg,171
+2018-12-18 00:00:00,thunberg,42
+2018-12-19 00:00:00,thunberg,34
+2018-12-20 00:00:00,thunberg,29
+2018-12-21 00:00:00,thunberg,46
+2018-12-22 00:00:00,thunberg,30
+2018-12-23 00:00:00,thunberg,9
+2018-12-24 00:00:00,thunberg,15
+2018-12-25 00:00:00,thunberg,11
+2018-12-26 00:00:00,thunberg,9
+2018-12-27 00:00:00,thunberg,13
+2018-12-28 00:00:00,thunberg,20
+2018-12-29 00:00:00,thunberg,13
+2018-12-30 00:00:00,thunberg,19
+2018-12-31 00:00:00,thunberg,26
+2019-01-01 00:00:00,thunberg,7
+2019-01-02 00:00:00,thunberg,12
+2019-01-03 00:00:00,thunberg,13
+2019-01-04 00:00:00,thunberg,12
+2019-01-05 00:00:00,thunberg,13
+2019-01-06 00:00:00,thunberg,10
+2019-01-07 00:00:00,thunberg,6
+2019-01-08 00:00:00,thunberg,13
+2019-01-09 00:00:00,thunberg,14
+2019-01-10 00:00:00,thunberg,19
+2019-01-11 00:00:00,thunberg,21
+2019-01-12 00:00:00,thunberg,8
+2019-01-13 00:00:00,thunberg,10
+2019-01-14 00:00:00,thunberg,24
+2019-01-15 00:00:00,thunberg,17
+2019-01-16 00:00:00,thunberg,6
+2019-01-17 00:00:00,thunberg,48
+2019-01-18 00:00:00,thunberg,111
+2019-01-19 00:00:00,thunberg,48
+2019-01-20 00:00:00,thunberg,14
+2019-01-21 00:00:00,thunberg,38
+2019-01-22 00:00:00,thunberg,38
+2019-01-23 00:00:00,thunberg,152
+2019-01-24 00:00:00,thunberg,221
+2019-01-25 00:00:00,thunberg,193
+2019-01-26 00:00:00,thunberg,96
+2019-01-27 00:00:00,thunberg,54
+2019-01-28 00:00:00,thunberg,103
+2019-01-29 00:00:00,thunberg,29
+2019-01-30 00:00:00,thunberg,52
+2019-01-31 00:00:00,thunberg,54
+2019-02-01 00:00:00,thunberg,49
+2019-02-02 00:00:00,thunberg,35
+2019-02-03 00:00:00,thunberg,25
+2019-02-04 00:00:00,thunberg,30
+2019-02-05 00:00:00,thunberg,30
+2019-02-06 00:00:00,thunberg,33
+2019-02-07 00:00:00,thunberg,36
+2019-02-08 00:00:00,thunberg,26
+2019-02-09 00:00:00,thunberg,55
+2019-02-10 00:00:00,thunberg,65
+2019-02-11 00:00:00,thunberg,40
+2019-02-12 00:00:00,thunberg,21
+2019-02-13 00:00:00,thunberg,73
+2019-02-14 00:00:00,thunberg,78
+2019-02-15 00:00:00,thunberg,641
+2019-02-16 00:00:00,thunberg,98
+2019-02-17 00:00:00,thunberg,47
+2019-02-18 00:00:00,thunberg,53
+2019-02-19 00:00:00,thunberg,51
+2019-02-20 00:00:00,thunberg,55
+2019-02-21 00:00:00,thunberg,360
+2019-02-22 00:00:00,thunberg,253
+2019-02-23 00:00:00,thunberg,75
+2019-02-24 00:00:00,thunberg,41
+2019-02-25 00:00:00,thunberg,63
+2019-02-26 00:00:00,thunberg,38
+2019-02-27 00:00:00,thunberg,46
+2019-02-28 00:00:00,thunberg,97
