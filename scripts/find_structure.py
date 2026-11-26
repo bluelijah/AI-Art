@@ -21,6 +21,7 @@ output/compare/structure/
   correlations_pooled.csv            sentence-feature correlations across all speeches together
   lead_lag_peaks_all.csv             every speech's lead/lag peaks side by side
   findings.md                        the strongest results, in words
+  ../art/constellation.png           all speeches wired together (plus output/<id>/art/wiring*.png)
 """
 
 import json
@@ -134,6 +135,18 @@ def main(ids: list[str]) -> None:
     lla.round(3).to_csv(out / "lead_lag_peaks_all.csv", index=False)
 
     write_findings(res, pc, lla, edges, gshare, out / "findings.md")
+
+    # the art built on these structures: one portrait per speech, and all of them wired together
+    from speechart.art import wiring
+    for r in res:
+        art = ROOT / "output" / r["sid"] / "art"
+        art.mkdir(exist_ok=True)
+        wiring.render_portrait(r["sid"], art / "wiring.png")
+        wiring.render_portrait(r["sid"], art / "wiring_annotated.png", annotated=True)
+    if len(res) > 1:
+        (ROOT / "output" / "compare" / "art").mkdir(exist_ok=True)
+        wiring.render_constellation([r["sid"] for r in res], ROOT / "output" / "compare" / "art" / "constellation.png")
+        print("wrote wiring portraits and output/compare/art/constellation.png")
     print(f"\nwrote {out.relative_to(ROOT)}/ and output/<id>/structure/")
 
 

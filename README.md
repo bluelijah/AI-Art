@@ -26,6 +26,8 @@ src/speechart/
   art/landscape.py        mountain panorama: peaks = applause, water = pauses (+ depth map)
   art/ripples.py          speech at the centre, daily echo rings (Wikipedia, GDELT)
   art/charts.py           analysis charts: phrase repetitions, anatomy of applause
+  art/wiring.py           The Hidden Wiring of Speech: spiral portraits built from the
+                          structures (breath gestures, echoes, applause) + constellation
 scripts/                  one runnable script per pipeline step
 tests/                    synthetic checks (no models, no network)
 output/<id>/              generated tables and art (committed, so results are shared)
@@ -120,6 +122,7 @@ the sentences and moments it came from.
 | Rhetorical devices + emotion | done (blind Gemini, consensus of 5 runs with agreement scores) |
 | Aftermath | Wikipedia + GDELT done; Google Trends not yet |
 | Breath Scroll, Fingerprint, Applause Landscape, Ripples | first versions |
+| The Hidden Wiring of Speech (portraits + constellation) | first version: `output/<id>/art/wiring*.png`, `output/compare/art/constellation.png` |
 | Gallery of Moments | not started |
 | More speeches + cross-comparison | done: Thunberg 2019, Thunberg COP24 2018, Malala 2013, King 1963 (edited excerpt) |
 | Process records (per-item tables, LLM and pipeline logs) | done |

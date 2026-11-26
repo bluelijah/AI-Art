@@ -54,3 +54,17 @@ def test_gesture_vocabulary_separates_shapes():
     labels, cent = st.gesture_vocabulary(X, k=2)
     assert len(set(labels[:10])) == 1 and len(set(labels[10:])) == 1 and labels[0] != labels[10]
     assert labels[0] == 0  # most common gesture gets id 0
+
+
+def test_spiral_runs_centre_outward_and_gesture_is_smooth():
+    from speechart.art.wiring import Spiral, _gesture
+
+    sp = Spiral(0, 100, turns=3, r0=0.2, r1=1.0)
+    r = lambda t: np.hypot(*sp.point(t))
+    assert r(0) == np.float64(0.2) or abs(r(0) - 0.2) < 1e-9
+    assert abs(r(100) - 1.0) < 1e-9 and r(50) < r(80)
+    t = np.linspace(0, 2, 200)
+    noisy = 4 * np.sin(np.pi * t / 2) + np.sin(40 * t)  # an arch plus syllable wiggle
+    g = _gesture(t, noisy)
+    assert np.abs(np.diff(g, 2)).max() < 0.05      # no wiggle left
+    assert g.argmax() in range(60, 140)            # the arch peaks mid-line

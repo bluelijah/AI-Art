@@ -14,7 +14,7 @@ from pathlib import Path
 
 import pandas as pd
 
-from speechart.art import breath_scroll, charts, fingerprint, landscape, ripples
+from speechart.art import breath_scroll, charts, fingerprint, landscape, ripples, wiring
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -54,6 +54,13 @@ def main(speech_id: str) -> None:
     landscape.render(grid, words, events, art / "applause_landscape.png", art / "applause_landscape_depth.png",
                      title=f"Applause Landscape: {name}")
     print("wrote art/applause_landscape.png (+ _depth.png for depth-conditioned painting)")
+
+    if (out / "structure" / "breath_groups.csv").exists():
+        wiring.render_portrait(speech_id, art / "wiring.png")
+        wiring.render_portrait(speech_id, art / "wiring_annotated.png", annotated=True)
+        print("wrote art/wiring.png, art/wiring_annotated.png")
+    else:
+        print("no structure yet: run find_structure.py for the wiring portrait")
 
     wiki_path, gdelt_path = out / "aftermath_wikipedia.csv", out / "aftermath_gdelt.csv"
     if wiki_path.exists() and "aftermath" in meta:
