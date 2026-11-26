@@ -64,3 +64,26 @@ def test_find_phrase_ignores_case_and_punctuation():
 
     w = pd.DataFrame({"word": ["How", "dare", "you?", "I", "say", "how", "dare", "you."]})
     assert find_phrase(w, "how dare you") == [0, 5]
+
+
+def test_consensus_votes_and_agreement():
+    from speechart.tagging import consensus
+
+    def run(devices, emotion, intensity, invites):
+        return SpeechAnnotation(sentences=[{"seg_id": 1, "devices": devices, "emotion": emotion,
+                                            "intensity": intensity, "addressee": "LEADERS",
+                                            "topic": "INACTION", "invites_applause": invites, "note": "n"}])
+
+    runs = [run(["CONTRAST", "PUNCHLINE"], "ANGER", 3, True),
+            run(["CONTRAST"], "ANGER", 2, True),
+            run(["CONTRAST", "STATISTIC"], "FEAR", 3, False),
+            run(["CONTRAST", "PUNCHLINE"], "ANGER", 3, False)]
+    ann, agree = consensus(runs)
+    s = ann.sentences[0]
+    assert set(s.devices) == {"CONTRAST", "PUNCHLINE"}      # PUNCHLINE 2/4 counts, STATISTIC 1/4 does not
+    assert s.emotion == "ANGER" and s.intensity == 3
+    assert s.invites_applause is True                      # 2/4 = half
+    a = agree.iloc[0]
+    assert a.applause_vote == 0.5 and a.emotion_agreement == 0.75 and a.intensity_spread == 1
+    assert a.device_votes.startswith("CONTRAST:4/4")
+    assert a.device_agreement == pytest.approx((1 + 0.5 + 0.75) / 3)

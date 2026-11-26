@@ -1,8 +1,9 @@
 {
-  "source": "gemini-2.5-flash via Gemini API (blind: transcript only)",
+  "source": "gemini-2.5-flash via Gemini API, consensus of 4 independent runs (blind: transcript only)",
   "prompt": "prompts/rhetoric_v1.md",
-  "run_log": "data/speeches/mlk_1963_dream/tagging_runs/2026-11-18T144216_gemini-2.5-flash.json",
-  "date": "2026-11-18",
+  "run_log": "data/speeches/mlk_1963_dream/tagging_runs/2026-11-26T144336_gemini-2.5-flash_x5.json",
+  "date": "2026-11-26",
+  "n_runs": 4,
   "sentences": [
     {
       "seg_id": 1,
@@ -14,8 +15,8 @@
       "intensity": 1,
       "addressee": "WORLD",
       "topic": "GREETING_CLOSING",
-      "invites_applause": false,
-      "note": "Direct address to audience, speaker's feeling"
+      "invites_applause": true,
+      "note": "Speaker's personal statement and address to audience"
     },
     {
       "seg_id": 2,
@@ -27,7 +28,7 @@
       "addressee": "NONE",
       "topic": "OTHER",
       "invites_applause": false,
-      "note": "Historical statistic"
+      "note": "Historical reference to Lincoln and 100 years."
     },
     {
       "seg_id": 3,
@@ -39,7 +40,7 @@
       "addressee": "NONE",
       "topic": "OTHER",
       "invites_applause": false,
-      "note": "Describes historical event's impact"
+      "note": "Metaphor of hope."
     },
     {
       "seg_id": 4,
@@ -51,7 +52,7 @@
       "addressee": "NONE",
       "topic": "OTHER",
       "invites_applause": false,
-      "note": "Describes past suffering"
+      "note": "Imagery of suffering."
     },
     {
       "seg_id": 5,
@@ -63,21 +64,20 @@
       "addressee": "NONE",
       "topic": "OTHER",
       "invites_applause": false,
-      "note": "Contrast between daybreak and long night"
+      "note": "Metaphorical contrast of light and darkness."
     },
     {
       "seg_id": 6,
       "devices": [
         "CONTRAST",
-        "STATISTIC",
-        "PUNCHLINE"
+        "STATISTIC"
       ],
       "emotion": "ANGER",
       "intensity": 2,
-      "addressee": "WORLD",
+      "addressee": "LEADERS",
       "topic": "INACTION",
       "invites_applause": true,
-      "note": "Contrast of 100 years later with lack of freedom"
+      "note": "Direct contrast and statistic showing continued oppression"
     },
     {
       "seg_id": 7,
@@ -86,11 +86,11 @@
         "STATISTIC"
       ],
       "emotion": "ANGER",
-      "intensity": 1,
-      "addressee": "NONE",
+      "intensity": 2,
+      "addressee": "LEADERS",
       "topic": "INACTION",
       "invites_applause": false,
-      "note": "Repetition of statistic"
+      "note": "Anaphora, emphasis on time."
     },
     {
       "seg_id": 8,
@@ -99,37 +99,35 @@
       ],
       "emotion": "ANGER",
       "intensity": 2,
-      "addressee": "NONE",
+      "addressee": "LEADERS",
       "topic": "INACTION",
       "invites_applause": false,
-      "note": "Describes ongoing injustice"
+      "note": "Metaphor of crippling manacles and chains."
     },
     {
       "seg_id": 9,
       "devices": [
         "ANAPHORA",
-        "STATISTIC",
-        "PUNCHLINE"
+        "STATISTIC"
       ],
       "emotion": "GRIEF",
       "intensity": 2,
-      "addressee": "NONE",
+      "addressee": "LEADERS",
       "topic": "INACTION",
       "invites_applause": true,
-      "note": "Repetition of statistic, describes ongoing injustice"
+      "note": "Anaphora, image of isolation, third description of condition."
     },
     {
       "seg_id": 10,
       "devices": [
-        "ANAPHORA",
         "PERSONAL_TESTIMONY"
       ],
       "emotion": "HOPE",
       "intensity": 2,
       "addressee": "WORLD",
       "topic": "MORAL_JUDGEMENT",
-      "invites_applause": false,
-      "note": "First 'I have a dream' statement"
+      "invites_applause": true,
+      "note": "First 'I have a dream', statement of hope"
     },
     {
       "seg_id": 11,
@@ -141,20 +139,20 @@
       "addressee": "WORLD",
       "topic": "MORAL_JUDGEMENT",
       "invites_applause": false,
-      "note": "Citing a foundational truth"
+      "note": "Quotation of American creed"
     },
     {
       "seg_id": 12,
       "devices": [
         "ANAPHORA",
-        "PERSONAL_TESTIMONY"
+        "CONTRAST"
       ],
       "emotion": "HOPE",
       "intensity": 2,
       "addressee": "WORLD",
       "topic": "FUTURE_WARNING",
       "invites_applause": false,
-      "note": "Second 'I have a dream'"
+      "note": "Anaphora, contrast of groups."
     },
     {
       "seg_id": 13,
@@ -166,13 +164,12 @@
       "addressee": "WORLD",
       "topic": "FUTURE_WARNING",
       "invites_applause": true,
-      "note": "Vision of racial harmony"
+      "note": "Completion of a dream, image of unity."
     },
     {
       "seg_id": 14,
       "devices": [
         "ANAPHORA",
-        "PERSONAL_TESTIMONY",
         "CONTRAST"
       ],
       "emotion": "HOPE",
@@ -180,62 +177,57 @@
       "addressee": "WORLD",
       "topic": "FUTURE_WARNING",
       "invites_applause": true,
-      "note": "Third 'I have a dream', strong contrast"
+      "note": "Anaphora, contrast of conditions, specific example."
     },
     {
       "seg_id": 15,
       "devices": [
-        "ANAPHORA",
-        "PERSONAL_TESTIMONY",
-        "PUNCHLINE"
+        "ANAPHORA"
       ],
       "emotion": "HOPE",
-      "intensity": 3,
+      "intensity": 2,
       "addressee": "WORLD",
-      "topic": "FUTURE_WARNING",
+      "topic": "OTHER",
       "invites_applause": true,
-      "note": "Emphatic repetition"
+      "note": "Short, emphatic anaphora"
     },
     {
       "seg_id": 16,
       "devices": [
-        "PERSONAL_TESTIMONY",
         "CONTRAST",
-        "PUNCHLINE"
+        "PUNCHLINE",
+        "PERSONAL_TESTIMONY"
       ],
       "emotion": "HOPE",
       "intensity": 3,
       "addressee": "WORLD",
       "topic": "PERSONAL_STAKES",
       "invites_applause": true,
-      "note": "Personal stakes, contrast"
+      "note": "Personal testimony, core message of character over skin color."
     },
     {
       "seg_id": 17,
       "devices": [
-        "ANAPHORA",
-        "PERSONAL_TESTIMONY",
-        "PUNCHLINE"
+        "ANAPHORA"
       ],
       "emotion": "HOPE",
-      "intensity": 3,
+      "intensity": 2,
       "addressee": "WORLD",
-      "topic": "FUTURE_WARNING",
+      "topic": "OTHER",
       "invites_applause": true,
-      "note": "Emphatic repetition"
+      "note": "Anaphora, adds immediacy."
     },
     {
       "seg_id": 18,
       "devices": [
-        "ANAPHORA",
-        "PERSONAL_TESTIMONY"
+        "ANAPHORA"
       ],
       "emotion": "HOPE",
       "intensity": 2,
       "addressee": "WORLD",
       "topic": "FUTURE_WARNING",
       "invites_applause": false,
-      "note": "Another 'I have a dream'"
+      "note": "Anaphora, specific geographical focus."
     },
     {
       "seg_id": 19,
@@ -247,7 +239,7 @@
       "addressee": "LEADERS",
       "topic": "INACTION",
       "invites_applause": false,
-      "note": "Accusation against state leaders"
+      "note": "Accusation against specific leader."
     },
     {
       "seg_id": 20,
@@ -260,27 +252,24 @@
       "addressee": "WORLD",
       "topic": "FUTURE_WARNING",
       "invites_applause": true,
-      "note": "Vision of racial harmony in Alabama"
+      "note": "Vision of racial unity, contrast with current."
     },
     {
       "seg_id": 21,
       "devices": [
-        "ANAPHORA",
-        "PERSONAL_TESTIMONY",
-        "PUNCHLINE"
+        "ANAPHORA"
       ],
       "emotion": "HOPE",
-      "intensity": 3,
+      "intensity": 2,
       "addressee": "WORLD",
-      "topic": "FUTURE_WARNING",
+      "topic": "OTHER",
       "invites_applause": true,
-      "note": "Emphatic repetition"
+      "note": "Anaphora, adds immediacy."
     },
     {
       "seg_id": 22,
       "devices": [
         "ANAPHORA",
-        "PERSONAL_TESTIMONY",
         "CONTRAST"
       ],
       "emotion": "HOPE",
@@ -288,12 +277,49 @@
       "addressee": "WORLD",
       "topic": "FUTURE_WARNING",
       "invites_applause": false,
-      "note": "Biblical allusion, contrast"
+      "note": "Anaphora, biblical allusion, contrast"
     },
     {
       "seg_id": 23,
       "devices": [
-        "LIST_OF_THREE",
+        "PUNCHLINE",
+        "LIST_OF_THREE"
+      ],
+      "emotion": "HOPE",
+      "intensity": 3,
+      "addressee": "WORLD",
+      "topic": "FUTURE_WARNING",
+      "invites_applause": true,
+      "note": "Biblical quote continuation, list of transformations, powerful climax."
+    },
+    {
+      "seg_id": 24,
+      "devices": [
+        "NONE"
+      ],
+      "emotion": "HOPE",
+      "intensity": 2,
+      "addressee": "WORLD",
+      "topic": "OTHER",
+      "invites_applause": true,
+      "note": "Simple declaration of hope"
+    },
+    {
+      "seg_id": 25,
+      "devices": [
+        "ANAPHORA",
+        "PERSONAL_TESTIMONY"
+      ],
+      "emotion": "RESOLVE",
+      "intensity": 2,
+      "addressee": "WORLD",
+      "topic": "PERSONAL_STAKES",
+      "invites_applause": false,
+      "note": "Personal testimony, setting up anaphora."
+    },
+    {
+      "seg_id": 26,
+      "devices": [
         "CONTRAST",
         "PUNCHLINE"
       ],
@@ -302,44 +328,7 @@
       "addressee": "WORLD",
       "topic": "FUTURE_WARNING",
       "invites_applause": true,
-      "note": "List of three parallel clauses from Isaiah"
-    },
-    {
-      "seg_id": 24,
-      "devices": [
-        "PUNCHLINE"
-      ],
-      "emotion": "HOPE",
-      "intensity": 2,
-      "addressee": "WORLD",
-      "topic": "FUTURE_WARNING",
-      "invites_applause": true,
-      "note": "Emphatic statement"
-    },
-    {
-      "seg_id": 25,
-      "devices": [
-        "PERSONAL_TESTIMONY",
-        "ANAPHORA"
-      ],
-      "emotion": "RESOLVE",
-      "intensity": 2,
-      "addressee": "WORLD",
-      "topic": "PERSONAL_STAKES",
-      "invites_applause": false,
-      "note": "Personal statement of faith, anaphora"
-    },
-    {
-      "seg_id": 26,
-      "devices": [
-        "CONTRAST"
-      ],
-      "emotion": "HOPE",
-      "intensity": 3,
-      "addressee": "WORLD",
-      "topic": "FUTURE_WARNING",
-      "invites_applause": false,
-      "note": "Metaphor, contrast"
+      "note": "Powerful contrast, punchline"
     },
     {
       "seg_id": 27,
@@ -351,32 +340,33 @@
       "intensity": 3,
       "addressee": "WORLD",
       "topic": "FUTURE_WARNING",
-      "invites_applause": false,
+      "invites_applause": true,
       "note": "Anaphora, contrast"
     },
     {
       "seg_id": 28,
       "devices": [
-        "ANAPHORA"
+        "ANAPHORA",
+        "LIST_OF_THREE"
       ],
       "emotion": "RESOLVE",
       "intensity": 3,
       "addressee": "WORLD",
       "topic": "FUTURE_WARNING",
       "invites_applause": true,
-      "note": "Anaphora, list of collective actions"
+      "note": "Anaphora, extended list of actions"
     },
     {
       "seg_id": 29,
       "devices": [
-        "NONE"
+        "PUNCHLINE"
       ],
       "emotion": "HOPE",
       "intensity": 2,
       "addressee": "WORLD",
       "topic": "FUTURE_WARNING",
       "invites_applause": false,
-      "note": "Vision of future unity"
+      "note": "Sets up next lines, future vision"
     },
     {
       "seg_id": 30,
@@ -388,32 +378,31 @@
       "addressee": "NONE",
       "topic": "OTHER",
       "invites_applause": false,
-      "note": "Song lyrics"
+      "note": "Song lyrics."
     },
     {
       "seg_id": 31,
       "devices": [
         "ANAPHORA"
       ],
-      "emotion": "NEUTRAL",
-      "intensity": 0,
+      "emotion": "HOPE",
+      "intensity": 1,
       "addressee": "NONE",
       "topic": "OTHER",
       "invites_applause": false,
-      "note": "Song lyrics with anaphora"
+      "note": "Quoting song lyrics, anaphora"
     },
     {
       "seg_id": 32,
       "devices": [
-        "ANAPHORA",
         "PUNCHLINE"
       ],
       "emotion": "HOPE",
-      "intensity": 2,
+      "intensity": 3,
       "addressee": "WORLD",
       "topic": "FUTURE_WARNING",
       "invites_applause": true,
-      "note": "First 'let freedom ring'"
+      "note": "Punchline, introduces 'let freedom ring' anaphora"
     },
     {
       "seg_id": 33,
@@ -425,7 +414,7 @@
       "addressee": "WORLD",
       "topic": "MORAL_JUDGEMENT",
       "invites_applause": true,
-      "note": "Conditional statement, punchline"
+      "note": "Declarative statement, punchline"
     },
     {
       "seg_id": 34,
@@ -437,7 +426,7 @@
       "addressee": "WORLD",
       "topic": "FUTURE_WARNING",
       "invites_applause": false,
-      "note": "Anaphora, first location"
+      "note": "Anaphora, specific location"
     },
     {
       "seg_id": 35,
@@ -449,7 +438,7 @@
       "addressee": "WORLD",
       "topic": "FUTURE_WARNING",
       "invites_applause": false,
-      "note": "Anaphora, second location"
+      "note": "Anaphora, specific location"
     },
     {
       "seg_id": 36,
@@ -461,7 +450,7 @@
       "addressee": "WORLD",
       "topic": "FUTURE_WARNING",
       "invites_applause": false,
-      "note": "Anaphora, third location"
+      "note": "Anaphora, specific location"
     },
     {
       "seg_id": 37,
@@ -473,7 +462,7 @@
       "addressee": "WORLD",
       "topic": "FUTURE_WARNING",
       "invites_applause": false,
-      "note": "Anaphora, fourth location"
+      "note": "Anaphora, geographical call to action."
     },
     {
       "seg_id": 38,
@@ -485,7 +474,7 @@
       "addressee": "WORLD",
       "topic": "FUTURE_WARNING",
       "invites_applause": false,
-      "note": "Anaphora, fifth location"
+      "note": "Anaphora, geographical call to action."
     },
     {
       "seg_id": 39,
@@ -494,11 +483,11 @@
         "CONTRAST"
       ],
       "emotion": "HOPE",
-      "intensity": 2,
+      "intensity": 3,
       "addressee": "WORLD",
       "topic": "FUTURE_WARNING",
-      "invites_applause": false,
-      "note": "Anaphora, shift to Southern locations"
+      "invites_applause": true,
+      "note": "Anaphora, introduces contrast to Southern states"
     },
     {
       "seg_id": 40,
@@ -510,60 +499,58 @@
       "addressee": "WORLD",
       "topic": "FUTURE_WARNING",
       "invites_applause": false,
-      "note": "Anaphora"
+      "note": "Anaphora, specific location"
     },
     {
       "seg_id": 41,
       "devices": [
         "ANAPHORA",
-        "LIST_OF_THREE",
-        "PUNCHLINE"
+        "LIST_OF_THREE"
       ],
       "emotion": "HOPE",
       "intensity": 3,
       "addressee": "WORLD",
       "topic": "FUTURE_WARNING",
       "invites_applause": true,
-      "note": "Anaphora, list of three places"
+      "note": "Anaphora, geographical climax, list of three"
     },
     {
       "seg_id": 42,
       "devices": [
-        "ANAPHORA",
-        "PUNCHLINE"
+        "ANAPHORA"
       ],
       "emotion": "RESOLVE",
       "intensity": 2,
-      "addressee": "NONE",
-      "topic": "FUTURE_WARNING",
-      "invites_applause": true,
-      "note": "Anaphora with added resolve"
+      "addressee": "WORLD",
+      "topic": "OTHER",
+      "invites_applause": false,
+      "note": "Anaphora, confident assertion."
     },
     {
       "seg_id": 43,
       "devices": [
-        "ANAPHORA"
+        "ANAPHORA",
+        "LIST_OF_THREE"
       ],
       "emotion": "HOPE",
       "intensity": 2,
       "addressee": "WORLD",
       "topic": "FUTURE_WARNING",
       "invites_applause": false,
-      "note": "Anaphora, list of places"
+      "note": "Anaphora, list of locations"
     },
     {
       "seg_id": 44,
       "devices": [
-        "LIST_OF_THREE",
-        "CONTRAST",
-        "PUNCHLINE"
+        "PUNCHLINE",
+        "LIST_OF_THREE"
       ],
       "emotion": "HOPE",
       "intensity": 3,
       "addressee": "WORLD",
       "topic": "FUTURE_WARNING",
       "invites_applause": true,
-      "note": "Climactic list of three contrasting groups, punchline"
+      "note": "Powerful list of united groups, climactic punchline"
     },
     {
       "seg_id": 45,
@@ -575,7 +562,414 @@
       "addressee": "NONE",
       "topic": "GREETING_CLOSING",
       "invites_applause": true,
-      "note": "Final exclamation, punchline"
+      "note": "Triumphant exclamation, completing the spiritual quote."
+    }
+  ],
+  "agreement": [
+    {
+      "seg_id": 1,
+      "n_runs": 4,
+      "applause_vote": 0.5,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 1,
+      "device_votes": "DIRECT_ADDRESS:4/4|PERSONAL_TESTIMONY:3/4|PUNCHLINE:1/4|NONE:1/4",
+      "device_agreement": 0.833
+    },
+    {
+      "seg_id": 2,
+      "n_runs": 4,
+      "applause_vote": 0.0,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 1,
+      "device_votes": "STATISTIC:4/4",
+      "device_agreement": 1.0
+    },
+    {
+      "seg_id": 3,
+      "n_runs": 4,
+      "applause_vote": 0.0,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 1,
+      "device_votes": "NONE:4/4",
+      "device_agreement": 1.0
+    },
+    {
+      "seg_id": 4,
+      "n_runs": 4,
+      "applause_vote": 0.0,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 0,
+      "device_votes": "NONE:4/4",
+      "device_agreement": 1.0
+    },
+    {
+      "seg_id": 5,
+      "n_runs": 4,
+      "applause_vote": 0.0,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 0,
+      "device_votes": "CONTRAST:3/4|NONE:1/4",
+      "device_agreement": 0.75
+    },
+    {
+      "seg_id": 6,
+      "n_runs": 4,
+      "applause_vote": 1.0,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 1,
+      "device_votes": "CONTRAST:4/4|STATISTIC:4/4|ACCUSATION:1/4|PUNCHLINE:1/4",
+      "device_agreement": 0.875
+    },
+    {
+      "seg_id": 7,
+      "n_runs": 4,
+      "applause_vote": 0.0,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 1,
+      "device_votes": "ANAPHORA:4/4|STATISTIC:4/4",
+      "device_agreement": 1.0
+    },
+    {
+      "seg_id": 8,
+      "n_runs": 4,
+      "applause_vote": 0.0,
+      "emotion_agreement": 0.75,
+      "intensity_spread": 0,
+      "device_votes": "NONE:4/4",
+      "device_agreement": 1.0
+    },
+    {
+      "seg_id": 9,
+      "n_runs": 4,
+      "applause_vote": 0.75,
+      "emotion_agreement": 0.75,
+      "intensity_spread": 0,
+      "device_votes": "ANAPHORA:4/4|STATISTIC:4/4",
+      "device_agreement": 1.0
+    },
+    {
+      "seg_id": 10,
+      "n_runs": 4,
+      "applause_vote": 0.75,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 1,
+      "device_votes": "PERSONAL_TESTIMONY:2/4|ANAPHORA:1/4|DIRECT_ADDRESS:1/4|NONE:1/4|PUNCHLINE:1/4",
+      "device_agreement": 0.688
+    },
+    {
+      "seg_id": 11,
+      "n_runs": 4,
+      "applause_vote": 0.25,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 1,
+      "device_votes": "NONE:3/4|DIRECT_ADDRESS:1/4",
+      "device_agreement": 0.75
+    },
+    {
+      "seg_id": 12,
+      "n_runs": 4,
+      "applause_vote": 0.0,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 0,
+      "device_votes": "ANAPHORA:4/4|CONTRAST:2/4",
+      "device_agreement": 0.75
+    },
+    {
+      "seg_id": 13,
+      "n_runs": 4,
+      "applause_vote": 1.0,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 0,
+      "device_votes": "PUNCHLINE:3/4|CONTRAST:1/4|NONE:1/4",
+      "device_agreement": 0.75
+    },
+    {
+      "seg_id": 14,
+      "n_runs": 4,
+      "applause_vote": 1.0,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 0,
+      "device_votes": "ANAPHORA:4/4|CONTRAST:4/4",
+      "device_agreement": 1.0
+    },
+    {
+      "seg_id": 15,
+      "n_runs": 4,
+      "applause_vote": 0.5,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 1,
+      "device_votes": "ANAPHORA:4/4|PUNCHLINE:1/4",
+      "device_agreement": 0.875
+    },
+    {
+      "seg_id": 16,
+      "n_runs": 4,
+      "applause_vote": 1.0,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 0,
+      "device_votes": "CONTRAST:4/4|PERSONAL_TESTIMONY:4/4|PUNCHLINE:2/4",
+      "device_agreement": 0.833
+    },
+    {
+      "seg_id": 17,
+      "n_runs": 4,
+      "applause_vote": 0.5,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 1,
+      "device_votes": "ANAPHORA:4/4",
+      "device_agreement": 1.0
+    },
+    {
+      "seg_id": 18,
+      "n_runs": 4,
+      "applause_vote": 0.0,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 1,
+      "device_votes": "ANAPHORA:4/4",
+      "device_agreement": 1.0
+    },
+    {
+      "seg_id": 19,
+      "n_runs": 4,
+      "applause_vote": 0.0,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 0,
+      "device_votes": "ACCUSATION:4/4",
+      "device_agreement": 1.0
+    },
+    {
+      "seg_id": 20,
+      "n_runs": 4,
+      "applause_vote": 1.0,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 0,
+      "device_votes": "CONTRAST:4/4|PUNCHLINE:3/4",
+      "device_agreement": 0.875
+    },
+    {
+      "seg_id": 21,
+      "n_runs": 4,
+      "applause_vote": 0.5,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 1,
+      "device_votes": "ANAPHORA:4/4",
+      "device_agreement": 1.0
+    },
+    {
+      "seg_id": 22,
+      "n_runs": 4,
+      "applause_vote": 0.0,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 0,
+      "device_votes": "ANAPHORA:4/4|CONTRAST:4/4|LIST_OF_THREE:1/4",
+      "device_agreement": 0.917
+    },
+    {
+      "seg_id": 23,
+      "n_runs": 4,
+      "applause_vote": 1.0,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 0,
+      "device_votes": "LIST_OF_THREE:4/4|PUNCHLINE:3/4|ANAPHORA:1/4",
+      "device_agreement": 0.833
+    },
+    {
+      "seg_id": 24,
+      "n_runs": 4,
+      "applause_vote": 0.5,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 1,
+      "device_votes": "NONE:2/4|DIRECT_ADDRESS:1/4|PUNCHLINE:1/4",
+      "device_agreement": 0.75
+    },
+    {
+      "seg_id": 25,
+      "n_runs": 4,
+      "applause_vote": 0.0,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 0,
+      "device_votes": "ANAPHORA:4/4|PERSONAL_TESTIMONY:3/4",
+      "device_agreement": 0.875
+    },
+    {
+      "seg_id": 26,
+      "n_runs": 4,
+      "applause_vote": 0.75,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 1,
+      "device_votes": "CONTRAST:4/4|PUNCHLINE:2/4|DIRECT_ADDRESS:1/4|ANAPHORA:1/4",
+      "device_agreement": 0.75
+    },
+    {
+      "seg_id": 27,
+      "n_runs": 4,
+      "applause_vote": 0.75,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 0,
+      "device_votes": "ANAPHORA:4/4|CONTRAST:4/4|DIRECT_ADDRESS:1/4|PUNCHLINE:1/4",
+      "device_agreement": 0.875
+    },
+    {
+      "seg_id": 28,
+      "n_runs": 4,
+      "applause_vote": 1.0,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 0,
+      "device_votes": "ANAPHORA:4/4|LIST_OF_THREE:2/4|DIRECT_ADDRESS:1/4|NONE:1/4",
+      "device_agreement": 0.75
+    },
+    {
+      "seg_id": 29,
+      "n_runs": 4,
+      "applause_vote": 0.0,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 0,
+      "device_votes": "PUNCHLINE:2/4|DIRECT_ADDRESS:1/4|NONE:1/4",
+      "device_agreement": 0.625
+    },
+    {
+      "seg_id": 30,
+      "n_runs": 4,
+      "applause_vote": 0.0,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 1,
+      "device_votes": "NONE:4/4",
+      "device_agreement": 1.0
+    },
+    {
+      "seg_id": 31,
+      "n_runs": 4,
+      "applause_vote": 0.0,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 1,
+      "device_votes": "NONE:3/4|ANAPHORA:2/4",
+      "device_agreement": 0.5
+    },
+    {
+      "seg_id": 32,
+      "n_runs": 4,
+      "applause_vote": 0.75,
+      "emotion_agreement": 0.75,
+      "intensity_spread": 1,
+      "device_votes": "PUNCHLINE:3/4|ANAPHORA:1/4|NONE:1/4",
+      "device_agreement": 0.75
+    },
+    {
+      "seg_id": 33,
+      "n_runs": 4,
+      "applause_vote": 0.75,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 0,
+      "device_votes": "PUNCHLINE:3/4|PUZZLE_SOLUTION:1/4|WARNING:1/4",
+      "device_agreement": 0.75
+    },
+    {
+      "seg_id": 34,
+      "n_runs": 4,
+      "applause_vote": 0.0,
+      "emotion_agreement": 0.75,
+      "intensity_spread": 0,
+      "device_votes": "ANAPHORA:4/4|LIST_OF_THREE:1/4",
+      "device_agreement": 0.875
+    },
+    {
+      "seg_id": 35,
+      "n_runs": 4,
+      "applause_vote": 0.0,
+      "emotion_agreement": 0.75,
+      "intensity_spread": 0,
+      "device_votes": "ANAPHORA:4/4|LIST_OF_THREE:1/4",
+      "device_agreement": 0.875
+    },
+    {
+      "seg_id": 36,
+      "n_runs": 4,
+      "applause_vote": 0.25,
+      "emotion_agreement": 0.75,
+      "intensity_spread": 0,
+      "device_votes": "ANAPHORA:4/4|LIST_OF_THREE:1/4",
+      "device_agreement": 0.875
+    },
+    {
+      "seg_id": 37,
+      "n_runs": 4,
+      "applause_vote": 0.0,
+      "emotion_agreement": 0.75,
+      "intensity_spread": 0,
+      "device_votes": "ANAPHORA:4/4",
+      "device_agreement": 1.0
+    },
+    {
+      "seg_id": 38,
+      "n_runs": 4,
+      "applause_vote": 0.0,
+      "emotion_agreement": 0.75,
+      "intensity_spread": 0,
+      "device_votes": "ANAPHORA:4/4",
+      "device_agreement": 1.0
+    },
+    {
+      "seg_id": 39,
+      "n_runs": 4,
+      "applause_vote": 0.5,
+      "emotion_agreement": 0.5,
+      "intensity_spread": 1,
+      "device_votes": "ANAPHORA:4/4|CONTRAST:4/4|LIST_OF_THREE:1/4|PUNCHLINE:1/4",
+      "device_agreement": 0.875
+    },
+    {
+      "seg_id": 40,
+      "n_runs": 4,
+      "applause_vote": 0.0,
+      "emotion_agreement": 0.5,
+      "intensity_spread": 0,
+      "device_votes": "ANAPHORA:4/4|LIST_OF_THREE:1/4",
+      "device_agreement": 0.875
+    },
+    {
+      "seg_id": 41,
+      "n_runs": 4,
+      "applause_vote": 1.0,
+      "emotion_agreement": 0.5,
+      "intensity_spread": 0,
+      "device_votes": "ANAPHORA:4/4|LIST_OF_THREE:2/4|PUNCHLINE:1/4|NONE:1/4",
+      "device_agreement": 0.75
+    },
+    {
+      "seg_id": 42,
+      "n_runs": 4,
+      "applause_vote": 0.0,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 1,
+      "device_votes": "ANAPHORA:4/4",
+      "device_agreement": 1.0
+    },
+    {
+      "seg_id": 43,
+      "n_runs": 4,
+      "applause_vote": 0.0,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 0,
+      "device_votes": "ANAPHORA:4/4|LIST_OF_THREE:2/4|DIRECT_ADDRESS:1/4|NONE:1/4",
+      "device_agreement": 0.75
+    },
+    {
+      "seg_id": 44,
+      "n_runs": 4,
+      "applause_vote": 1.0,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 0,
+      "device_votes": "PUNCHLINE:4/4|LIST_OF_THREE:4/4|DIRECT_ADDRESS:1/4|CONTRAST:1/4",
+      "device_agreement": 0.875
+    },
+    {
+      "seg_id": 45,
+      "n_runs": 4,
+      "applause_vote": 1.0,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 0,
+      "device_votes": "PUNCHLINE:3/4|NONE:1/4",
+      "device_agreement": 0.75
     }
   ]
 }

@@ -55,7 +55,10 @@ def main(speech_id: str) -> None:
 
     ann_path = ROOT / "data" / "speeches" / speech_id / "annotations.json"
     if ann_path.exists():
-        ann = to_table(SpeechAnnotation.model_validate(json.loads(ann_path.read_text())))
+        raw = json.loads(ann_path.read_text())
+        ann = to_table(SpeechAnnotation.model_validate(raw))
+        if raw.get("agreement"):  # multi-run consensus: how sure the runs were, per sentence
+            ann = ann.merge(pd.DataFrame(raw["agreement"]), on="seg_id", how="left")
         words = words.merge(ann, on="seg_id", how="left")
     words.to_csv(out / "words_timeline.csv", index=False)
 

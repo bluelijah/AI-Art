@@ -1,0 +1,8 @@
+a,b,peak_lag_s,peak_r,at_window_edge
+applause_vote,applause_prob,6.0,0.383,True
+intensity,applause_prob,6.0,0.24,True
+intensity,loudness_db,0.0,0.054,False
+loudness_db,applause_prob,5.3,0.133,False
+loudness_db,pause,0.0,-0.763,False
+pause,applause_prob,0.1,-0.226,False
+pitch_hz,applause_prob,1.7,0.2,False

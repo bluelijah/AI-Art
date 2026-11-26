@@ -1,8 +1,9 @@
 {
-  "source": "gemini-2.5-flash via Gemini API (blind: transcript only)",
+  "source": "gemini-2.5-flash via Gemini API, consensus of 5 independent runs (blind: transcript only)",
   "prompt": "prompts/rhetoric_v1.md",
-  "run_log": "data/speeches/thunberg_2018_cop24/tagging_runs/2026-11-18T143829_gemini-2.5-flash.json",
-  "date": "2026-11-18",
+  "run_log": "data/speeches/thunberg_2018_cop24/tagging_runs/2026-11-26T142952_gemini-2.5-flash_x5.json",
+  "date": "2026-11-26",
+  "n_runs": 5,
   "sentences": [
     {
       "seg_id": 2,
@@ -11,10 +12,10 @@
       ],
       "emotion": "NEUTRAL",
       "intensity": 0,
-      "addressee": "WORLD",
-      "topic": "GREETING_CLOSING",
+      "addressee": "NONE",
+      "topic": "OTHER",
       "invites_applause": false,
-      "note": "Introduction of self"
+      "note": "self-introduction"
     },
     {
       "seg_id": 3,
@@ -23,10 +24,10 @@
       ],
       "emotion": "NEUTRAL",
       "intensity": 0,
-      "addressee": "WORLD",
+      "addressee": "NONE",
       "topic": "PERSONAL_STAKES",
       "invites_applause": false,
-      "note": "Stating age and origin"
+      "note": "self-introduction"
     },
     {
       "seg_id": 4,
@@ -35,10 +36,10 @@
       ],
       "emotion": "RESOLVE",
       "intensity": 1,
-      "addressee": "WORLD",
+      "addressee": "LEADERS",
       "topic": "PERSONAL_STAKES",
       "invites_applause": false,
-      "note": "Stating purpose"
+      "note": "statement of purpose"
     },
     {
       "seg_id": 5,
@@ -47,15 +48,16 @@
       ],
       "emotion": "NEUTRAL",
       "intensity": 0,
-      "addressee": "WORLD",
+      "addressee": "NONE",
       "topic": "OTHER",
       "invites_applause": false,
-      "note": "Setting up a common belief"
+      "note": "Setting up a common belief."
     },
     {
       "seg_id": 6,
       "devices": [
         "CONTRAST",
+        "DIRECT_ADDRESS",
         "PERSONAL_TESTIMONY",
         "PUNCHLINE"
       ],
@@ -64,59 +66,60 @@
       "addressee": "WORLD",
       "topic": "OTHER",
       "invites_applause": true,
-      "note": "Contrast to previous sentence, personal learning, punchline"
+      "note": "Contrast and personal lesson, direct address."
     },
     {
       "seg_id": 7,
       "devices": [
-        "DIRECT_ADDRESS",
-        "PUZZLE_SOLUTION"
+        "PUZZLE_SOLUTION",
+        "PERSONAL_TESTIMONY",
+        "RHETORICAL_QUESTION"
       ],
       "emotion": "HOPE",
       "intensity": 2,
       "addressee": "WORLD",
       "topic": "OTHER",
       "invites_applause": true,
-      "note": "Sets up hypothetical, invites imagination of collective action"
+      "note": "rhetorical question, call to action"
     },
     {
       "seg_id": 8,
       "devices": [
-        "CONTRAST"
+        "NONE"
       ],
       "emotion": "RESOLVE",
       "intensity": 1,
       "addressee": "WORLD",
       "topic": "OTHER",
       "invites_applause": false,
-      "note": "Call for clear speaking"
+      "note": "Stating the need for clear speech."
     },
     {
       "seg_id": 9,
       "devices": [
-        "ACCUSATION",
-        "DIRECT_ADDRESS"
+        "DIRECT_ADDRESS",
+        "ACCUSATION"
       ],
       "emotion": "ANGER",
       "intensity": 2,
       "addressee": "LEADERS",
       "topic": "INACTION",
       "invites_applause": true,
-      "note": "Accusation of leaders' fear of unpopularity"
+      "note": "direct accusation of leaders"
     },
     {
       "seg_id": 10,
       "devices": [
-        "ACCUSATION",
+        "ANAPHORA",
         "DIRECT_ADDRESS",
-        "ANAPHORA"
+        "ACCUSATION"
       ],
       "emotion": "ANGER",
       "intensity": 2,
       "addressee": "LEADERS",
       "topic": "INACTION",
       "invites_applause": false,
-      "note": "Anaphora ('You only'), accusation"
+      "note": "anaphora, accusation"
     },
     {
       "seg_id": 11,
@@ -129,35 +132,34 @@
       "addressee": "LEADERS",
       "topic": "INACTION",
       "invites_applause": true,
-      "note": "Contrast 'moving forward' with 'pull emergency brake'"
+      "note": "completes accusation from seg 10, contrast"
     },
     {
       "seg_id": 12,
       "devices": [
-        "ACCUSATION",
         "DIRECT_ADDRESS",
-        "PUNCHLINE"
+        "ACCUSATION"
       ],
       "emotion": "ANGER",
       "intensity": 3,
       "addressee": "LEADERS",
       "topic": "MORAL_JUDGEMENT",
       "invites_applause": true,
-      "note": "Accusation of immaturity"
+      "note": "direct accusation"
     },
     {
       "seg_id": 13,
       "devices": [
-        "ACCUSATION",
+        "CONTRAST",
         "DIRECT_ADDRESS",
-        "CONTRAST"
+        "ACCUSATION"
       ],
       "emotion": "ANGER",
       "intensity": 3,
       "addressee": "LEADERS",
       "topic": "MORAL_JUDGEMENT",
       "invites_applause": true,
-      "note": "Accusation of burdening children"
+      "note": "accusation, contrast between children and adults"
     },
     {
       "seg_id": 14,
@@ -170,52 +172,52 @@
       "addressee": "LEADERS",
       "topic": "PERSONAL_STAKES",
       "invites_applause": false,
-      "note": "Contrast to leaders' popularity concern, personal testimony"
+      "note": "personal testimony, contrast with leaders"
     },
     {
       "seg_id": 15,
       "devices": [
+        "PUNCHLINE",
         "PERSONAL_TESTIMONY"
       ],
       "emotion": "RESOLVE",
       "intensity": 2,
-      "addressee": "LEADERS",
+      "addressee": "NONE",
       "topic": "PERSONAL_STAKES",
       "invites_applause": true,
-      "note": "Personal testimony of values"
+      "note": "personal testimony, punchline"
     },
     {
       "seg_id": 16,
       "devices": [
-        "ACCUSATION",
-        "CONTRAST"
+        "CONTRAST",
+        "ACCUSATION"
       ],
       "emotion": "ANGER",
       "intensity": 3,
       "addressee": "WORLD",
       "topic": "MORAL_JUDGEMENT",
-      "invites_applause": false,
-      "note": "Accusation of civilization sacrifice for profit"
+      "invites_applause": true,
+      "note": "accusation, contrast"
     },
     {
       "seg_id": 17,
       "devices": [
-        "ACCUSATION",
+        "ANAPHORA",
         "CONTRAST",
-        "ANAPHORA"
+        "ACCUSATION"
       ],
       "emotion": "ANGER",
       "intensity": 3,
       "addressee": "WORLD",
       "topic": "MORAL_JUDGEMENT",
-      "invites_applause": false,
-      "note": "Anaphora ('Our... is being sacrificed'), accusation"
+      "invites_applause": true,
+      "note": "anaphora, accusation, contrast"
     },
     {
       "seg_id": 18,
       "devices": [
         "CONTRAST",
-        "ACCUSATION",
         "PUNCHLINE"
       ],
       "emotion": "ANGER",
@@ -223,7 +225,7 @@
       "addressee": "WORLD",
       "topic": "MORAL_JUDGEMENT",
       "invites_applause": true,
-      "note": "Contrast 'many' vs 'few', punchline, accusation"
+      "note": "strong contrast, punchline"
     },
     {
       "seg_id": 19,
@@ -235,7 +237,7 @@
       "addressee": "NONE",
       "topic": "FUTURE_WARNING",
       "invites_applause": false,
-      "note": "Setting a future date"
+      "note": "setting future time"
     },
     {
       "seg_id": 20,
@@ -244,22 +246,22 @@
       ],
       "emotion": "NEUTRAL",
       "intensity": 0,
-      "addressee": "WORLD",
+      "addressee": "NONE",
       "topic": "FUTURE_WARNING",
       "invites_applause": false,
-      "note": "Personal future event"
+      "note": "personal testimony about future"
     },
     {
       "seg_id": 21,
       "devices": [
         "PERSONAL_TESTIMONY"
       ],
-      "emotion": "FEAR",
-      "intensity": 1,
-      "addressee": "WORLD",
+      "emotion": "NEUTRAL",
+      "intensity": 0,
+      "addressee": "NONE",
       "topic": "FUTURE_WARNING",
       "invites_applause": false,
-      "note": "Hypothetical personal future event"
+      "note": "personal testimony, setting future scene"
     },
     {
       "seg_id": 22,
@@ -268,58 +270,58 @@
         "RHETORICAL_QUESTION"
       ],
       "emotion": "FEAR",
-      "intensity": 2,
+      "intensity": 1,
       "addressee": "LEADERS",
       "topic": "FUTURE_WARNING",
       "invites_applause": false,
-      "note": "Direct address, implicit rhetorical question"
+      "note": "Sets up future question, direct address"
     },
     {
       "seg_id": 23,
       "devices": [
-        "DIRECT_ADDRESS",
+        "ACCUSATION",
         "RHETORICAL_QUESTION",
-        "ACCUSATION"
+        "DIRECT_ADDRESS"
       ],
-      "emotion": "FEAR",
-      "intensity": 3,
+      "emotion": "ANGER",
+      "intensity": 2,
       "addressee": "LEADERS",
       "topic": "FUTURE_WARNING",
       "invites_applause": true,
-      "note": "Direct address, rhetorical question, accusation of future inaction"
+      "note": "Rhetorical question, warning of future judgment"
     },
     {
       "seg_id": 24,
       "devices": [
         "CONTRAST",
-        "ACCUSATION",
         "DIRECT_ADDRESS",
-        "PUNCHLINE"
+        "ACCUSATION"
       ],
       "emotion": "ANGER",
       "intensity": 3,
       "addressee": "LEADERS",
       "topic": "MORAL_JUDGEMENT",
       "invites_applause": true,
-      "note": "Contrast between words and actions, accusation, punchline"
+      "note": "direct address, accusation, contrast"
     },
     {
       "seg_id": 25,
       "devices": [
-        "CONTRAST",
         "WARNING",
+        "CONTRAST",
         "DIRECT_ADDRESS"
       ],
       "emotion": "DEFIANCE",
       "intensity": 2,
       "addressee": "LEADERS",
       "topic": "INACTION",
-      "invites_applause": false,
-      "note": "Contrast 'needs to be done' vs 'politically possible', warning of no hope"
+      "invites_applause": true,
+      "note": "direct address, warning, contrast"
     },
     {
       "seg_id": 26,
       "devices": [
+        "CONTRAST",
         "PUNCHLINE"
       ],
       "emotion": "RESOLVE",
@@ -327,7 +329,7 @@
       "addressee": "WORLD",
       "topic": "INACTION",
       "invites_applause": true,
-      "note": "Punchline, inherent logical truth"
+      "note": "punchline, contrast"
     },
     {
       "seg_id": 27,
@@ -336,10 +338,10 @@
       ],
       "emotion": "RESOLVE",
       "intensity": 1,
-      "addressee": "WORLD",
+      "addressee": "LEADERS",
       "topic": "OTHER",
       "invites_applause": false,
-      "note": "Call to action (two specific points)"
+      "note": "Stating specific actions."
     },
     {
       "seg_id": 28,
@@ -349,10 +351,10 @@
       ],
       "emotion": "DEFIANCE",
       "intensity": 2,
-      "addressee": "WORLD",
+      "addressee": "LEADERS",
       "topic": "OTHER",
       "invites_applause": true,
-      "note": "Puzzle/solution, punchline, call for systemic change"
+      "note": "Puzzle/solution, defiant punchline."
     },
     {
       "seg_id": 29,
@@ -362,61 +364,62 @@
       "emotion": "DEFIANCE",
       "intensity": 2,
       "addressee": "LEADERS",
-      "topic": "OTHER",
+      "topic": "PERSONAL_STAKES",
       "invites_applause": false,
-      "note": "Sets up a contrast, statement of defiance"
+      "note": "Setting up a contrast of purpose."
     },
     {
       "seg_id": 30,
       "devices": [
+        "WARNING",
+        "DIRECT_ADDRESS",
         "ACCUSATION",
-        "DIRECT_ADDRESS"
+        "ANAPHORA"
       ],
       "emotion": "ANGER",
-      "intensity": 2,
+      "intensity": 3,
       "addressee": "LEADERS",
       "topic": "INACTION",
-      "invites_applause": false,
-      "note": "Accusation of past and future inaction"
+      "invites_applause": true,
+      "note": "Direct accusation of repeated ignorance, warning, anaphora ('you have ignored')."
     },
     {
       "seg_id": 31,
       "devices": [
-        "WARNING"
+        "PUNCHLINE"
       ],
       "emotion": "FEAR",
       "intensity": 2,
       "addressee": "WORLD",
       "topic": "FUTURE_WARNING",
-      "invites_applause": false,
-      "note": "Two parallel phrases highlighting urgency"
+      "invites_applause": true,
+      "note": "Urgent warning, concise statement"
     },
     {
       "seg_id": 32,
       "devices": [
-        "CONTRAST",
-        "DIRECT_ADDRESS",
+        "WARNING",
         "PUNCHLINE",
-        "WARNING"
+        "DIRECT_ADDRESS"
       ],
       "emotion": "DEFIANCE",
       "intensity": 3,
       "addressee": "LEADERS",
       "topic": "FUTURE_WARNING",
       "invites_applause": true,
-      "note": "Contrast, direct address, punchline, warning"
+      "note": "Iconic punchline, defiance, warning"
     },
     {
       "seg_id": 33,
       "devices": [
         "PUNCHLINE"
       ],
-      "emotion": "DEFIANCE",
-      "intensity": 3,
+      "emotion": "HOPE",
+      "intensity": 2,
       "addressee": "WORLD",
       "topic": "OTHER",
       "invites_applause": true,
-      "note": "Punchline, statement about power"
+      "note": "punchline, statement of empowerment"
     },
     {
       "seg_id": 34,
@@ -425,10 +428,10 @@
       ],
       "emotion": "NEUTRAL",
       "intensity": 0,
-      "addressee": "WORLD",
+      "addressee": "NONE",
       "topic": "GREETING_CLOSING",
       "invites_applause": false,
-      "note": "Closing remark"
+      "note": "closing"
     },
     {
       "seg_id": 35,
@@ -440,7 +443,315 @@
       "addressee": "NONE",
       "topic": "OTHER",
       "invites_applause": false,
-      "note": "Stray word from transcription or final direct address"
+      "note": "utterance fragment"
+    }
+  ],
+  "agreement": [
+    {
+      "seg_id": 2,
+      "n_runs": 5,
+      "applause_vote": 0.0,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 0,
+      "device_votes": "PERSONAL_TESTIMONY:4/5|NONE:1/5",
+      "device_agreement": 0.8
+    },
+    {
+      "seg_id": 3,
+      "n_runs": 5,
+      "applause_vote": 0.0,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 0,
+      "device_votes": "PERSONAL_TESTIMONY:5/5",
+      "device_agreement": 1.0
+    },
+    {
+      "seg_id": 4,
+      "n_runs": 5,
+      "applause_vote": 0.0,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 0,
+      "device_votes": "PERSONAL_TESTIMONY:5/5",
+      "device_agreement": 1.0
+    },
+    {
+      "seg_id": 5,
+      "n_runs": 5,
+      "applause_vote": 0.0,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 0,
+      "device_votes": "NONE:4/5|CONTRAST:1/5",
+      "device_agreement": 0.8
+    },
+    {
+      "seg_id": 6,
+      "n_runs": 5,
+      "applause_vote": 1.0,
+      "emotion_agreement": 0.6,
+      "intensity_spread": 1,
+      "device_votes": "CONTRAST:5/5|PERSONAL_TESTIMONY:5/5|DIRECT_ADDRESS:4/5|PUNCHLINE:3/5",
+      "device_agreement": 0.85
+    },
+    {
+      "seg_id": 7,
+      "n_runs": 5,
+      "applause_vote": 1.0,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 0,
+      "device_votes": "RHETORICAL_QUESTION:5/5|PUZZLE_SOLUTION:3/5|PERSONAL_TESTIMONY:3/5|DIRECT_ADDRESS:1/5",
+      "device_agreement": 0.75
+    },
+    {
+      "seg_id": 8,
+      "n_runs": 5,
+      "applause_vote": 0.0,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 0,
+      "device_votes": "NONE:2/5|CONTRAST:2/5|PERSONAL_TESTIMONY:1/5",
+      "device_agreement": 0.7
+    },
+    {
+      "seg_id": 9,
+      "n_runs": 5,
+      "applause_vote": 1.0,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 1,
+      "device_votes": "DIRECT_ADDRESS:5/5|ACCUSATION:5/5|CONTRAST:2/5",
+      "device_agreement": 0.867
+    },
+    {
+      "seg_id": 10,
+      "n_runs": 5,
+      "applause_vote": 0.0,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 1,
+      "device_votes": "DIRECT_ADDRESS:5/5|ANAPHORA:4/5|ACCUSATION:4/5",
+      "device_agreement": 0.867
+    },
+    {
+      "seg_id": 11,
+      "n_runs": 5,
+      "applause_vote": 1.0,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 1,
+      "device_votes": "CONTRAST:5/5|ACCUSATION:5/5",
+      "device_agreement": 1.0
+    },
+    {
+      "seg_id": 12,
+      "n_runs": 5,
+      "applause_vote": 1.0,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 1,
+      "device_votes": "DIRECT_ADDRESS:5/5|ACCUSATION:5/5|PUNCHLINE:2/5",
+      "device_agreement": 0.867
+    },
+    {
+      "seg_id": 13,
+      "n_runs": 5,
+      "applause_vote": 1.0,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 1,
+      "device_votes": "DIRECT_ADDRESS:5/5|ACCUSATION:5/5|CONTRAST:4/5|PERSONAL_TESTIMONY:1/5|PUNCHLINE:1/5",
+      "device_agreement": 0.88
+    },
+    {
+      "seg_id": 14,
+      "n_runs": 5,
+      "applause_vote": 0.2,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 0,
+      "device_votes": "CONTRAST:5/5|PERSONAL_TESTIMONY:5/5|WARNING:1/5",
+      "device_agreement": 0.933
+    },
+    {
+      "seg_id": 15,
+      "n_runs": 5,
+      "applause_vote": 1.0,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 0,
+      "device_votes": "PERSONAL_TESTIMONY:5/5|PUNCHLINE:4/5|CONTRAST:1/5",
+      "device_agreement": 0.867
+    },
+    {
+      "seg_id": 16,
+      "n_runs": 5,
+      "applause_vote": 0.8,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 1,
+      "device_votes": "CONTRAST:5/5|ACCUSATION:5/5",
+      "device_agreement": 1.0
+    },
+    {
+      "seg_id": 17,
+      "n_runs": 5,
+      "applause_vote": 0.8,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 1,
+      "device_votes": "CONTRAST:5/5|ACCUSATION:5/5|ANAPHORA:4/5|PERSONAL_TESTIMONY:2/5",
+      "device_agreement": 0.85
+    },
+    {
+      "seg_id": 18,
+      "n_runs": 5,
+      "applause_vote": 1.0,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 0,
+      "device_votes": "CONTRAST:5/5|PUNCHLINE:5/5|ACCUSATION:1/5",
+      "device_agreement": 0.933
+    },
+    {
+      "seg_id": 19,
+      "n_runs": 5,
+      "applause_vote": 0.0,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 0,
+      "device_votes": "NONE:5/5",
+      "device_agreement": 1.0
+    },
+    {
+      "seg_id": 20,
+      "n_runs": 5,
+      "applause_vote": 0.0,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 0,
+      "device_votes": "PERSONAL_TESTIMONY:5/5",
+      "device_agreement": 1.0
+    },
+    {
+      "seg_id": 21,
+      "n_runs": 5,
+      "applause_vote": 0.0,
+      "emotion_agreement": 0.8,
+      "intensity_spread": 1,
+      "device_votes": "PERSONAL_TESTIMONY:5/5",
+      "device_agreement": 1.0
+    },
+    {
+      "seg_id": 22,
+      "n_runs": 5,
+      "applause_vote": 0.0,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 1,
+      "device_votes": "DIRECT_ADDRESS:5/5|RHETORICAL_QUESTION:3/5|ANAPHORA:1/5|PERSONAL_TESTIMONY:1/5",
+      "device_agreement": 0.8
+    },
+    {
+      "seg_id": 23,
+      "n_runs": 5,
+      "applause_vote": 1.0,
+      "emotion_agreement": 0.6,
+      "intensity_spread": 1,
+      "device_votes": "RHETORICAL_QUESTION:5/5|DIRECT_ADDRESS:5/5|ACCUSATION:4/5|ANAPHORA:2/5|PERSONAL_TESTIMONY:1/5|WARNING:1/5",
+      "device_agreement": 0.833
+    },
+    {
+      "seg_id": 24,
+      "n_runs": 5,
+      "applause_vote": 1.0,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 0,
+      "device_votes": "CONTRAST:5/5|DIRECT_ADDRESS:5/5|ACCUSATION:5/5|PUNCHLINE:2/5",
+      "device_agreement": 0.9
+    },
+    {
+      "seg_id": 25,
+      "n_runs": 5,
+      "applause_vote": 1.0,
+      "emotion_agreement": 0.6,
+      "intensity_spread": 0,
+      "device_votes": "WARNING:5/5|CONTRAST:5/5|DIRECT_ADDRESS:5/5",
+      "device_agreement": 1.0
+    },
+    {
+      "seg_id": 26,
+      "n_runs": 5,
+      "applause_vote": 1.0,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 0,
+      "device_votes": "PUNCHLINE:5/5|CONTRAST:3/5",
+      "device_agreement": 0.8
+    },
+    {
+      "seg_id": 27,
+      "n_runs": 5,
+      "applause_vote": 0.2,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 1,
+      "device_votes": "NONE:4/5|PERSONAL_TESTIMONY:1/5",
+      "device_agreement": 0.8
+    },
+    {
+      "seg_id": 28,
+      "n_runs": 5,
+      "applause_vote": 1.0,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 0,
+      "device_votes": "PUZZLE_SOLUTION:5/5|PUNCHLINE:4/5|PERSONAL_TESTIMONY:1/5",
+      "device_agreement": 0.867
+    },
+    {
+      "seg_id": 29,
+      "n_runs": 5,
+      "applause_vote": 0.0,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 0,
+      "device_votes": "CONTRAST:5/5|PERSONAL_TESTIMONY:2/5|WARNING:1/5",
+      "device_agreement": 0.8
+    },
+    {
+      "seg_id": 30,
+      "n_runs": 5,
+      "applause_vote": 0.6,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 1,
+      "device_votes": "DIRECT_ADDRESS:5/5|ACCUSATION:5/5|WARNING:3/5|ANAPHORA:3/5",
+      "device_agreement": 0.8
+    },
+    {
+      "seg_id": 31,
+      "n_runs": 5,
+      "applause_vote": 1.0,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 1,
+      "device_votes": "PUNCHLINE:4/5|CONTRAST:2/5|PERSONAL_TESTIMONY:1/5|WARNING:1/5",
+      "device_agreement": 0.75
+    },
+    {
+      "seg_id": 32,
+      "n_runs": 5,
+      "applause_vote": 1.0,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 0,
+      "device_votes": "WARNING:5/5|PUNCHLINE:5/5|DIRECT_ADDRESS:5/5|CONTRAST:2/5|PERSONAL_TESTIMONY:1/5",
+      "device_agreement": 0.88
+    },
+    {
+      "seg_id": 33,
+      "n_runs": 5,
+      "applause_vote": 1.0,
+      "emotion_agreement": 0.6,
+      "intensity_spread": 0,
+      "device_votes": "PUNCHLINE:5/5",
+      "device_agreement": 1.0
+    },
+    {
+      "seg_id": 34,
+      "n_runs": 5,
+      "applause_vote": 0.2,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 0,
+      "device_votes": "NONE:5/5",
+      "device_agreement": 1.0
+    },
+    {
+      "seg_id": 35,
+      "n_runs": 5,
+      "applause_vote": 0.0,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 0,
+      "device_votes": "NONE:5/5",
+      "device_agreement": 1.0
     }
   ]
 }

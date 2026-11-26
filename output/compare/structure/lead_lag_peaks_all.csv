@@ -1,0 +1,29 @@
+a,b,peak_lag_s,peak_r,at_window_edge,speech
+applause_vote,applause_prob,6.0,0.383,True,Thunberg 2019
+intensity,applause_prob,6.0,0.24,True,Thunberg 2019
+intensity,loudness_db,0.0,0.054,False,Thunberg 2019
+loudness_db,applause_prob,5.3,0.133,False,Thunberg 2019
+loudness_db,pause,0.0,-0.763,False,Thunberg 2019
+pause,applause_prob,0.1,-0.226,False,Thunberg 2019
+pitch_hz,applause_prob,1.7,0.2,False,Thunberg 2019
+applause_vote,applause_prob,0.6,-0.068,False,Thunberg 2018
+intensity,applause_prob,2.1,-0.101,False,Thunberg 2018
+intensity,loudness_db,-0.1,-0.068,False,Thunberg 2018
+loudness_db,applause_prob,0.1,0.097,False,Thunberg 2018
+loudness_db,pause,0.0,-0.87,False,Thunberg 2018
+pause,applause_prob,0.1,-0.141,False,Thunberg 2018
+pitch_hz,applause_prob,0.1,0.305,False,Thunberg 2018
+applause_vote,applause_prob,6.0,0.287,True,Yousafzai 2013
+intensity,applause_prob,6.0,0.182,True,Yousafzai 2013
+intensity,loudness_db,2.4,0.084,False,Yousafzai 2013
+loudness_db,applause_prob,0.1,0.298,False,Yousafzai 2013
+loudness_db,pause,0.0,-0.901,False,Yousafzai 2013
+pause,applause_prob,0.1,-0.282,False,Yousafzai 2013
+pitch_hz,applause_prob,-2.9,0.119,False,Yousafzai 2013
+applause_vote,applause_prob,-6.0,-0.33,True,King 1963 (excerpt)
+intensity,applause_prob,-6.0,-0.211,True,King 1963 (excerpt)
+intensity,loudness_db,2.5,0.247,False,King 1963 (excerpt)
+loudness_db,applause_prob,-0.6,0.193,False,King 1963 (excerpt)
+loudness_db,pause,0.0,-0.791,False,King 1963 (excerpt)
+pause,applause_prob,-0.4,-0.171,False,King 1963 (excerpt)
+pitch_hz,applause_prob,-0.9,0.079,False,King 1963 (excerpt)

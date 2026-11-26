@@ -1,34 +1,34 @@
 {
-  "source": "gemini-2.5-flash via Gemini API (blind: transcript only)",
+  "source": "gemini-2.5-flash via Gemini API, consensus of 5 independent runs (blind: transcript only)",
   "prompt": "prompts/rhetoric_v1.md",
-  "run_log": "data/speeches/thunberg_2019_un/tagging_runs/2026-11-18T143941_gemini-2.5-flash.json",
-  "date": "2026-11-18",
+  "run_log": "data/speeches/thunberg_2019_un/tagging_runs/2026-11-26T142634_gemini-2.5-flash_x5.json",
+  "date": "2026-11-26",
+  "n_runs": 5,
   "sentences": [
     {
       "seg_id": 3,
       "devices": [
-        "PERSONAL_TESTIMONY",
-        "DIRECT_ADDRESS",
-        "WARNING"
+        "WARNING",
+        "DIRECT_ADDRESS"
       ],
       "emotion": "RESOLVE",
       "intensity": 2,
       "addressee": "LEADERS",
       "topic": "FUTURE_WARNING",
-      "invites_applause": false,
-      "note": "Personal testimony, direct address and warning"
+      "invites_applause": true,
+      "note": "Direct address and warning"
     },
     {
       "seg_id": 4,
       "devices": [
-        "ACCUSATION"
+        "NONE"
       ],
       "emotion": "ANGER",
       "intensity": 2,
-      "addressee": "LEADERS",
+      "addressee": "NONE",
       "topic": "MORAL_JUDGEMENT",
       "invites_applause": false,
-      "note": "General statement of disapproval"
+      "note": "Simple statement of disapproval"
     },
     {
       "seg_id": 5,
@@ -40,33 +40,32 @@
       "addressee": "SELF",
       "topic": "PERSONAL_STAKES",
       "invites_applause": false,
-      "note": "Speaker's personal situation"
+      "note": "Speaker's personal experience"
     },
     {
       "seg_id": 6,
       "devices": [
-        "PERSONAL_TESTIMONY",
-        "CONTRAST"
+        "PERSONAL_TESTIMONY"
       ],
-      "emotion": "ANGER",
+      "emotion": "GRIEF",
       "intensity": 2,
       "addressee": "SELF",
       "topic": "PERSONAL_STAKES",
       "invites_applause": false,
-      "note": "Personal testimony about her rightful place"
+      "note": "Speaker's personal experience"
     },
     {
       "seg_id": 7,
       "devices": [
-        "CONTRAST",
-        "DIRECT_ADDRESS"
+        "DIRECT_ADDRESS",
+        "CONTRAST"
       ],
-      "emotion": "ANGER",
+      "emotion": "IRONY",
       "intensity": 2,
       "addressee": "LEADERS",
-      "topic": "MORAL_JUDGEMENT",
+      "topic": "INACTION",
       "invites_applause": false,
-      "note": "Contrast between her situation and leaders' actions"
+      "note": "Direct address with a contrast"
     },
     {
       "seg_id": 8,
@@ -80,34 +79,34 @@
       "addressee": "LEADERS",
       "topic": "MORAL_JUDGEMENT",
       "invites_applause": true,
-      "note": "Rhetorical question, direct accusation"
+      "note": "Rhetorical question, accusation"
     },
     {
       "seg_id": 9,
       "devices": [
+        "PERSONAL_TESTIMONY",
         "DIRECT_ADDRESS",
-        "ACCUSATION",
-        "PERSONAL_TESTIMONY"
+        "ACCUSATION"
       ],
       "emotion": "ANGER",
       "intensity": 3,
       "addressee": "LEADERS",
       "topic": "PERSONAL_STAKES",
       "invites_applause": true,
-      "note": "Direct accusation of personal loss"
+      "note": "Direct accusation and personal testimony"
     },
     {
       "seg_id": 10,
       "devices": [
-        "CONTRAST",
-        "PERSONAL_TESTIMONY"
+        "PERSONAL_TESTIMONY",
+        "CONTRAST"
       ],
       "emotion": "GRIEF",
       "intensity": 2,
       "addressee": "WORLD",
       "topic": "PERSONAL_STAKES",
       "invites_applause": false,
-      "note": "Contrast, setting up the next list"
+      "note": "Contrast with personal situation"
     },
     {
       "seg_id": 11,
@@ -124,15 +123,15 @@
     {
       "seg_id": 12,
       "devices": [
-        "LIST_OF_THREE",
-        "ANAPHORA"
+        "ANAPHORA",
+        "LIST_OF_THREE"
       ],
       "emotion": "GRIEF",
       "intensity": 2,
       "addressee": "WORLD",
       "topic": "MORAL_JUDGEMENT",
       "invites_applause": false,
-      "note": "Second item in a list of three, anaphora"
+      "note": "Second item in a list, anaphora"
     },
     {
       "seg_id": 13,
@@ -149,32 +148,31 @@
     {
       "seg_id": 14,
       "devices": [
-        "WARNING",
-        "CONTRAST",
         "DIRECT_ADDRESS",
-        "ACCUSATION"
+        "ACCUSATION",
+        "CONTRAST"
       ],
       "emotion": "ANGER",
       "intensity": 3,
       "addressee": "LEADERS",
-      "topic": "FUTURE_WARNING",
+      "topic": "INACTION",
       "invites_applause": true,
-      "note": "Warning, contrast between reality and leaders' focus"
+      "note": "Direct accusation, strong contrast"
     },
     {
       "seg_id": 15,
       "devices": [
         "RHETORICAL_QUESTION",
         "DIRECT_ADDRESS",
-        "ACCUSATION",
-        "ANAPHORA"
+        "ANAPHORA",
+        "ACCUSATION"
       ],
       "emotion": "ANGER",
       "intensity": 3,
       "addressee": "LEADERS",
       "topic": "MORAL_JUDGEMENT",
       "invites_applause": true,
-      "note": "Repetition of 'How dare you?'"
+      "note": "Repeated rhetorical question, anaphora"
     },
     {
       "seg_id": 16,
@@ -182,27 +180,27 @@
         "STATISTIC"
       ],
       "emotion": "NEUTRAL",
-      "intensity": 0,
-      "addressee": "NONE",
+      "intensity": 1,
+      "addressee": "LEADERS",
       "topic": "SCIENCE_NUMBERS",
       "invites_applause": false,
-      "note": "Statistic, factual statement"
+      "note": "Statistic about duration"
     },
     {
       "seg_id": 17,
       "devices": [
-        "RHETORICAL_QUESTION",
+        "CONTRAST",
         "DIRECT_ADDRESS",
-        "ACCUSATION",
+        "RHETORICAL_QUESTION",
         "ANAPHORA",
-        "CONTRAST"
+        "ACCUSATION"
       ],
       "emotion": "ANGER",
       "intensity": 3,
       "addressee": "LEADERS",
       "topic": "INACTION",
       "invites_applause": true,
-      "note": "Third 'How dare you?', direct accusation of inaction and deception"
+      "note": "Anaphoric rhetorical question, direct accusation, contrast"
     },
     {
       "seg_id": 18,
@@ -210,134 +208,131 @@
         "DIRECT_ADDRESS",
         "CONTRAST"
       ],
-      "emotion": "IRONY",
+      "emotion": "NEUTRAL",
       "intensity": 1,
       "addressee": "LEADERS",
       "topic": "INACTION",
       "invites_applause": false,
-      "note": "Direct address, setting up a contrast"
+      "note": "Sets up a contrast"
     },
     {
       "seg_id": 19,
       "devices": [
-        "CONTRAST",
-        "PERSONAL_TESTIMONY"
+        "PERSONAL_TESTIMONY",
+        "CONTRAST"
       ],
-      "emotion": "ANGER",
+      "emotion": "DISBELIEF",
       "intensity": 2,
-      "addressee": "SELF",
+      "addressee": "LEADERS",
       "topic": "PERSONAL_STAKES",
       "invites_applause": false,
-      "note": "Personal testimony, contrast of emotion and belief"
+      "note": "Personal testimony, contrasting belief"
     },
     {
       "seg_id": 20,
       "devices": [
         "DIRECT_ADDRESS",
-        "ACCUSATION"
+        "PUZZLE_SOLUTION"
       ],
       "emotion": "ANGER",
       "intensity": 1,
       "addressee": "LEADERS",
       "topic": "INACTION",
       "invites_applause": false,
-      "note": "Conditional accusation"
+      "note": "Sets up a puzzle/conditional"
     },
     {
       "seg_id": 21,
       "devices": [
+        "PUZZLE_SOLUTION",
         "DIRECT_ADDRESS",
         "ACCUSATION",
-        "PERSONAL_TESTIMONY",
-        "PUZZLE_SOLUTION"
+        "PERSONAL_TESTIMONY"
       ],
-      "emotion": "ANGER",
+      "emotion": "DISBELIEF",
       "intensity": 2,
       "addressee": "LEADERS",
       "topic": "MORAL_JUDGEMENT",
       "invites_applause": false,
-      "note": "Completes the conditional accusation, personal testimony"
+      "note": "Completes the puzzle with a hypothetical accusation and personal refusal to believe."
     },
     {
       "seg_id": 22,
       "devices": [
-        "STATISTIC",
-        "WARNING"
+        "STATISTIC"
       ],
       "emotion": "FEAR",
       "intensity": 2,
       "addressee": "WORLD",
       "topic": "SCIENCE_NUMBERS",
       "invites_applause": false,
-      "note": "Statistics and warning"
+      "note": "Presentation of statistics and associated risks"
     },
     {
       "seg_id": 23,
       "devices": [
-        "STATISTIC",
         "DIRECT_ADDRESS",
-        "CONTRAST"
+        "CONTRAST",
+        "STATISTIC"
       ],
       "emotion": "IRONY",
-      "intensity": 1,
+      "intensity": 2,
       "addressee": "LEADERS",
       "topic": "SCIENCE_NUMBERS",
       "invites_applause": false,
-      "note": "Statistic, direct address, setting up a contrast"
+      "note": "Statistic, direct address, sets up contrast"
     },
     {
       "seg_id": 24,
       "devices": [
-        "CONTRAST",
-        "STATISTIC"
+        "CONTRAST"
       ],
-      "emotion": "ANGER",
+      "emotion": "FEAR",
       "intensity": 2,
-      "addressee": "WORLD",
+      "addressee": "LEADERS",
       "topic": "SCIENCE_NUMBERS",
       "invites_applause": false,
-      "note": "Contrast, explaining flaws in statistics"
+      "note": "Contrasting what the numbers exclude"
     },
     {
       "seg_id": 25,
       "devices": [
-        "ACCUSATION",
         "PERSONAL_TESTIMONY",
         "DIRECT_ADDRESS",
-        "STATISTIC"
+        "ACCUSATION"
       ],
       "emotion": "ANGER",
       "intensity": 2,
       "addressee": "LEADERS",
       "topic": "INACTION",
       "invites_applause": false,
-      "note": "Accusation, statistic, personal stakes"
+      "note": "Accusation of shifting responsibility to future generations"
     },
     {
       "seg_id": 26,
       "devices": [
+        "PUNCHLINE",
         "STATISTIC",
-        "CONTRAST",
-        "PERSONAL_TESTIMONY"
+        "CONTRAST"
       ],
       "emotion": "DEFIANCE",
       "intensity": 2,
       "addressee": "LEADERS",
       "topic": "PERSONAL_STAKES",
       "invites_applause": true,
-      "note": "Statistic, defiance, contrast to previous statement"
+      "note": "Direct statement of non-acceptance, summarizing the argument against the 50% risk."
     },
     {
       "seg_id": 27,
       "devices": [
         "PERSONAL_TESTIMONY"
       ],
-      "emotion": "ANGER",
-      "intensity": 1,
+      "emotion": "DEFIANCE",
+      "intensity": 2,
       "addressee": "LEADERS",
       "topic": "PERSONAL_STAKES",
       "invites_applause": false,
-      "note": "Clarification of 'us'"
+      "note": "Personal testimony"
     },
     {
       "seg_id": 28,
@@ -346,57 +341,54 @@
       ],
       "emotion": "NEUTRAL",
       "intensity": 0,
-      "addressee": "NONE",
+      "addressee": "WORLD",
       "topic": "SCIENCE_NUMBERS",
       "invites_applause": false,
-      "note": "Scientific statistics and dates"
+      "note": "Detailed statistical information"
     },
     {
       "seg_id": 29,
       "devices": [
-        "STATISTIC",
-        "CONTRAST"
+        "STATISTIC"
       ],
       "emotion": "FEAR",
       "intensity": 1,
-      "addressee": "NONE",
+      "addressee": "WORLD",
       "topic": "SCIENCE_NUMBERS",
       "invites_applause": false,
-      "note": "Updated statistic, implicit contrast"
+      "note": "Updated statistic"
     },
     {
       "seg_id": 30,
       "devices": [
-        "RHETORICAL_QUESTION",
         "DIRECT_ADDRESS",
-        "ACCUSATION",
-        "ANAPHORA"
+        "RHETORICAL_QUESTION",
+        "ANAPHORA",
+        "ACCUSATION"
       ],
       "emotion": "ANGER",
       "intensity": 3,
       "addressee": "LEADERS",
       "topic": "INACTION",
       "invites_applause": true,
-      "note": "Fourth 'How dare you?', direct accusation of deception"
+      "note": "Repeated rhetorical question, accusation"
     },
     {
       "seg_id": 31,
       "devices": [
-        "STATISTIC",
-        "WARNING"
+        "WARNING",
+        "STATISTIC"
       ],
       "emotion": "FEAR",
       "intensity": 2,
       "addressee": "WORLD",
       "topic": "FUTURE_WARNING",
       "invites_applause": false,
-      "note": "Statistic, warning about timeline"
+      "note": "Statistic and warning"
     },
     {
       "seg_id": 32,
       "devices": [
-        "WARNING",
-        "STATISTIC",
         "ACCUSATION"
       ],
       "emotion": "ANGER",
@@ -404,20 +396,21 @@
       "addressee": "LEADERS",
       "topic": "INACTION",
       "invites_applause": false,
-      "note": "Prediction of inaction, accusation of discomfort"
+      "note": "Accusation of avoiding uncomfortable truths"
     },
     {
       "seg_id": 33,
       "devices": [
+        "PUNCHLINE",
         "DIRECT_ADDRESS",
         "ACCUSATION"
       ],
       "emotion": "ANGER",
-      "intensity": 2,
+      "intensity": 3,
       "addressee": "LEADERS",
       "topic": "MORAL_JUDGEMENT",
       "invites_applause": true,
-      "note": "Direct accusation of immaturity and dishonesty"
+      "note": "Direct accusation, punchline"
     },
     {
       "seg_id": 34,
@@ -431,7 +424,7 @@
       "addressee": "LEADERS",
       "topic": "INACTION",
       "invites_applause": true,
-      "note": "Direct and concise accusation"
+      "note": "Direct address, accusation, punchline"
     },
     {
       "seg_id": 35,
@@ -439,7 +432,7 @@
         "CONTRAST",
         "ACCUSATION"
       ],
-      "emotion": "ANGER",
+      "emotion": "DEFIANCE",
       "intensity": 2,
       "addressee": "LEADERS",
       "topic": "MORAL_JUDGEMENT",
@@ -449,36 +442,21 @@
     {
       "seg_id": 36,
       "devices": [
-        "DIRECT_ADDRESS",
-        "WARNING"
+        "WARNING",
+        "DIRECT_ADDRESS"
       ],
       "emotion": "RESOLVE",
       "intensity": 2,
       "addressee": "LEADERS",
       "topic": "FUTURE_WARNING",
       "invites_applause": false,
-      "note": "Direct address, warning of future judgment"
+      "note": "Warning, direct address"
     },
     {
       "seg_id": 37,
       "devices": [
-        "DIRECT_ADDRESS",
         "WARNING",
-        "PERSONAL_TESTIMONY",
-        "ACCUSATION"
-      ],
-      "emotion": "DEFIANCE",
-      "intensity": 3,
-      "addressee": "LEADERS",
-      "topic": "FUTURE_WARNING",
-      "invites_applause": true,
-      "note": "Conditional warning, direct address, personal testimony"
-    },
-    {
-      "seg_id": 38,
-      "devices": [
         "DIRECT_ADDRESS",
-        "WARNING",
         "PUNCHLINE"
       ],
       "emotion": "DEFIANCE",
@@ -486,34 +464,47 @@
       "addressee": "LEADERS",
       "topic": "FUTURE_WARNING",
       "invites_applause": true,
-      "note": "Direct address, warning, defiance"
+      "note": "Direct address, warning, punchline"
+    },
+    {
+      "seg_id": 38,
+      "devices": [
+        "WARNING",
+        "DIRECT_ADDRESS",
+        "PUNCHLINE"
+      ],
+      "emotion": "DEFIANCE",
+      "intensity": 3,
+      "addressee": "LEADERS",
+      "topic": "FUTURE_WARNING",
+      "invites_applause": true,
+      "note": "Warning and punchline of defiance"
     },
     {
       "seg_id": 39,
       "devices": [
         "PUNCHLINE"
       ],
-      "emotion": "RESOLVE",
+      "emotion": "DEFIANCE",
       "intensity": 3,
       "addressee": "LEADERS",
       "topic": "OTHER",
       "invites_applause": true,
-      "note": "Powerful statement of resolve, punchline"
+      "note": "Powerful punchline, definitive stance"
     },
     {
       "seg_id": 40,
       "devices": [
         "PUNCHLINE",
-        "WARNING",
         "DIRECT_ADDRESS",
-        "CONTRAST"
+        "WARNING"
       ],
-      "emotion": "RESOLVE",
+      "emotion": "HOPE",
       "intensity": 3,
       "addressee": "LEADERS",
       "topic": "FUTURE_WARNING",
       "invites_applause": true,
-      "note": "Punchline, warning, statement of inevitable change"
+      "note": "Final punchline, warning, direct address"
     },
     {
       "seg_id": 41,
@@ -524,8 +515,361 @@
       "intensity": 0,
       "addressee": "NONE",
       "topic": "GREETING_CLOSING",
-      "invites_applause": false,
+      "invites_applause": true,
       "note": "Standard closing"
+    }
+  ],
+  "agreement": [
+    {
+      "seg_id": 3,
+      "n_runs": 5,
+      "applause_vote": 0.8,
+      "emotion_agreement": 0.6,
+      "intensity_spread": 0,
+      "device_votes": "WARNING:5/5|DIRECT_ADDRESS:5/5|PUNCHLINE:1/5",
+      "device_agreement": 0.933
+    },
+    {
+      "seg_id": 4,
+      "n_runs": 5,
+      "applause_vote": 0.0,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 1,
+      "device_votes": "NONE:5/5",
+      "device_agreement": 1.0
+    },
+    {
+      "seg_id": 5,
+      "n_runs": 5,
+      "applause_vote": 0.0,
+      "emotion_agreement": 0.6,
+      "intensity_spread": 0,
+      "device_votes": "PERSONAL_TESTIMONY:5/5",
+      "device_agreement": 1.0
+    },
+    {
+      "seg_id": 6,
+      "n_runs": 5,
+      "applause_vote": 0.0,
+      "emotion_agreement": 0.6,
+      "intensity_spread": 1,
+      "device_votes": "PERSONAL_TESTIMONY:5/5|CONTRAST:2/5",
+      "device_agreement": 0.8
+    },
+    {
+      "seg_id": 7,
+      "n_runs": 5,
+      "applause_vote": 0.4,
+      "emotion_agreement": 0.6,
+      "intensity_spread": 0,
+      "device_votes": "DIRECT_ADDRESS:5/5|CONTRAST:5/5|ACCUSATION:1/5",
+      "device_agreement": 0.933
+    },
+    {
+      "seg_id": 8,
+      "n_runs": 5,
+      "applause_vote": 1.0,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 0,
+      "device_votes": "RHETORICAL_QUESTION:5/5|DIRECT_ADDRESS:5/5|ACCUSATION:4/5|PUNCHLINE:1/5",
+      "device_agreement": 0.9
+    },
+    {
+      "seg_id": 9,
+      "n_runs": 5,
+      "applause_vote": 1.0,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 0,
+      "device_votes": "PERSONAL_TESTIMONY:5/5|DIRECT_ADDRESS:5/5|ACCUSATION:5/5|PUNCHLINE:1/5",
+      "device_agreement": 0.95
+    },
+    {
+      "seg_id": 10,
+      "n_runs": 5,
+      "applause_vote": 0.0,
+      "emotion_agreement": 0.6,
+      "intensity_spread": 0,
+      "device_votes": "CONTRAST:5/5|PERSONAL_TESTIMONY:4/5",
+      "device_agreement": 0.9
+    },
+    {
+      "seg_id": 11,
+      "n_runs": 5,
+      "applause_vote": 0.0,
+      "emotion_agreement": 0.8,
+      "intensity_spread": 0,
+      "device_votes": "LIST_OF_THREE:5/5",
+      "device_agreement": 1.0
+    },
+    {
+      "seg_id": 12,
+      "n_runs": 5,
+      "applause_vote": 0.0,
+      "emotion_agreement": 0.8,
+      "intensity_spread": 0,
+      "device_votes": "LIST_OF_THREE:5/5|ANAPHORA:4/5",
+      "device_agreement": 0.9
+    },
+    {
+      "seg_id": 13,
+      "n_runs": 5,
+      "applause_vote": 1.0,
+      "emotion_agreement": 0.6,
+      "intensity_spread": 1,
+      "device_votes": "LIST_OF_THREE:5/5|PUNCHLINE:2/5",
+      "device_agreement": 0.8
+    },
+    {
+      "seg_id": 14,
+      "n_runs": 5,
+      "applause_vote": 1.0,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 0,
+      "device_votes": "DIRECT_ADDRESS:5/5|ACCUSATION:5/5|CONTRAST:5/5|PUNCHLINE:1/5",
+      "device_agreement": 0.95
+    },
+    {
+      "seg_id": 15,
+      "n_runs": 5,
+      "applause_vote": 1.0,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 0,
+      "device_votes": "RHETORICAL_QUESTION:5/5|DIRECT_ADDRESS:5/5|ANAPHORA:5/5|ACCUSATION:3/5|PUNCHLINE:1/5",
+      "device_agreement": 0.88
+    },
+    {
+      "seg_id": 16,
+      "n_runs": 5,
+      "applause_vote": 0.0,
+      "emotion_agreement": 0.6,
+      "intensity_spread": 1,
+      "device_votes": "STATISTIC:5/5|NONE:1/5",
+      "device_agreement": 1.0
+    },
+    {
+      "seg_id": 17,
+      "n_runs": 5,
+      "applause_vote": 1.0,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 0,
+      "device_votes": "DIRECT_ADDRESS:5/5|RHETORICAL_QUESTION:5/5|ACCUSATION:5/5|ANAPHORA:4/5|CONTRAST:3/5|PUNCHLINE:1/5",
+      "device_agreement": 0.867
+    },
+    {
+      "seg_id": 18,
+      "n_runs": 5,
+      "applause_vote": 0.0,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 1,
+      "device_votes": "DIRECT_ADDRESS:5/5|CONTRAST:5/5",
+      "device_agreement": 1.0
+    },
+    {
+      "seg_id": 19,
+      "n_runs": 5,
+      "applause_vote": 0.0,
+      "emotion_agreement": 0.6,
+      "intensity_spread": 0,
+      "device_votes": "PERSONAL_TESTIMONY:5/5|CONTRAST:5/5",
+      "device_agreement": 1.0
+    },
+    {
+      "seg_id": 20,
+      "n_runs": 5,
+      "applause_vote": 0.0,
+      "emotion_agreement": 0.6,
+      "intensity_spread": 0,
+      "device_votes": "PUZZLE_SOLUTION:5/5|DIRECT_ADDRESS:4/5",
+      "device_agreement": 0.9
+    },
+    {
+      "seg_id": 21,
+      "n_runs": 5,
+      "applause_vote": 0.4,
+      "emotion_agreement": 0.8,
+      "intensity_spread": 0,
+      "device_votes": "PUZZLE_SOLUTION:5/5|DIRECT_ADDRESS:4/5|PERSONAL_TESTIMONY:4/5|ACCUSATION:3/5",
+      "device_agreement": 0.8
+    },
+    {
+      "seg_id": 22,
+      "n_runs": 5,
+      "applause_vote": 0.0,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 0,
+      "device_votes": "STATISTIC:5/5|WARNING:2/5",
+      "device_agreement": 0.8
+    },
+    {
+      "seg_id": 23,
+      "n_runs": 5,
+      "applause_vote": 0.0,
+      "emotion_agreement": 0.6,
+      "intensity_spread": 1,
+      "device_votes": "DIRECT_ADDRESS:5/5|CONTRAST:5/5|STATISTIC:5/5",
+      "device_agreement": 1.0
+    },
+    {
+      "seg_id": 24,
+      "n_runs": 5,
+      "applause_vote": 0.0,
+      "emotion_agreement": 0.6,
+      "intensity_spread": 0,
+      "device_votes": "CONTRAST:5/5",
+      "device_agreement": 1.0
+    },
+    {
+      "seg_id": 25,
+      "n_runs": 5,
+      "applause_vote": 0.2,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 1,
+      "device_votes": "PERSONAL_TESTIMONY:5/5|DIRECT_ADDRESS:5/5|ACCUSATION:5/5|STATISTIC:2/5|CONTRAST:1/5",
+      "device_agreement": 0.88
+    },
+    {
+      "seg_id": 26,
+      "n_runs": 5,
+      "applause_vote": 1.0,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 1,
+      "device_votes": "PUNCHLINE:4/5|STATISTIC:4/5|CONTRAST:4/5|DIRECT_ADDRESS:2/5|PERSONAL_TESTIMONY:2/5",
+      "device_agreement": 0.72
+    },
+    {
+      "seg_id": 27,
+      "n_runs": 5,
+      "applause_vote": 0.0,
+      "emotion_agreement": 0.6,
+      "intensity_spread": 1,
+      "device_votes": "PERSONAL_TESTIMONY:5/5|PUNCHLINE:1/5",
+      "device_agreement": 0.9
+    },
+    {
+      "seg_id": 28,
+      "n_runs": 5,
+      "applause_vote": 0.0,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 0,
+      "device_votes": "STATISTIC:5/5",
+      "device_agreement": 1.0
+    },
+    {
+      "seg_id": 29,
+      "n_runs": 5,
+      "applause_vote": 0.0,
+      "emotion_agreement": 0.8,
+      "intensity_spread": 0,
+      "device_votes": "STATISTIC:5/5|CONTRAST:1/5",
+      "device_agreement": 0.9
+    },
+    {
+      "seg_id": 30,
+      "n_runs": 5,
+      "applause_vote": 1.0,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 0,
+      "device_votes": "DIRECT_ADDRESS:5/5|RHETORICAL_QUESTION:5/5|ANAPHORA:5/5|ACCUSATION:5/5|CONTRAST:1/5|PUNCHLINE:1/5",
+      "device_agreement": 0.933
+    },
+    {
+      "seg_id": 31,
+      "n_runs": 5,
+      "applause_vote": 0.0,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 0,
+      "device_votes": "WARNING:5/5|STATISTIC:5/5",
+      "device_agreement": 1.0
+    },
+    {
+      "seg_id": 32,
+      "n_runs": 5,
+      "applause_vote": 0.0,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 0,
+      "device_votes": "ACCUSATION:5/5|CONTRAST:2/5|PUZZLE_SOLUTION:1/5|STATISTIC:1/5",
+      "device_agreement": 0.8
+    },
+    {
+      "seg_id": 33,
+      "n_runs": 5,
+      "applause_vote": 1.0,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 0,
+      "device_votes": "PUNCHLINE:5/5|DIRECT_ADDRESS:5/5|ACCUSATION:5/5",
+      "device_agreement": 1.0
+    },
+    {
+      "seg_id": 34,
+      "n_runs": 5,
+      "applause_vote": 1.0,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 0,
+      "device_votes": "DIRECT_ADDRESS:5/5|ACCUSATION:5/5|PUNCHLINE:3/5",
+      "device_agreement": 0.867
+    },
+    {
+      "seg_id": 35,
+      "n_runs": 5,
+      "applause_vote": 0.2,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 0,
+      "device_votes": "CONTRAST:5/5|ACCUSATION:4/5|WARNING:1/5|DIRECT_ADDRESS:1/5",
+      "device_agreement": 0.85
+    },
+    {
+      "seg_id": 36,
+      "n_runs": 5,
+      "applause_vote": 0.2,
+      "emotion_agreement": 0.8,
+      "intensity_spread": 0,
+      "device_votes": "WARNING:5/5|DIRECT_ADDRESS:5/5|PUNCHLINE:1/5",
+      "device_agreement": 0.933
+    },
+    {
+      "seg_id": 37,
+      "n_runs": 5,
+      "applause_vote": 1.0,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 0,
+      "device_votes": "WARNING:5/5|DIRECT_ADDRESS:5/5|PUNCHLINE:5/5|ACCUSATION:1/5|PERSONAL_TESTIMONY:1/5",
+      "device_agreement": 0.92
+    },
+    {
+      "seg_id": 38,
+      "n_runs": 5,
+      "applause_vote": 1.0,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 0,
+      "device_votes": "WARNING:5/5|DIRECT_ADDRESS:5/5|PUNCHLINE:3/5|ANAPHORA:2/5",
+      "device_agreement": 0.8
+    },
+    {
+      "seg_id": 39,
+      "n_runs": 5,
+      "applause_vote": 1.0,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 0,
+      "device_votes": "PUNCHLINE:5/5|ANAPHORA:2/5",
+      "device_agreement": 0.8
+    },
+    {
+      "seg_id": 40,
+      "n_runs": 5,
+      "applause_vote": 1.0,
+      "emotion_agreement": 0.4,
+      "intensity_spread": 0,
+      "device_votes": "PUNCHLINE:5/5|WARNING:5/5|DIRECT_ADDRESS:3/5|CONTRAST:2/5",
+      "device_agreement": 0.8
+    },
+    {
+      "seg_id": 41,
+      "n_runs": 5,
+      "applause_vote": 0.8,
+      "emotion_agreement": 1.0,
+      "intensity_spread": 0,
+      "device_votes": "NONE:5/5",
+      "device_agreement": 1.0
     }
   ]
 }

@@ -2,3 +2,7 @@
 {"step": "timeline", "command": "scripts/build_timeline.py thunberg_2019_un", "started": "2026-11-18T14:43:05+00:00", "seconds": 2.4, "status": "ok"}
 {"step": "aftermath", "command": "scripts/fetch_aftermath.py thunberg_2019_un", "started": "2026-11-18T14:43:07+00:00", "seconds": 74.1, "status": "ok"}
 {"step": "draw", "command": "scripts/draw.py thunberg_2019_un", "started": "2026-11-18T14:44:21+00:00", "seconds": 23.1, "status": "ok"}
+{"step": "run", "started": "2026-11-26T14:47:29+00:00", "from_step": "timeline", "provider": "gemini", "git_commit": "713ce40", "settings": {"delivery": {"sr": 16000, "hop_s": 0.01, "frame_s": 0.04, "fmin_hz": 75.0, "fmax_hz": 500.0, "min_pause_s": 0.2, "silence_ratio": 0.3}, "transcribe": {"model": "large-v3-turbo", "language": "en", "device": "cpu", "compute_type": "int8", "batch_size": 8}, "reactions": {"window_s": 2.0, "hop_s": 0.25, "threshold": 0.2, "min_event_s": 0.75, "merge_gap_s": 0.5, "batch_size": 32}, "tagging": {"gemini": "gemini-2.5-flash", "claude": "claude-opus-5-5"}}, "speaker_start_s": 24.0, "tracked_phrase": "how dare you"}
+{"step": "timeline", "command": "scripts/build_timeline.py thunberg_2019_un", "started": "2026-11-26T14:47:30+00:00", "seconds": 0.9, "status": "ok"}
+{"step": "aftermath", "command": "scripts/fetch_aftermath.py thunberg_2019_un", "started": "2026-11-26T14:47:31+00:00", "seconds": 133.5, "status": "ok"}
+{"step": "draw", "command": "scripts/draw.py thunberg_2019_un", "started": "2026-11-26T14:49:44+00:00", "seconds": 14.9, "status": "ok"}

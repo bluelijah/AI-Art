@@ -17,6 +17,9 @@ src/speechart/
   reactions.py            audio -> applause / laughter / cheering (PANNs)
   tagging.py              sentences -> rhetorical devices, emotion (Claude API)
   timeline.py             shared timeline: frame grid, word table, lead/lag
+  process.py              per-item process tables (sentence endings, run-up curves, reactions)
+  structure.py            structure finding: lead/lag, correlations, arc, sections, breath
+                          groups, rhythm, meaning echoes, gesture vocabulary
   aftermath.py            Wikipedia pageviews, GDELT news volume
   art/breath_scroll.py    ink scroll: strokes = loudness/pitch, gold = applause
   art/fingerprint.py      self-similarity matrix (what is said / how it is said)
@@ -43,6 +46,7 @@ One command per speech (after importing its audio):
 uv run python scripts/import_audio.py <speech_id> path/to/video.mp4   # once: video -> audio.wav
 uv run python scripts/run_pipeline.py <speech_id>                     # every step below, in order
 uv run python scripts/compare.py <id> <id> ...                         # cross-speech tables and charts
+uv run python scripts/find_structure.py <id> <id> ...                  # hidden structures (docs/structures.md)
 ```
 
 Or step by step:
@@ -63,7 +67,10 @@ PANNs, a small sentence-embedding model).
 
 `tag_sentences.py` needs `ANTHROPIC_API_KEY` (Claude) or `GEMINI_API_KEY`
 (Gemini, in the environment or a gitignored `.env`). `annotations.json` is the
-blind run (gemini-2.5-flash, transcript only, same model for every speech). `annotations_manual.json` is an
+blind consensus of 5 independent runs (gemini-2.5-flash, transcript only, same
+model for every speech): each tag is decided by vote, and each sentence keeps
+an agreement record (`applause_vote`, `emotion_agreement`, `device_votes`,
+`device_agreement`), because single LLM runs disagree with each other a lot. `annotations_manual.json` is an
 earlier manual pass made after applause was known, kept for comparison.
 
 ## Summary vs. process
@@ -78,7 +85,8 @@ the sentences and moments it came from.
 | Run-up curves | `output/<id>/runup_curves.csv` | loudness / pitch around every sentence ending |
 | Reaction moments | `output/<id>/reaction_moments.csv` | each reaction with the word and sentence before it, prediction, delivery |
 | Speaker reference | `output/<id>/speaker_levels.json` | the typical loudness / pitch everything is measured against |
-| LLM call log | `data/speeches/<id>/tagging_runs/*.json` | each tagging run: prompt hash, exact message sent, every attempt and raw reply |
+| LLM call log | `data/speeches/<id>/tagging_runs/*.json` | each tagging call: prompt hash, exact message sent, and for each of the 5 runs every attempt and raw reply |
+| Tag agreement | `sentences.csv` columns `applause_vote` … `device_agreement` | how many of the runs agreed on each sentence's tags |
 | Pipeline log | `output/<id>/pipeline_log.jsonl` | each run: git commit, all settings, every step's duration and status |
 | Cross-speech rows | `output/compare/*_all.csv` | the per-item tables of every speech stacked, behind every comparison |
 
@@ -109,9 +117,10 @@ the sentences and moments it came from.
 | Word-level transcript | done |
 | Applause / laughter | done |
 | Shared timeline | done |
-| Rhetorical devices + emotion | done (blind Gemini run) |
+| Rhetorical devices + emotion | done (blind Gemini, consensus of 5 runs with agreement scores) |
 | Aftermath | Wikipedia + GDELT done; Google Trends not yet |
 | Breath Scroll, Fingerprint, Applause Landscape, Ripples | first versions |
 | Gallery of Moments | not started |
 | More speeches + cross-comparison | done: Thunberg 2019, Thunberg COP24 2018, Malala 2013, King 1963 (edited excerpt) |
 | Process records (per-item tables, LLM and pipeline logs) | done |
+| Hidden structures (sections, arcs, echoes, gestures, correlations) | first pass, see `docs/structures.md` |

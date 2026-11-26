@@ -74,6 +74,12 @@ def speech_metrics(d: dict) -> dict:
         m["prediction_hit_rate"] = (inv & got).sum() / max(inv.sum(), 1)   # precision
         m["applause_caught"] = (inv & got).sum() / max(got.sum(), 1)       # recall
         m["mean_intensity"] = sent.intensity.mean()
+        if "applause_vote" in sent:  # multi-run agreement (1 = all runs agreed)
+            m["tagging_runs"] = int(sent.n_runs.max())
+            m["applause_vote_agreement"] = sent.applause_vote.apply(lambda v: max(v, 1 - v)).mean()
+            m["emotion_agreement"] = sent.emotion_agreement.mean()
+            m["device_agreement"] = sent.device_agreement.mean()
+            m["contested_applause_predictions"] = int(sent.applause_vote.between(0.2, 0.8).sum())
         devs = sent.devices.fillna("").str.split("|")
         for dv in DEVICES:
             m[f"dev_{dv.lower()}"] = devs.apply(lambda x: dv in x).mean()

@@ -14,6 +14,7 @@ from __future__ import annotations
 from pathlib import Path
 from typing import Literal
 
+import numpy as np
 import pandas as pd
 from pydantic import BaseModel, Field
 
@@ -159,3 +160,59 @@ def tag_with_gemini(segments: pd.DataFrame, context: str, prompt_file: str = "rh
             raise RuntimeError(f"no annotation for seg_ids {sorted(missing)}")
         log.append({**entry, "status": "ok", "raw_response": response.text})
         return result
+
+
+def consensus(runs: list[SpeechAnnotation]) -> tuple[SpeechAnnotation, pd.DataFrame]:
+    """Combine several independent tagging runs into one annotation plus agreement scores.
+
+    LLM tags vary from run to run, so each field is decided by vote:
+    - emotion, addressee, topic : most common value (ties: first run's value)
+    - intensity                 : median, rounded
+    - invites_applause          : True when at least half the runs say so
+    - devices                   : every device named in at least half the runs
+    - note                      : from the first run that matches the consensus devices
+
+    The agreement table has one row per sentence:
+    - applause_vote      : share of runs predicting applause (0-1, a confidence)
+    - emotion_agreement  : share of runs agreeing with the consensus emotion
+    - intensity_spread   : max - min intensity across runs
+    - device_votes       : every device named, with its vote count, e.g. "CONTRAST:5/5|STATISTIC:2/5"
+    - device_agreement   : mean over named devices of max(share, 1 - share); 1 = unanimous
+    - n_runs
+    """
+    from collections import Counter
+
+    n = len(runs)
+    by_seg: dict[int, list[SentenceAnnotation]] = {}
+    for run in runs:
+        for s in run.sentences:
+            by_seg.setdefault(s.seg_id, []).append(s)
+
+    def mode(values):
+        counts = Counter(values)
+        top = max(counts.values())
+        return next(v for v in values if counts[v] == top)  # first run wins ties
+
+    sentences, rows = [], []
+    for seg_id in sorted(by_seg):
+        ss = by_seg[seg_id]
+        k = len(ss)
+        dev_counts = Counter(d for s in ss for d in set(s.devices))
+        devices = [d for d, c in dev_counts.items() if c / k >= 0.5 and d != "NONE"] or ["NONE"]
+        emotion = mode([s.emotion for s in ss])
+        votes = sum(s.invites_applause for s in ss)
+        note = next((s.note for s in ss if set(s.devices) == set(devices)), ss[0].note)
+        sentences.append(SentenceAnnotation(
+            seg_id=seg_id, devices=devices, emotion=emotion,
+            intensity=int(round(float(np.median([s.intensity for s in ss])))),
+            addressee=mode([s.addressee for s in ss]), topic=mode([s.topic for s in ss]),
+            invites_applause=votes / k >= 0.5, note=note))
+        shares = [c / k for d, c in dev_counts.items() if d != "NONE"]
+        rows.append({
+            "seg_id": seg_id, "n_runs": k, "applause_vote": votes / k,
+            "emotion_agreement": sum(s.emotion == emotion for s in ss) / k,
+            "intensity_spread": max(s.intensity for s in ss) - min(s.intensity for s in ss),
+            "device_votes": "|".join(f"{d}:{c}/{k}" for d, c in dev_counts.most_common()),
+            "device_agreement": float(np.mean([max(p, 1 - p) for p in shares])) if shares else 1.0,
+        })
+    return SpeechAnnotation(sentences=sentences), pd.DataFrame(rows)
