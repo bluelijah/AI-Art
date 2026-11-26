@@ -14,7 +14,7 @@ from pathlib import Path
 
 import pandas as pd
 
-from speechart.art import breath_scroll, charts, fingerprint, landscape, ripples, wiring
+from speechart.art import bodies, breath_scroll, charts, fingerprint, landscape, ripples, wiring
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -58,7 +58,8 @@ def main(speech_id: str) -> None:
     if (out / "structure" / "breath_groups.csv").exists():
         wiring.render_portrait(speech_id, art / "wiring.png")
         wiring.render_portrait(speech_id, art / "wiring_annotated.png", annotated=True)
-        print("wrote art/wiring.png, art/wiring_annotated.png")
+        bodies.render_body(speech_id, art / "speech_body.png")
+        print("wrote art/wiring.png, art/wiring_annotated.png, art/speech_body.png")
     else:
         print("no structure yet: run find_structure.py for the wiring portrait")
 

@@ -106,7 +106,7 @@ def render(frames: pd.DataFrame, words: pd.DataFrame, events: pd.DataFrame,
 
     fig.text(0.04, 0.955, title or "Ripples", color=INK, fontsize=14, family="serif")
     fig.text(0.04, 0.03,
-             f"centre: the speech, clockwise from the top (weight = loudness, gold = applause, white = “{phrase}”)\n"
+             f"center: the speech, clockwise from the top (weight = loudness, gold = applause, white = “{phrase}”)\n"
              f"blue rings: Wikipedia views of {article.replace('_', ' ')} per day   "
              f"gold arcs: news articles quoting “{phrase}”, anchored where it was said",
              color=INK_2, fontsize=7.5, family="serif")

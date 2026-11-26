@@ -146,6 +146,10 @@ def main(ids: list[str]) -> None:
     if len(res) > 1:
         (ROOT / "output" / "compare" / "art").mkdir(exist_ok=True)
         wiring.render_constellation([r["sid"] for r in res], ROOT / "output" / "compare" / "art" / "constellation.png")
+        from speechart.art import bodies
+        for r in res:
+            bodies.render_body(r["sid"], ROOT / "output" / r["sid"] / "art" / "speech_body.png")
+        bodies.render_bodies([r["sid"] for r in res], ROOT / "output" / "compare" / "art" / "speech_bodies.png")
         print("wrote wiring portraits and output/compare/art/constellation.png")
     print(f"\nwrote {out.relative_to(ROOT)}/ and output/<id>/structure/")
 

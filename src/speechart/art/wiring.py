@@ -46,7 +46,7 @@ EMOTION = {  # luminous on a dark ground
 
 
 class Spiral:
-    """Archimedean spiral mapping speech time to a point, outward from the centre."""
+    """Archimedean spiral mapping speech time to a point, outward from the center."""
 
     def __init__(self, t0: float, t1: float, turns: float, r0: float = 0.22, r1: float = 1.0):
         self.t0, self.t1, self.turns, self.r0, self.r1 = t0, t1, turns, r0, r1
@@ -243,8 +243,8 @@ def render_portrait(sid: str, path: Path, annotated: bool = False) -> None:
     fig.text(0.04, 0.945, f"{m['title']}, {m['date'][:4]}" + (" (excerpt)" if m.get("excerpt") else ""),
              color=INK_2, fontsize=9, family="serif")
     if annotated:
-        fig.text(0.96, 0.965, "spiral: the speech from centre outward   stroke: one breath, bent by its pitch,\n"
-                 "width = loudness   colour: emotion the AI hears   threads: sentences echoing in meaning\n"
+        fig.text(0.96, 0.965, "spiral: the speech from center outward   stroke: one breath, bent by its pitch,\n"
+                 "width = loudness   color: emotion the AI hears   threads: sentences echoing in meaning\n"
                  "gold: applause   marks: where the speech changes character",
                  color=INK_2, fontsize=6.5, family="serif", ha="right", va="top")
         _legend(fig, set(d["sentences"].emotion.dropna()))
@@ -300,8 +300,8 @@ def render_constellation(ids: list[str], path: Path, title: str = "The Hidden Wi
     ax.set_xlim(-lim, lim)
     ax.set_ylim(-lim - 0.08, lim + 0.04)
     fig.text(0.03, 0.975, title, color=INK, fontsize=18, family="serif", va="top")
-    fig.text(0.03, 0.055, "Each spiral is one speech, centre outward. Each stroke is one breath, bent by its pitch; "
-             "width is loudness; colour is the emotion the AI hears.\nColoured threads: sentences echoing each other "
+    fig.text(0.03, 0.055, "Each spiral is one speech, center outward. Each stroke is one breath, bent by its pitch; "
+             "width is loudness; color is the emotion the AI hears.\nColored threads: sentences echoing each other "
              "inside a speech. White threads: echoes between speeches, found by an AI that places every sentence in a "
              "space of meaning. Gold: applause.", color=INK_2, fontsize=8.5, family="serif", va="bottom")
     _legend(fig, set().union(*[set(d["sentences"].emotion.dropna()) for d in ds]), y=0.02)

@@ -129,7 +129,7 @@ def render(grid: pd.DataFrame, words: pd.DataFrame, events: pd.DataFrame, path: 
         fig.patches.append(plt.Rectangle((x0, 0.045), 0.01, 0.03, color=EMOTION_COLOURS[name],
                                          transform=fig.transFigure, figure=fig))
         fig.text(x0 + 0.014, 0.05, name.lower(), fontsize=8, family="serif", color="#2d261c")
-    fig.text(0.985, 0.05, "peaks (gold): audience response   far hills: loudness   water: pauses   colour: emotion",
+    fig.text(0.985, 0.05, "peaks (gold): audience response   far hills: loudness   water: pauses   color: emotion",
              ha="right", fontsize=8, family="serif", color="#6b604c")
     fig.savefig(path, facecolor=PAPER)
     plt.close(fig)

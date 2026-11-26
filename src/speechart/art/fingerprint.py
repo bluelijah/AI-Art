@@ -25,7 +25,7 @@ BG = "#0e0d12"
 
 
 def text_windows(words: pd.DataFrame, grid_t: np.ndarray, half_words: int = 5) -> list[str | None]:
-    """For each grid time, the ~11 words centred on the word being spoken (None if silent)."""
+    """For each grid time, the ~11 words centerd on the word being spoken (None if silent)."""
     out = []
     starts, ends = words.start.to_numpy(), words.end.to_numpy()
     toks = words.word.tolist()

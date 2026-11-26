@@ -28,6 +28,8 @@ src/speechart/
   art/charts.py           analysis charts: phrase repetitions, anatomy of applause
   art/wiring.py           The Hidden Wiring of Speech: spiral portraits built from the
                           structures (breath gestures, echoes, applause) + constellation
+  art/bodies.py           Speech Bodies: each speech as a solid of stacked discs
+gallery/                  numbered copies of every image + README.md describing each one
 scripts/                  one runnable script per pipeline step
 tests/                    synthetic checks (no models, no network)
 output/<id>/              generated tables and art (committed, so results are shared)
@@ -49,7 +51,12 @@ uv run python scripts/import_audio.py <speech_id> path/to/video.mp4   # once: vi
 uv run python scripts/run_pipeline.py <speech_id>                     # every step below, in order
 uv run python scripts/compare.py <id> <id> ...                         # cross-speech tables and charts
 uv run python scripts/find_structure.py <id> <id> ...                  # hidden structures (docs/structures.md)
+uv run python scripts/build_gallery.py                                 # gallery/ folder + running document
 ```
+
+**Gallery:** [`gallery/README.md`](gallery/README.md) lists every image as "Image NN", with what it
+shows, the data it is drawn from, and how it is made (including which AI models). The images sit in
+the same folder under the same numbers. Rerun `build_gallery.py` after the art changes.
 
 Or step by step:
 
@@ -123,6 +130,8 @@ the sentences and moments it came from.
 | Aftermath | Wikipedia + GDELT done; Google Trends not yet |
 | Breath Scroll, Fingerprint, Applause Landscape, Ripples | first versions |
 | The Hidden Wiring of Speech (portraits + constellation) | first version: `output/<id>/art/wiring*.png`, `output/compare/art/constellation.png` |
+| Speech Bodies (per speech + stacked comparison) | first version |
+| Gallery folder + running document | `gallery/`, rebuilt by `scripts/build_gallery.py` |
 | Gallery of Moments | not started |
 | More speeches + cross-comparison | done: Thunberg 2019, Thunberg COP24 2018, Malala 2013, King 1963 (edited excerpt) |
 | Process records (per-item tables, LLM and pipeline logs) | done |
